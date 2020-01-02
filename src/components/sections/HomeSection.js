@@ -10,7 +10,8 @@ const useStyles = makeStyles(theme => ({
   },
   title: {
     marginTop: "1rem",
-    fontSize: 12,
+    fontSize: 20,
+    textAlign: "center",
     fontWeight: 600,
     textTransform: "uppercase",
     letterSpacing: 1.2,
