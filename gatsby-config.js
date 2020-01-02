@@ -7,16 +7,15 @@ module.exports = {
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-material-ui`,
-    "gatsby-plugin-no-sourcemaps",
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `Seyed Alireza Fatemi Jahromi`,
+        short_name: `Fatemi`,
         start_url: `/`,
         background_color: `#fff`,
         theme_color: `#fff`,
-        display: `minimal-ui`,
+        display: `standalone`,
         icon: `src/images/icon.png`,
       },
     },

@@ -50,7 +50,7 @@ const Layout = ({ children, page }) => {
     setTheme(theme === "light" ? "dark" : "light")
   }, [theme, setTheme])
   return (
-    <ThemeProvider theme={theme === "light" ? darkTheme : lightTheme}>
+    <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
       <Header siteTitle={data.site.siteMetadata.title} onChangeThemeMode={handleThemeModeChange} page={page} />
       <div
         style={{
