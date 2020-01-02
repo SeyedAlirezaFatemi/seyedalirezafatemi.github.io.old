@@ -125,7 +125,8 @@ export function WorkSection() {
         <Typography variant="body1" className={classes.paragraph}>
           This was the project for Computer Architecture course. I used MiBench benchmarks and Intel VTune Amplifier for
           profiling. The dedicated hardware was designed in Verilog and tested using ModelSim and Xilinix ISE.
-          Simulations were done using gem5.
+          Simulations were done using gem5. The code is available on <a
+          href="https://github.com/SeyedAlirezaFatemi/gem5" target="_blank">GitHub</a>.
         </Typography>
         <Typography variant="body1" className={classes.paragraph}>
           <a className={classes.link} target="_blank" rel="noopener noreferrer"
@@ -137,10 +138,12 @@ export function WorkSection() {
           Spring 2017
         </Typography>
         <Typography variant="body1" className={classes.paragraph}>
-          This was a course project for Digital System Design, and it is a hardware (and software) implementation of a
+          This was the project for Digital System Design course, and it is a hardware (and software) implementation of a
           co-processor that can translate JVM bytecode (only a subset, including the arithmetic) to ARM machine
           instructions. It is tested on a Raspberry PI 3 and can generate much faster executables (up to 15x) than
-          running on top of the JVM engine.
+          running on top of the JVM engine. The code is available on <a
+          href="https://github.com/ImanHosseini/JAA"
+          target="_blank">GitHub</a>.
         </Typography>
         <Typography variant="body1" className={classes.paragraph}>
           <a className={classes.link} target="_blank" rel="noopener noreferrer" href="https://www.aparat.com/v/KtZps">
