@@ -1,0 +1,24 @@
+module.exports = {
+  siteMetadata: {
+    title: `Seyed Alireza Fatemi Jahromi`,
+    description: `Seyed Alireza Fatemi Jahromi`,
+    author: `Seyed Alireza Fatemi Jahromi`,
+  },
+  plugins: [
+    `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-material-ui`,
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `gatsby-starter-default`,
+        short_name: `starter`,
+        start_url: `/`,
+        background_color: `#fff`,
+        theme_color: `#fff`,
+        display: `minimal-ui`,
+        icon: `src/images/icon.png`,
+      },
+    },
+    `gatsby-plugin-offline`,
+  ],
+}
