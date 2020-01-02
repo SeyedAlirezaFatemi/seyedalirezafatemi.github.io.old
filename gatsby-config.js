@@ -7,6 +7,7 @@ module.exports = {
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-material-ui`,
+    "gatsby-plugin-no-sourcemaps",
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
