@@ -75,7 +75,7 @@ export function HonorsSection() {
         </li>
         <li>
           <HonorIcon />
-          Ranked <strong>1th</strong> in the third Sharif ICT Challenge (Fintech) among 65 chosen teams.
+          Ranked <strong>1st</strong> in the third Sharif ICT Challenge (Fintech) among 65 chosen teams.
           <Date>Summer 2019</Date>
         </li>
         <li>

@@ -50,7 +50,7 @@ export function WorkSection() {
       <CVSection title={"Work Experiences"}>
         <Typography variant="body1" className={classes.paragraph}>
           <a className={classes.link} target="_blank" rel="noopener noreferrer" href="https://en.bmn.ir/">
-            National Elites Foundation, Shahid Ahmadi Roshan Project
+            Iran's National Elites Foundation, Shahid Ahmadi Roshan Project
           </a>
         </Typography>
         <Typography variant="subtitle1" className={classes.paragraph}>
@@ -66,8 +66,7 @@ export function WorkSection() {
             medical field such as digital pathology. My research is focused on the classification and segmentation of
             different types of cancer in digital pathology images. I work with Whole Slide Images from various organs
             such as Liver, Colon, and Prostate. I also worked with 3D brain MRI images for the task of grading
-            Periventricular
-            White Matter Changes, Deep White Matter Changes, and Global Cortical Atrophy.
+            Periventricular White Matter Changes, Deep White Matter Changes, and Global Cortical Atrophy.
           </li>
           <li>
             Meeting with hospital, clinic, and laboratory managers for requirements engineering and data gathering.
@@ -96,7 +95,8 @@ export function WorkSection() {
         </ul>
         <Typography variant="body1" className={classes.paragraph}>
           My teammates and I developed a social media application (similar to Instagram). The project is
-          open-source and available on <a href="https://github.com/Mangeneh" target="_blank">GitHub</a>.
+          open-source and available on <a href="https://github.com/Mangeneh" target="_blank"
+                                          rel="noopener noreferrer">GitHub</a>.
         </Typography>
       </CVSection>
       <CVSection title={"Other Projects"}>
@@ -111,7 +111,8 @@ export function WorkSection() {
         </Typography>
         <Typography variant="body1" className={classes.paragraph}>
           This was the project for Computer Networks course. It is a small example of a peer-to-peer network. The code
-          is available on <a href="https://github.com/SeyedAlirezaFatemi/p2p_network_project" target="_blank">GitHub</a>.
+          is available on <a href="https://github.com/SeyedAlirezaFatemi/p2p_network_project" target="_blank"
+                             rel="noopener noreferrer">GitHub</a>.
         </Typography>
         <Typography variant="body1" className={classes.paragraph}>
           <a className={classes.link} target="_blank" rel="noopener noreferrer"
@@ -126,7 +127,7 @@ export function WorkSection() {
           This was the project for Computer Architecture course. I used MiBench benchmarks and Intel VTune Amplifier for
           profiling. The dedicated hardware was designed in Verilog and tested using ModelSim and Xilinix ISE.
           Simulations were done using gem5. The code is available on <a
-          href="https://github.com/SeyedAlirezaFatemi/gem5" target="_blank">GitHub</a>.
+          href="https://github.com/SeyedAlirezaFatemi/gem5" target="_blank" rel="noopener noreferrer">GitHub</a>.
         </Typography>
         <Typography variant="body1" className={classes.paragraph}>
           <a className={classes.link} target="_blank" rel="noopener noreferrer"
@@ -143,7 +144,7 @@ export function WorkSection() {
           instructions. It is tested on a Raspberry PI 3 and can generate much faster executables (up to 15x) than
           running on top of the JVM engine. The code is available on <a
           href="https://github.com/ImanHosseini/JAA"
-          target="_blank">GitHub</a>.
+          target="_blank" rel="noopener noreferrer">GitHub</a>.
         </Typography>
         <Typography variant="body1" className={classes.paragraph}>
           <a className={classes.link} target="_blank" rel="noopener noreferrer" href="https://www.aparat.com/v/KtZps">
@@ -170,12 +171,12 @@ export function WorkSection() {
         <Typography variant="body1" className={classes.paragraph}>
           For the project of Logic Circuits course, I designed a digital safe in Verilog. It was successfully tested on
           Xilinix Spartan 6 FPGA. The code is available on <a href="https://github.com/SeyedAlirezaFatemi/TheSafe"
-                                                              target="_blank">GitHub</a>.
+                                                              target="_blank" rel="noopener noreferrer">GitHub</a>.
         </Typography>
         <Typography variant="body1" className={classes.paragraph}>
-          <a className={classes.link}>
+          <p className={classes.link}>
             Who Killed Martin?
-          </a>
+          </p>
         </Typography>
         <Typography variant="subtitle1" className={classes.paragraph}>
           Fall 2016
