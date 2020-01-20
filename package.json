@@ -6,6 +6,7 @@
   "dependencies": {
     "@material-ui/core": "^4.8.2",
     "gatsby": "^2.18.17",
+    "gatsby-plugin-gtag": "^1.0.12",
     "gatsby-plugin-manifest": "^2.2.34",
     "gatsby-plugin-material-ui": "^2.1.6",
     "gatsby-plugin-offline": "^3.0.30",
@@ -13,7 +14,7 @@
     "prop-types": "^15.7.2",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
-    "react-helmet": "^5.2.1"
+    "react-helmet": "^6.0.0-beta"
   },
   "devDependencies": {
     "gh-pages": "^2.1.1",

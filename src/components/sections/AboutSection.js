@@ -25,7 +25,7 @@ export function AboutSection() {
   const quote = isDark ? quoteOff : quoteOn
   return (
     <div className={classes.about}>
-      <img src={quote} width={600} className={classes.image} />
+      <img alt="Quote" src={quote} width={600} className={classes.image} />
       {/*<div className="quote--container">*/}
       {/*  <p className="quote">*/}
       {/*    I go to seek a <span className="quote--highlight">Great Perhaps</span>.*/}

@@ -20,5 +20,15 @@ module.exports = {
       },
     },
     `gatsby-plugin-offline`,
+    {
+      resolve: `gatsby-plugin-gtag`,
+      options: {
+        trackingId: "UA-107408319-2",
+        // Puts tracking script in the head instead of the body
+        // head: false,
+        // enable ip anonymization
+        // anonymize: true,
+      },
+    },
   ],
 }

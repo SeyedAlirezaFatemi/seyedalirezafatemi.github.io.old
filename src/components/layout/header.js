@@ -17,6 +17,7 @@ import "./hamburgers.css"
 import on from "../../images/on.png"
 import off from "../../images/off.png"
 import { Sections } from "../../utils"
+import { Helmet } from "react-helmet"
 
 const colorModeTransition =
   "background 0.25s var(--ease-in-out-quad), color 0.25s var(--ease-in-out-quad)"
@@ -215,6 +216,11 @@ const Header = ({ siteTitle, onChangeThemeMode, page }) => {
   const classes = useStyles()
   return (
     <header className={classes.header}>
+      <Helmet>
+        <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+        <meta http-equiv="Pragma" content="no-cache" />
+        <meta http-equiv="Expires" content="0" />
+      </Helmet>
       <Grid container alignItems="center" justify="center">
         <Grid container alignItems="center" justify="center">
           <DarkModeToggle toggleDayNight={onChangeThemeMode} />
@@ -299,9 +305,9 @@ function MobileNavigation() {
         <button className={`hamburger hamburger--spin ${open ? "is-active" : ""} ${classes.hamburger}`} type="button"
                 onClick={toggleDrawer(true)} aria-label="Menu" aria-controls="navigation"
                 aria-expanded={open ? "true" : "false"}>
-            <span className="hamburger-box">
-              <span className="hamburger-inner" />
-            </span>
+  <span className="hamburger-box">
+  <span className="hamburger-inner" />
+  </span>
         </button>
       </AppBar>
       <div id="navigation">
