@@ -72,8 +72,7 @@ export function WorkSection() {
             Meeting with hospital, clinic, and laboratory managers for requirements engineering and data gathering.
           </li>
           <li>
-            Designing and developing software products. I used Adobe XD for prototyping, React for front-end, Django for
-            back-end, and TensorFlow for implementing neural networks.
+            Designing and developing software products.
           </li>
         </ul>
         <Typography variant="body1" className={classes.paragraph}>

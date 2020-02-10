@@ -44,7 +44,7 @@ export function AboutSection() {
       find the complete list of the tools I've worked with in my <a href={"/Seyed Alireza Fatemi Jahromi.pdf"}>CV</a>.
       <br />
       I love playing games, watching series, running, and swimming. My favorite games are "The Elder Scrolls V: Skyrim"
-      & "Control" and my favorite series are "The OA", "Looking for Alaska", "Sharp Objects", and "The Witcher". I love
+      & "Control" and my favorite series are "The OA", "Looking for Alaska", "Sharp Objects", "Castle Rock", and "The Witcher". I love
       to travel to new places and meet new people.
     </div>
   )

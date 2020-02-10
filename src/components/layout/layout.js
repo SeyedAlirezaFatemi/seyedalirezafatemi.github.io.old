@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 import { graphql, useStaticQuery } from "gatsby"
 import Header from "./header"
 import "./layout.css"
-import { CssBaseline } from "@material-ui/core"
+import { CssBaseline, Divider } from "@material-ui/core"
 import { createMuiTheme, responsiveFontSizes, ThemeProvider } from "@material-ui/core/styles"
 import { useLocalStorage } from "../../utils/useLocalStorage"
 
@@ -37,13 +37,13 @@ const darkTheme = responsiveFontSizes(createMuiTheme({
 
 const Layout = ({ children, page }) => {
   const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
+      query SiteTitleQuery {
+          site {
+              siteMetadata {
+                  title
+              }
+          }
       }
-    }
   `)
   const [theme, setTheme] = useLocalStorage("theme", "light")
   const handleThemeModeChange = useCallback(() => {
@@ -62,6 +62,7 @@ const Layout = ({ children, page }) => {
       >
         <CssBaseline />
         <main>{children}</main>
+        <Divider style={{ marginTop: 12 }} />
       </div>
     </ThemeProvider>
   )
