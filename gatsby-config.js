@@ -16,10 +16,9 @@ module.exports = {
         background_color: `#fff`,
         theme_color: `#fff`,
         display: `standalone`,
-        icon: `src/images/icon.png`,
+        icon: `static/icon.png`,
       },
     },
-    `gatsby-plugin-offline`,
     {
       resolve: `gatsby-plugin-gtag`,
       options: {

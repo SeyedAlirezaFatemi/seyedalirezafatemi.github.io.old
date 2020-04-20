@@ -1,6 +1,6 @@
 import React, { useCallback } from "react"
-import honorIconLight from "../../images/trophy_light.svg"
-import honorIconDark from "../../images/trophy_dark.svg"
+import honorIconLight from "../../../static/trophy_light.svg"
+import honorIconDark from "../../../static/trophy_dark.svg"
 import { makeStyles, Typography, useTheme } from "@material-ui/core"
 
 const useStyles = makeStyles(theme => ({

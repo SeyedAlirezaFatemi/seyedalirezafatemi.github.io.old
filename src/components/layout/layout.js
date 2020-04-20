@@ -1,11 +1,10 @@
 import React, { useCallback } from "react"
-import PropTypes from "prop-types"
 import { graphql, useStaticQuery } from "gatsby"
 import Header from "./header"
 import "./layout.css"
 import { CssBaseline, Divider } from "@material-ui/core"
 import { createMuiTheme, responsiveFontSizes, ThemeProvider } from "@material-ui/core/styles"
-import { useLocalStorage } from "../../utils/useLocalStorage"
+import { useLocalStorage } from "../../utils"
 
 const lightTheme = responsiveFontSizes(createMuiTheme({
   palette: {
@@ -52,24 +51,13 @@ const Layout = ({ children, page }) => {
   return (
     <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
       <Header siteTitle={data.site.siteMetadata.title} onChangeThemeMode={handleThemeModeChange} page={page} />
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0px 1.0875rem 1.45rem`,
-          paddingTop: 0,
-        }}
-      >
+      <div className="main-container">
         <CssBaseline />
         <main>{children}</main>
-        <Divider style={{ marginTop: 12 }} />
+        <Divider className="divider" />
       </div>
     </ThemeProvider>
   )
-}
-
-Layout.propTypes = {
-  children: PropTypes.node.isRequired,
 }
 
 export { Layout }

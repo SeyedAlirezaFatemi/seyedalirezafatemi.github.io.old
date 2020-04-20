@@ -98,7 +98,7 @@ export function HomeSection() {
       <CVSection title={"Publications"}>
         <ol className={classes.interestsList}>
           <li>A. Khani, <strong>S.A. Fatemi Jahromi</strong>, H. Otroshi Shahreza, H. Behroozi, M. Soleymani Baghshah,
-            <i>"Towards Automatic Prostate Gleason Grading via Deep Convolutional Neural Networks"</i>, The 5th Iranian
+            <a href="https://ieeexplore.ieee.org/document/9066019"><i>"Towards Automatic Prostate Gleason Grading via Deep Convolutional Neural Networks"</i></a>, The 5th Iranian
             Conference on Signal Processing and Intelligent Systems (ICSPIS 2019), Shahrood, Iran, 2019
           </li>
           <li>

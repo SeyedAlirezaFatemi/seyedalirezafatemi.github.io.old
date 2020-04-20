@@ -1,7 +1,5 @@
 import React from "react"
 import "./about.css"
-import quoteOn from "../../images/quote-on.jpg"
-import quoteOff from "../../images/quote-off.jpg"
 import { makeStyles, useTheme } from "@material-ui/core"
 
 const useStyles = makeStyles(theme => ({
@@ -22,7 +20,7 @@ export function AboutSection() {
   const theme = useTheme()
   const classes = useStyles()
   const isDark = theme.palette.type === "dark"
-  const quote = isDark ? quoteOff : quoteOn
+  const quote = isDark ? 'quote-off.jpg' : 'quote-on.jpg'
   return (
     <div className={classes.about}>
       <img alt="Quote" src={quote} width={600} className={classes.image} />

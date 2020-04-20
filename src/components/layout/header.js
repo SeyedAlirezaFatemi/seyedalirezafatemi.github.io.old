@@ -1,5 +1,4 @@
 import { Link } from "gatsby"
-import PropTypes from "prop-types"
 import React, { useCallback } from "react"
 import {
   AppBar,
@@ -14,8 +13,6 @@ import {
   useTheme,
 } from "@material-ui/core"
 import "./hamburgers.css"
-import on from "../../images/on.png"
-import off from "../../images/off.png"
 import { Sections } from "../../utils"
 import { Helmet } from "react-helmet"
 
@@ -217,9 +214,10 @@ const Header = ({ siteTitle, onChangeThemeMode, page }) => {
   return (
     <header className={classes.header}>
       <Helmet>
-        <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
-        <meta http-equiv="Pragma" content="no-cache" />
-        <meta http-equiv="Expires" content="0" />
+        <meta httpEquiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+        <meta httpEquiv="Pragma" content="no-cache" />
+        <meta httpEquiv="Expires" content="0" />
+        <title>{siteTitle}</title>
       </Helmet>
       <Grid container alignItems="center" justify="center">
         <Grid container alignItems="center" justify="center">
@@ -244,7 +242,7 @@ const Header = ({ siteTitle, onChangeThemeMode, page }) => {
             </button>
           </Link>
         </Hidden>
-        <img src={theme.palette.type === "dark" ? off : on} onClick={onChangeThemeMode} alt="Fatemi Logo"
+        <img src={theme.palette.type === "dark" ? "off.png" : "on.png"} onClick={onChangeThemeMode} alt="Fatemi Logo"
              className={classes.logo} />
         <Hidden smDown>
           <Link to={Sections.honors.path}>
@@ -322,10 +320,6 @@ function MobileNavigation() {
       </div>
     </nav>
   )
-}
-
-Header.propTypes = {
-  siteTitle: PropTypes.string,
 }
 
 Header.defaultProps = {
