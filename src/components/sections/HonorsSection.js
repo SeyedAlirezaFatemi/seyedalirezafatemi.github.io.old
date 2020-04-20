@@ -1,6 +1,4 @@
 import React, { useCallback } from "react"
-import honorIconLight from "../../../static/trophy_light.svg"
-import honorIconDark from "../../../static/trophy_dark.svg"
 import { makeStyles, Typography, useTheme } from "@material-ui/core"
 
 const useStyles = makeStyles(theme => ({
@@ -30,7 +28,7 @@ export function HonorsSection() {
   const theme = useTheme()
   const isDark = theme.palette.type === "dark"
   const HonorIcon = useCallback(() => (
-    <img src={isDark ? honorIconDark : honorIconLight} alt="Honor" width={24} style={{
+    <img src={isDark ? "trophy_dark.svg" : "trophy_light.svg"} alt="Honor" width={24} style={{
       marginBottom: -6,
     }} />), [isDark])
   const Date = useCallback(({ children }) => (<span className={classes.date}>{children}</span>), [classes])
@@ -58,13 +56,29 @@ export function HonorsSection() {
         </li>
         <li>
           <HonorIcon />
+          Ranked <strong>5th</strong> in <a href="https://monusac-2020.grand-challenge.org/Results/">MoNuSAC 2020
+          Challenge</a>.
+          I was one of the three members of Sharif HooshPardaz Team.
+          <Date>Spring 2020</Date>
+        </li>
+        <li>
+          <HonorIcon />
+          Ranked <strong>3rd</strong> in the Eleventh <a
+          href="http://vccup.sharif.ir/11/%db%8c%d8%a7%d8%b2%d8%af%d9%87%d9%85%db%8c%d9%86-%d8%ac%d8%b4%d9%86%d9%88%d8%a7%d8%b1%d9%87-%da%a9%d8%a7%d8%b1%d8%a2%d9%81%d8%b1%db%8c%d9%86%db%8c-%da%a9%d8%b3%d8%a8%e2%80%8c%d9%88%da%a9%d8%a7%d8%b1/">Sharif
+          VC Cup</a>.
+          I was a member of Sharif HooshPardaz Team.
+          <Date>Winter 2020</Date>
+        </li>
+        <li>
+          <HonorIcon />
           Reached the final stage of Artificial Intelligence Challenge in Medical Imaging 2019, Intelligent Assessment
           of Imaging Biomarkers of Dementia.
           <Date>Fall 2019</Date>
         </li>
         <li>
           <HonorIcon />
-          Ranked <strong>8th</strong> in the MICCAI Automatic Prostate Gleason Grading Challenge 2019.
+          Ranked <strong>8th</strong> in the <a href="https://gleason2019.grand-challenge.org/Results/">MICCAI Automatic
+          Prostate Gleason Grading Challenge 2019</a>.
           <Date>Fall 2019</Date>
         </li>
         <li>
