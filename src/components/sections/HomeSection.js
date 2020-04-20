@@ -6,6 +6,8 @@ const useStyles = makeStyles(theme => ({
     fontSize: 30,
     fontWeight: 600,
     textTransform: "uppercase",
+  },
+  contact: {
     marginBottom: "2rem",
   },
   title: {
@@ -64,6 +66,11 @@ export function HomeSection() {
       <Typography className={classes.name} variant="h1" align="center">
         Seyed Alireza Fatemi Jahromi
       </Typography>
+      <Typography className={classes.contact} variant="subtitle2" align="center">
+        alirezafa [at] rocketmail.com , afatemi [at] ce.sharif.edu , <a
+        href="https://github.com/SeyedAlirezaFatemi">GitHub</a>, <a
+        href="https://www.linkedin.com/in/seyed-alireza-fatemi-jahromi">LinkedIn</a>
+      </Typography>
       <Typography variant="body1" className={classes.paragraph}>
         Computer Engineering Student Specializing in Deep Learning & Computer Vision
       </Typography>
@@ -98,7 +105,8 @@ export function HomeSection() {
       <CVSection title={"Publications"}>
         <ol className={classes.interestsList}>
           <li>A. Khani, <strong>S.A. Fatemi Jahromi</strong>, H. Otroshi Shahreza, H. Behroozi, M. Soleymani Baghshah,
-            <a href="https://ieeexplore.ieee.org/document/9066019"><i>"Towards Automatic Prostate Gleason Grading via Deep Convolutional Neural Networks"</i></a>, The 5th Iranian
+            <a href="https://ieeexplore.ieee.org/document/9066019"><i>"Towards Automatic Prostate Gleason Grading via
+              Deep Convolutional Neural Networks"</i></a>, The 5th Iranian
             Conference on Signal Processing and Intelligent Systems (ICSPIS 2019), Shahrood, Iran, 2019
           </li>
           <li>
