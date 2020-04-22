@@ -68,9 +68,12 @@ export function HomeSection() {
       </Typography>
       <Typography className={classes.contact} variant="subtitle2" align="center">
         alirezafa [at] rocketmail.com , afatemi [at] ce.sharif.edu , <a
-        href="https://github.com/SeyedAlirezaFatemi">GitHub</a>, <a
+        href="https://github.com/SeyedAlirezaFatemi">GitHub</a> , <a
         href="https://www.linkedin.com/in/seyed-alireza-fatemi-jahromi">LinkedIn</a>
+        <br/>
+        <a href="Seyed Alireza Fatemi Jahromi.pdf">Download CV</a>
       </Typography>
+
       <Typography variant="body1" className={classes.paragraph}>
         Computer Engineering Student Specializing in Deep Learning & Computer Vision
       </Typography>
@@ -93,7 +96,7 @@ export function HomeSection() {
           <span className={classes.headline}>Sharif University of Technology</span>
         </Typography>
         <Typography variant="subtitle1" className={classes.paragraph}>
-          Bachelor of Science in Computer Engineering | Tehran | 2015 – Current
+          Bachelor of Science in Computer Engineering | Tehran | 2016 – Current
         </Typography>
         <Typography variant="body1" className={classes.paragraph}>
           <span className={classes.headline}>Shahid Dastgheib High School</span>
