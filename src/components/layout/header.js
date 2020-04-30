@@ -7,11 +7,10 @@ import {
   List,
   ListItem,
   ListItemText,
-  makeStyles,
   SwipeableDrawer,
   Typography,
-  useTheme,
 } from "@material-ui/core"
+import {useTheme, makeStyles} from '@material-ui/core/styles'
 import "./hamburgers.css"
 import { Sections } from "../../utils"
 import { Helmet } from "react-helmet"

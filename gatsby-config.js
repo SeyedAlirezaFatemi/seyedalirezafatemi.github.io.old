@@ -29,5 +29,6 @@ module.exports = {
         // anonymize: true,
       },
     },
+    "gatsby-plugin-webpack-bundle-analyser-v2",
   ],
 }

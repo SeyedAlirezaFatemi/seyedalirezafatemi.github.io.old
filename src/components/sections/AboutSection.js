@@ -1,6 +1,6 @@
 import React from "react"
 import "./about.css"
-import { makeStyles, useTheme } from "@material-ui/core"
+import { makeStyles, useTheme } from "@material-ui/core/styles"
 
 const useStyles = makeStyles(theme => ({
   about: {
