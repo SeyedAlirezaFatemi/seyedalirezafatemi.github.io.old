@@ -254,8 +254,7 @@ const Header = ({ siteTitle, onChangeThemeMode, page }) => {
         <div onClick={onChangeThemeMode}>
           <Img fluid={theme.palette.type === "dark" ? data.off.childImageSharp.fluid : data.on.childImageSharp.fluid}
                alt="Fatemi Logo"
-               className={classes.logo}
-               backgroundColor={theme.palette.background.default}/>
+               className={classes.logo} />
         </div>
         <Hidden smDown>
           <Link to={Sections.honors.path}>

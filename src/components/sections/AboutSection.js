@@ -45,7 +45,7 @@ export function AboutSection() {
   return (
     <div className={classes.about}>
       <Img alt="Quote" fluid={isDark ? data.off.childImageSharp.fluid : data.on.childImageSharp.fluid}
-           className={classes.image} backgroundColor={theme.palette.background.default}/>
+           className={classes.image} />
       {/*<div className="quote--container">*/}
       {/*  <p className="quote">*/}
       {/*    I go to seek a <span className="quote--highlight">Great Perhaps</span>.*/}
