@@ -1,6 +1,8 @@
 import React from "react"
 import "./about.css"
 import { makeStyles, useTheme } from "@material-ui/core/styles"
+import { graphql, useStaticQuery } from "gatsby"
+import Img from "gatsby-image"
 
 const useStyles = makeStyles(theme => ({
   about: {
@@ -20,10 +22,30 @@ export function AboutSection() {
   const theme = useTheme()
   const classes = useStyles()
   const isDark = theme.palette.type === "dark"
-  const quote = isDark ? 'quote-off.jpg' : 'quote-on.jpg'
+  const data = useStaticQuery(graphql`
+      query {
+          on: file(relativePath: { eq: "quote-on.jpg" }) {
+              childImageSharp {
+                  fluid(maxWidth: 600) {
+                      ...GatsbyImageSharpFluid_withWebp
+                      ...GatsbyImageSharpFluidLimitPresentationSize
+                  }
+              }
+          }
+          off: file(relativePath: { eq: "quote-off.jpg" }) {
+              childImageSharp {
+                  fluid(maxWidth: 600) {
+                      ...GatsbyImageSharpFluid_withWebp
+                      ...GatsbyImageSharpFluidLimitPresentationSize
+                  }
+              }
+          }
+      }
+  `)
   return (
     <div className={classes.about}>
-      <img alt="Quote" src={quote} width={600} className={classes.image} />
+      <Img alt="Quote" fluid={isDark ? data.off.childImageSharp.fluid : data.on.childImageSharp.fluid}
+           className={classes.image} backgroundColor={theme.palette.background.default}/>
       {/*<div className="quote--container">*/}
       {/*  <p className="quote">*/}
       {/*    I go to seek a <span className="quote--highlight">Great Perhaps</span>.*/}
@@ -42,7 +64,8 @@ export function AboutSection() {
       find the complete list of the tools I've worked with in my <a href={"/Seyed Alireza Fatemi Jahromi.pdf"}>CV</a>.
       <br />
       I love playing games, watching series, running, and swimming. My favorite games are "The Elder Scrolls V: Skyrim"
-      & "Control" and my favorite series are "The OA", "Looking for Alaska", "Sharp Objects", "Castle Rock", and "The Witcher". I love
+      & "Control" and my favorite series are "The OA", "Looking for Alaska", "Sharp Objects", "Castle Rock", and "The
+      Witcher". I love
       to travel to new places and meet new people.
     </div>
   )

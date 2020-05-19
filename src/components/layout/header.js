@@ -1,19 +1,11 @@
-import { Link } from "gatsby"
+import { graphql, Link, useStaticQuery } from "gatsby"
 import React, { useCallback } from "react"
-import {
-  AppBar,
-  Grid,
-  Hidden,
-  List,
-  ListItem,
-  ListItemText,
-  SwipeableDrawer,
-  Typography,
-} from "@material-ui/core"
-import {useTheme, makeStyles} from '@material-ui/core/styles'
+import { AppBar, Grid, Hidden, List, ListItem, ListItemText, SwipeableDrawer, Typography } from "@material-ui/core"
+import { makeStyles, useTheme } from "@material-ui/core/styles"
 import "./hamburgers.css"
 import { Sections } from "../../utils"
 import { Helmet } from "react-helmet"
+import Img from "gatsby-image"
 
 const colorModeTransition =
   "background 0.25s var(--ease-in-out-quad), color 0.25s var(--ease-in-out-quad)"
@@ -210,6 +202,24 @@ const DarkModeToggle = ({ toggleDayNight }) => {
 const Header = ({ siteTitle, onChangeThemeMode, page }) => {
   const theme = useTheme()
   const classes = useStyles()
+  const data = useStaticQuery(graphql`
+      query {
+          on: file(relativePath: { eq: "on.png" }) {
+              childImageSharp {
+                  fluid {
+                      ...GatsbyImageSharpFluid_withWebp
+                  }
+              }
+          }
+          off: file(relativePath: { eq: "off.png" }) {
+              childImageSharp {
+                  fluid {
+                      ...GatsbyImageSharpFluid_withWebp
+                  }
+              }
+          }
+      }
+  `)
   return (
     <header className={classes.header}>
       <Helmet>
@@ -241,8 +251,12 @@ const Header = ({ siteTitle, onChangeThemeMode, page }) => {
             </button>
           </Link>
         </Hidden>
-        <img src={theme.palette.type === "dark" ? "off.png" : "on.png"} onClick={onChangeThemeMode} alt="Fatemi Logo"
-             className={classes.logo} />
+        <div onClick={onChangeThemeMode}>
+          <Img fluid={theme.palette.type === "dark" ? data.off.childImageSharp.fluid : data.on.childImageSharp.fluid}
+               alt="Fatemi Logo"
+               className={classes.logo}
+               backgroundColor={theme.palette.background.default}/>
+        </div>
         <Hidden smDown>
           <Link to={Sections.honors.path}>
             <button className={page === Sections.honors.name ? classes.buttonActive : classes.button}>

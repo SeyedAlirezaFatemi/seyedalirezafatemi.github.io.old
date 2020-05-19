@@ -1,3 +1,5 @@
+const path = require("path")
+
 module.exports = {
   siteMetadata: {
     title: `Seyed Alireza Fatemi Jahromi`,
@@ -5,6 +7,15 @@ module.exports = {
     author: `Seyed Alireza Fatemi Jahromi`,
   },
   plugins: [
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: path.join(__dirname, `src`, `images`),
+      },
+    },
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-material-ui`,
     {

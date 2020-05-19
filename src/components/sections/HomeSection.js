@@ -71,8 +71,8 @@ export function HomeSection() {
         alirezafa [at] rocketmail.com , afatemi [at] ce.sharif.edu , <a
         href="https://github.com/SeyedAlirezaFatemi">GitHub</a> , <a
         href="https://www.linkedin.com/in/seyed-alireza-fatemi-jahromi">LinkedIn</a>
-        <br/>
-        <a href="Seyed Alireza Fatemi Jahromi.pdf">Download CV</a>
+        <br />
+        <a href={"Seyed Alireza Fatemi Jahromi.pdf"}>Download CV</a>
       </Typography>
 
       <Typography variant="body1" className={classes.paragraph}>
