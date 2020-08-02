@@ -2,6 +2,7 @@ import React from "react"
 import { Typography } from "@material-ui/core"
 import { makeStyles } from "@material-ui/core/styles"
 import { CVSection } from "./HomeSection"
+import clsx from "clsx"
 
 const useStyles = makeStyles(theme => ({
   name: {
@@ -173,10 +174,8 @@ export function WorkSection() {
           Xilinix Spartan 6 FPGA. The code is available on <a href="https://github.com/SeyedAlirezaFatemi/TheSafe"
                                                               target="_blank" rel="noopener noreferrer">GitHub</a>.
         </Typography>
-        <Typography variant="body1" className={classes.paragraph}>
-          <p className={classes.link}>
-            Who Killed Martin?
-          </p>
+        <Typography variant="body1" className={clsx(classes.paragraph, classes.link)}>
+          Who Killed Martin?
         </Typography>
         <Typography variant="subtitle1" className={classes.paragraph}>
           Fall 2016

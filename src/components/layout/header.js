@@ -299,7 +299,7 @@ function MobileNavigation() {
     >
       <List>
         {Object.keys(Sections).map((section) => (
-          <Link to={Sections[section].path} className={classes.drawerLink}>
+          <Link to={Sections[section].path} className={classes.drawerLink} key={Sections[section].path}>
             <ListItem button key={Sections[section].name}>
               <ListItemText primary={Sections[section].title} />
             </ListItem>

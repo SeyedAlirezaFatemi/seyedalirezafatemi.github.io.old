@@ -29,7 +29,7 @@ export function HonorsSection() {
   const theme = useTheme()
   const isDark = theme.palette.type === "dark"
   const HonorIcon = useCallback(() => (
-    <img src={isDark ? "trophy_dark.svg" : "trophy_light.svg"} alt="Honor" width={24} style={{
+    <img src={isDark ? "/trophy_dark.svg" : "/trophy_light.svg"} alt="Honor" width={24} style={{
       marginBottom: -6,
     }} />), [isDark])
   const Date = useCallback(({ children }) => (<span className={classes.date}>{children}</span>), [classes])
