@@ -60,7 +60,7 @@ export function WorkSection() {
       </Typography>
       <CVSection title={"Work Experiences"}>
         <Typography variant="body1" className={classes.paragraph}>
-          <a className={classes.link} target="_blank" rel="noopener noreferrer" href="https://en.bmn.ir/">
+          <a className={classes.link} target="_blank" rel="noopener noreferrer" href="https://bmn.ir/">
             Iran&apos;s National Elites Foundation, Shahid Ahmadi Roshan Project
           </a>
         </Typography>
