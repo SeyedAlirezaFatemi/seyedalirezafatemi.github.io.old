@@ -49,13 +49,11 @@ const Layout = ({ children, page }) => {
     }
   `)
   const [theme, setTheme] = useLocalStorage("theme", "light")
-  const [materialTheme, setMaterialTheme] = useState(lightTheme)
   const handleThemeModeChange = useCallback(() => {
     setTheme(theme === "light" ? "dark" : "light")
-    setMaterialTheme(theme === "light" ? darkTheme : lightTheme)
   }, [theme])
   return (
-    <ThemeProvider theme={materialTheme}>
+    <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
       <Header siteTitle={data.site.siteMetadata.title} onChangeThemeMode={handleThemeModeChange} page={page} />
       <div className="main-container">
         <CssBaseline />
