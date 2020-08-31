@@ -1,8 +1,9 @@
-import React from "react"
 import { Typography } from "@material-ui/core"
 import { makeStyles } from "@material-ui/core/styles"
-import { CVSection } from "./HomeSection"
 import clsx from "clsx"
+import React from "react"
+
+import { CVSection } from "./HomeSection"
 
 const useStyles = makeStyles(theme => ({
   name: {
@@ -52,14 +53,14 @@ export function WorkSection() {
       <CVSection title={"Work Experiences"}>
         <Typography variant="body1" className={classes.paragraph}>
           <a className={classes.link} target="_blank" rel="noopener noreferrer" href="https://en.bmn.ir/">
-            Iran's National Elites Foundation, Shahid Ahmadi Roshan Project
+            Iran&apos;s National Elites Foundation, Shahid Ahmadi Roshan Project
           </a>
         </Typography>
         <Typography variant="subtitle1" className={classes.paragraph}>
           Researcher | March, 2019 – Present
         </Typography>
         <Typography variant="body1" className={classes.paragraph}>
-          A project funded by Iran's National Elites Foundation and supervised by Prof. Behroozi and Prof. Soleymani. My
+          A project funded by Iran&apos;s National Elites Foundation and supervised by Prof. Behroozi and Prof. Soleymani. My
           Responsibilities include:
         </Typography>
         <ul className={classes.workResponsibilitiesList}>

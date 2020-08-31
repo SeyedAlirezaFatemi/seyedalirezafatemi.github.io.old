@@ -1,11 +1,13 @@
-import { graphql, Link, useStaticQuery } from "gatsby"
-import React, { useCallback } from "react"
+import "./hamburgers.css"
+
 import { AppBar, Grid, Hidden, List, ListItem, ListItemText, SwipeableDrawer, Typography } from "@material-ui/core"
 import { makeStyles, useTheme } from "@material-ui/core/styles"
-import "./hamburgers.css"
-import { Sections } from "../../utils"
-import { Helmet } from "react-helmet"
+import { graphql, Link, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
+import React, { useCallback } from "react"
+import { Helmet } from "react-helmet"
+
+import { Sections } from "../../utils"
 
 const colorModeTransition =
   "background 0.25s var(--ease-in-out-quad), color 0.25s var(--ease-in-out-quad)"
@@ -207,14 +209,14 @@ const Header = ({ siteTitle, onChangeThemeMode, page }) => {
       on: file(relativePath: { eq: "on.png" }) {
         childImageSharp {
           fluid {
-            ...GatsbyImageSharpFluid_withWebp
+            ...GatsbyImageSharpFluid_noBase64
           }
         }
       }
       off: file(relativePath: { eq: "off.png" }) {
         childImageSharp {
           fluid {
-            ...GatsbyImageSharpFluid_withWebp
+            ...GatsbyImageSharpFluid_noBase64
           }
         }
       }
@@ -254,7 +256,8 @@ const Header = ({ siteTitle, onChangeThemeMode, page }) => {
         <div onClick={onChangeThemeMode}>
           <Img fluid={theme.palette.type === "dark" ? data.off.childImageSharp.fluid : data.on.childImageSharp.fluid}
                alt="Fatemi Logo"
-               className={classes.logo} />
+               className={classes.logo}
+               loading="eager"/>
         </div>
         <Hidden smDown>
           <Link to={Sections.honors.path}>

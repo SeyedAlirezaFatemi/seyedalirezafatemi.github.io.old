@@ -1,4 +1,5 @@
 import React from "react"
+
 import { HomeSection, Layout, SEO } from "../components"
 import { Sections } from "../utils"
 

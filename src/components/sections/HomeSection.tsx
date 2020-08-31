@@ -1,6 +1,6 @@
-import React from "react"
 import { Typography } from "@material-ui/core"
 import { makeStyles } from "@material-ui/core/styles"
+import React from "react"
 
 const useStyles = makeStyles(theme => ({
   name: {
@@ -109,13 +109,13 @@ export function HomeSection() {
       <CVSection title={"Publications"}>
         <ol className={classes.interestsList}>
           <li>A. Khani, <strong>S.A. Fatemi Jahromi</strong>, H. Otroshi Shahreza, H. Behroozi, M. Soleymani Baghshah,
-            <a href="https://ieeexplore.ieee.org/document/9066019"><i>"Towards Automatic Prostate Gleason Grading via
-              Deep Convolutional Neural Networks"</i></a>, The 5th Iranian
+            <a href="https://ieeexplore.ieee.org/document/9066019"><i>&quot;Towards Automatic Prostate Gleason Grading via
+              Deep Convolutional Neural Networks&quot;</i></a>, The 5th Iranian
             Conference on Signal Processing and Intelligent Systems (ICSPIS 2019), Shahrood, Iran, 2019
           </li>
           <li>
             <strong>S.A. Fatemi Jahromi</strong>, A. Khani, H. Otroshi Shahreza, B. Otroshi Shahreza, H. Behroozi, M.
-            Soleymani Baghshah, <i>"A Deep Learning Framework for Viable Tumor Burden Estimation"</i>, To be submitted
+            Soleymani Baghshah, <i>&quot;A Deep Learning Framework for Viable Tumor Burden Estimation&quot;</i>, To be submitted
             soon
           </li>
         </ol>

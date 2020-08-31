@@ -1,8 +1,9 @@
-import React from "react"
 import "./about.css"
+
 import { makeStyles, useTheme } from "@material-ui/core/styles"
 import { graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
+import React from "react"
 
 const useStyles = makeStyles(theme => ({
   about: {
@@ -27,7 +28,7 @@ export function AboutSection() {
       on: file(relativePath: { eq: "quote-on.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 600) {
-            ...GatsbyImageSharpFluid_withWebp
+            ...GatsbyImageSharpFluid_noBase64
             ...GatsbyImageSharpFluidLimitPresentationSize
           }
         }
@@ -35,7 +36,7 @@ export function AboutSection() {
       off: file(relativePath: { eq: "quote-off.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 600) {
-            ...GatsbyImageSharpFluid_withWebp
+            ...GatsbyImageSharpFluid_noBase64
             ...GatsbyImageSharpFluidLimitPresentationSize
           }
         }
@@ -45,14 +46,15 @@ export function AboutSection() {
   return (
     <div className={classes.about}>
       <Img alt="Quote" fluid={isDark ? data.off.childImageSharp.fluid : data.on.childImageSharp.fluid}
-           className={classes.image} />
+           className={classes.image}
+           loading="eager"/>
       {/*<div className="quote--container">*/}
       {/*  <p className="quote">*/}
       {/*    I go to seek a <span className="quote--highlight">Great Perhaps</span>.*/}
       {/*  </p>*/}
       {/*  <p className="quote--author">&ndash; Francis Bacon</p>*/}
       {/*</div>*/}
-      Welcome! My name is Seyed Alireza Fatemi Jahromi. I'm currently a bachelor of Computer Engineering at Sharif
+      Welcome! My name is Seyed Alireza Fatemi Jahromi. I&apos;m currently a bachelor of Computer Engineering at Sharif
       University of Technology. My main research focus is on Deep Learning & Machine Learning. My experience ranges from
       designing and implementing mobile and web applications to designing and implementing various complex deep learning
       algorithms. I love to enter new fields of artificial intelligence and play with new datasets and applications of
@@ -60,12 +62,12 @@ export function AboutSection() {
       various fields.
       <br />
       I have worked with many programming languages and frameworks, and learning to use a new programming language or
-      tool doesn't take too much time and effort for me. I love to learn new things, and I'm a fast learner. You can
-      find the complete list of the tools I've worked with in my <a href={"/Seyed Alireza Fatemi Jahromi.pdf"}>CV</a>.
+      tool doesn&apos;t take too much time and effort for me. I love to learn new things, and I&apos;m a fast learner. You can
+      find the complete list of the tools I&apos;ve worked with in my <a href={"/Seyed Alireza Fatemi Jahromi.pdf"}>CV</a>.
       <br />
-      I love playing games, watching series, running, and swimming. My favorite games are "The Elder Scrolls V: Skyrim"
-      & "Control" and my favorite series are "The OA", "Looking for Alaska", "Sharp Objects", "Castle Rock", and "The
-      Witcher". I love
+      I love playing games, watching series, running, and swimming. My favorite games are &quot;The Elder Scrolls V: Skyrim&quot;
+      & &quot;Control&quot; and my favorite series are &quot;The OA&quot;, &quot;Looking for Alaska&quot;, &quot;Sharp Objects&quot;, &quot;Castle Rock&quot;, and &quot;The
+      Witcher&quot;. I love
       to travel to new places and meet new people.
     </div>
   )

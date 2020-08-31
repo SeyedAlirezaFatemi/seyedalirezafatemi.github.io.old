@@ -1,6 +1,6 @@
-import React, { useCallback } from "react"
 import { Typography } from "@material-ui/core"
 import { makeStyles, useTheme } from "@material-ui/core/styles"
+import React, { useCallback } from "react"
 
 const useStyles = makeStyles(theme => ({
   name: {
@@ -45,13 +45,13 @@ export function HonorsSection() {
       }}>
         <li>
           <HonorIcon />
-          Recipient of the grant and membership of <strong>Iran's National Elites Foundation</strong>, for outstanding
+          Recipient of the grant and membership of <strong>Iran&apos;s National Elites Foundation</strong>, for outstanding
           academic success and participation in Shahid Ahmadi Roshan Project.
           <Date>Summer 2016 - Present</Date>
         </li>
         <li>
           <HonorIcon />
-          Participant of the third and the fourth round of Shahid Ahmadi Roshan Project which is funded by Iran's
+          Participant of the third and the fourth round of Shahid Ahmadi Roshan Project which is funded by Iran&apos;s
           National Elites Foundation and supervised by Prof. Behroozi and Prof. Soleymani.
           <Date>Spring 2019 - Present</Date>
         </li>

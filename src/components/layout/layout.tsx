@@ -1,10 +1,12 @@
-import React, { useCallback, useState } from "react"
-import { graphql, useStaticQuery } from "gatsby"
-import Header from "./header"
 import "./layout.css"
+
 import { CssBaseline, Divider } from "@material-ui/core"
 import { createMuiTheme, responsiveFontSizes, ThemeProvider } from "@material-ui/core/styles"
+import { graphql, useStaticQuery } from "gatsby"
+import React, { useCallback, useState } from "react"
+
 import { useLocalStorage } from "../../utils"
+import Header from "./header"
 
 const lightTheme = responsiveFontSizes(createMuiTheme({
   palette: {
