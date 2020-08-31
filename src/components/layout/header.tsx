@@ -203,22 +203,22 @@ const Header = ({ siteTitle, onChangeThemeMode, page }) => {
   const theme = useTheme()
   const classes = useStyles()
   const data = useStaticQuery(graphql`
-      query {
-          on: file(relativePath: { eq: "on.png" }) {
-              childImageSharp {
-                  fluid {
-                      ...GatsbyImageSharpFluid_withWebp
-                  }
-              }
+    query {
+      on: file(relativePath: { eq: "on.png" }) {
+        childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid_withWebp
           }
-          off: file(relativePath: { eq: "off.png" }) {
-              childImageSharp {
-                  fluid {
-                      ...GatsbyImageSharpFluid_withWebp
-                  }
-              }
-          }
+        }
       }
+      off: file(relativePath: { eq: "off.png" }) {
+        childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
+    }
   `)
   return (
     <header className={classes.header}>
@@ -280,6 +280,7 @@ const Header = ({ siteTitle, onChangeThemeMode, page }) => {
 function MobileNavigation() {
   const classes = useStyles()
   const [open, setOpen] = React.useState(false)
+  // @ts-ignore
   const iOS = process.browser && /iPad|iPhone|iPod/.test(navigator.userAgent)
 
   const toggleDrawer = useCallback((open) => event => {

@@ -23,24 +23,24 @@ export function AboutSection() {
   const classes = useStyles()
   const isDark = theme.palette.type === "dark"
   const data = useStaticQuery(graphql`
-      query {
-          on: file(relativePath: { eq: "quote-on.jpg" }) {
-              childImageSharp {
-                  fluid(maxWidth: 600) {
-                      ...GatsbyImageSharpFluid_withWebp
-                      ...GatsbyImageSharpFluidLimitPresentationSize
-                  }
-              }
+    query {
+      on: file(relativePath: { eq: "quote-on.jpg" }) {
+        childImageSharp {
+          fluid(maxWidth: 600) {
+            ...GatsbyImageSharpFluid_withWebp
+            ...GatsbyImageSharpFluidLimitPresentationSize
           }
-          off: file(relativePath: { eq: "quote-off.jpg" }) {
-              childImageSharp {
-                  fluid(maxWidth: 600) {
-                      ...GatsbyImageSharpFluid_withWebp
-                      ...GatsbyImageSharpFluidLimitPresentationSize
-                  }
-              }
-          }
+        }
       }
+      off: file(relativePath: { eq: "quote-off.jpg" }) {
+        childImageSharp {
+          fluid(maxWidth: 600) {
+            ...GatsbyImageSharpFluid_withWebp
+            ...GatsbyImageSharpFluidLimitPresentationSize
+          }
+        }
+      }
+    }
   `)
   return (
     <div className={classes.about}>

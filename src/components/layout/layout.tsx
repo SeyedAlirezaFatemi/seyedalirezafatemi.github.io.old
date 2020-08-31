@@ -1,4 +1,4 @@
-import React, { useCallback } from "react"
+import React, { useCallback, useState } from "react"
 import { graphql, useStaticQuery } from "gatsby"
 import Header from "./header"
 import "./layout.css"
@@ -11,6 +11,7 @@ const lightTheme = responsiveFontSizes(createMuiTheme({
     type: "light",
   },
   typography: {
+    // @ts-ignore
     WebkitFontSmoothing: "antialiased",
     MozOsxFontSmoothing: "grayscale",
     fontFamily: "-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, Cantarell, Roboto, Helvetica, Arial, Noto Sans,\n      sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'",
@@ -25,6 +26,7 @@ const darkTheme = responsiveFontSizes(createMuiTheme({
     type: "dark",
   },
   typography: {
+    // @ts-ignore
     WebkitFontSmoothing: "antialiased",
     MozOsxFontSmoothing: "grayscale",
     fontFamily: "-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, Cantarell, Roboto, Helvetica, Arial, Noto Sans,\n      sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'",
@@ -36,20 +38,22 @@ const darkTheme = responsiveFontSizes(createMuiTheme({
 
 const Layout = ({ children, page }) => {
   const data = useStaticQuery(graphql`
-      query SiteTitleQuery {
-          site {
-              siteMetadata {
-                  title
-              }
-          }
+    query SiteTitleQuery {
+      site {
+        siteMetadata {
+          title
+        }
       }
+    }
   `)
   const [theme, setTheme] = useLocalStorage("theme", "light")
+  const [materialTheme, setMaterialTheme] = useState(lightTheme)
   const handleThemeModeChange = useCallback(() => {
     setTheme(theme === "light" ? "dark" : "light")
-  }, [theme, setTheme])
+    setMaterialTheme(theme === "light" ? darkTheme : lightTheme)
+  }, [theme])
   return (
-    <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
+    <ThemeProvider theme={materialTheme}>
       <Header siteTitle={data.site.siteMetadata.title} onChangeThemeMode={handleThemeModeChange} page={page} />
       <div className="main-container">
         <CssBaseline />
