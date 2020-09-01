@@ -1,3 +1,5 @@
+import './work.css'
+
 import { Typography } from "@material-ui/core"
 import { makeStyles } from "@material-ui/core/styles"
 import clsx from "clsx"
@@ -34,14 +36,14 @@ const useStyles = makeStyles(theme => ({
     "&:link": {
       color: "inherit",
     },
-    backgroundImage: "linear-gradient(to right, #fc466b, #3f5efb)",
+    backgroundImage: "linear-gradient(to right, #00c6ff, #0072ff)",
     backgroundRepeat: "no-repeat",
     backgroundSize: "100% 0.2em",
     backgroundPosition: "0 100%",
     transition: "background-size 0.25s ease-in",
-    // "&:hover": {
-    //   backgroundSize: "100% 60%",
-    // },
+    "&:hover": {
+      backgroundSize: "100% 50%",
+    },
   },
   workResponsibilitiesList: {
     "& li": {
