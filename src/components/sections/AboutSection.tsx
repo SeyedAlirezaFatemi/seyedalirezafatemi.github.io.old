@@ -27,7 +27,7 @@ export function AboutSection() {
     query {
       on: file(relativePath: { eq: "quote-on.jpg" }) {
         childImageSharp {
-          fluid(maxWidth: 600) {
+          fluid(maxWidth: 600, quality: 100) {
             ...GatsbyImageSharpFluid_noBase64
             ...GatsbyImageSharpFluidLimitPresentationSize
           }
@@ -35,7 +35,7 @@ export function AboutSection() {
       }
       off: file(relativePath: { eq: "quote-off.jpg" }) {
         childImageSharp {
-          fluid(maxWidth: 600) {
+          fluid(maxWidth: 600, quality: 100) {
             ...GatsbyImageSharpFluid_noBase64
             ...GatsbyImageSharpFluidLimitPresentationSize
           }
