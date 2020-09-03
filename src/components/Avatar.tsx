@@ -7,7 +7,7 @@ function Avatar(props) {
     query {
       placeholderImage: file(relativePath: { eq: "avatar1.jpg" }) {
         childImageSharp {
-          fixed(width: 200, height: 200) {
+          fixed(width: 200, height: 200, quality: 100) {
             ...GatsbyImageSharpFixed_noBase64
           }
         }
