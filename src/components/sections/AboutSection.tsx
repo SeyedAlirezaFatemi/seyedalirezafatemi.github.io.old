@@ -13,7 +13,7 @@ const useStyles = makeStyles(theme => ({
     margin: "auto",
     display: "block",
     borderRadius: 8,
-    marginBottom: theme.spacing(2),
+    marginBottom: theme.spacing(4),
   },
 }))
 
@@ -54,20 +54,21 @@ export function AboutSection() {
       {/*  <p className="quote--author">&ndash; Francis Bacon</p>*/}
       {/*</div>*/}
       Welcome! My name is Seyed Alireza Fatemi Jahromi. I&apos;m currently a bachelor of Computer Engineering at Sharif
-      University of Technology. My main research focus is on Deep Learning & Machine Learning. My experience ranges from
-      designing and implementing mobile and web applications to designing and implementing various complex deep learning
-      algorithms. I love to enter new fields of artificial intelligence and play with new datasets and applications of
-      deep learning. One of my hobbies is reading papers about fascinating applications of deep learning algorithms in
-      various fields.
+      University of Technology. My main research focus is on Machine Learning & Computer Vision. I'm fascinated by the
+      use of AI and Machine Learning in the field of Medical Diagnosis and Medical Imaging and Computer Vision. I've
+      worked on classifying and segmenting Gigapixel Whole-Slide Histopathology images of different organs such as
+      Prostate, Liver, and Colon. I also have experience working with 3D brain MRI images on analyzing chest CT scans
+      of Covid-19 patients.
+      I also have a lot of experience in designing and implementing mobile and web applications. I plan to expand my
+      knowledge in the fields of Artificial Intelligence & Computer Vision + Software Engineering. I believe that with
+      knowledge and skills in these fields, we can create innovative products and solutions that can impact people's
+      lives.
       <br />
-      I have worked with many programming languages and frameworks, and learning to use a new programming language or
-      tool doesn&apos;t take too much time and effort for me. I love to learn new things, and I&apos;m a fast learner. You can
-      find the complete list of the tools I&apos;ve worked with in my <a href={"/Seyed Alireza Fatemi Jahromi.pdf"}>CV</a>.
-      <br />
-      I love playing games, watching series, running, and swimming. My favorite games are &quot;The Elder Scrolls V: Skyrim&quot;
-      & &quot;Control&quot; and my favorite series are &quot;The OA&quot;, &quot;Looking for Alaska&quot;, &quot;Sharp Objects&quot;, &quot;Castle Rock&quot;, and &quot;The
-      Witcher&quot;. I love
-      to travel to new places and meet new people.
+      I love playing games, watching series, traveling, running, swimming, and participating in challenges and
+      hackathons. My favorite games are &quot;The Elder
+      Scrolls V: Skyrim&quot; & &quot;Control&quot; & &quot;Fable&quot; and my favorite series are &quot;The
+      OA&quot;, &quot;Looking for Alaska&quot;, &quot;Sharp Objects&quot;, &quot;Castle Rock&quot;, &quot;The
+      Magicians&quot;, and &quot;The Witcher&quot;. I love to travel to new places and meet new people.
     </div>
   )
 }

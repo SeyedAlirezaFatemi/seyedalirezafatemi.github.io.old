@@ -50,6 +50,9 @@ const useStyles = makeStyles(theme => ({
       marginBottom: theme.spacing(1),
     },
   },
+  divider: {
+    marginTop: theme.spacing(2),
+  },
 }))
 
 
@@ -113,8 +116,8 @@ export function WorkSection() {
         </Typography>
       </CVSection>
 
-      <Divider />
-      <CVSection title={"Other Projects"}>
+      <Divider className={classes.divider}/>
+      <CVSection title={"Projects"}>
         <Typography variant="body1" className={classes.paragraph}>
           <a className={classes.link} target="_blank" rel="noopener noreferrer"
              href="https://github.com/SeyedAlirezaFatemi/decaf-compiler">

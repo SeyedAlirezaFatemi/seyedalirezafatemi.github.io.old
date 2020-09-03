@@ -57,6 +57,8 @@ const useStyles = makeStyles(theme => {
     logo: {
       cursor: "pointer",
       width: 100,
+      marginRight: theme.spacing(10),
+      marginLeft: theme.spacing(10),
     },
     moonOrSun: {
       position: "relative",
@@ -174,7 +176,6 @@ const useStyles = makeStyles(theme => {
       },
     },
   })
-
 })
 
 const DarkModeToggle = ({ toggleDayNight }) => {

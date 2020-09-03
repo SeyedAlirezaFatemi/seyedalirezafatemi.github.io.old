@@ -5,10 +5,10 @@ import Img from "gatsby-image"
 function Avatar(props) {
   const data = useStaticQuery(graphql`
     query {
-      placeholderImage: file(relativePath: { eq: "on.png" }) {
+      placeholderImage: file(relativePath: { eq: "avatar1.jpg" }) {
         childImageSharp {
-          fixed(width: 100, height: 100) {
-            ...GatsbyImageSharpFixed
+          fixed(width: 200, height: 200) {
+            ...GatsbyImageSharpFixed_noBase64
           }
         }
       }
@@ -17,8 +17,8 @@ function Avatar(props) {
 
   const { url, altText, title } = props
   const styles = {
-    width: "100px",
-    height: "100px",
+    width: "200px",
+    height: "200px",
     borderRadius: "50%",
   }
 
