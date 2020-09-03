@@ -1,6 +1,7 @@
-import { Typography } from "@material-ui/core"
+import { Divider, Grid, Typography } from "@material-ui/core"
 import { makeStyles } from "@material-ui/core/styles"
 import React from "react"
+import { Avatar } from "../Avatar"
 
 const useStyles = makeStyles(theme => ({
   name: {
@@ -46,6 +47,10 @@ const useStyles = makeStyles(theme => ({
       marginBottom: theme.spacing(1),
     },
   },
+  avatar: {
+    marginTop: theme.spacing(2),
+    marginBottom: theme.spacing(2),
+  },
 }))
 
 export function CVSection({ title, children }) {
@@ -67,6 +72,9 @@ export function HomeSection() {
       <Typography className={classes.name} variant="h1" align="center">
         Seyed Alireza Fatemi Jahromi
       </Typography>
+      <Grid container justify="center" className={classes.avatar}>
+        <Avatar />
+      </Grid>
       <Typography className={classes.contact} variant="subtitle2" align="center">
         alirezafa [at] rocketmail.com , afatemi [at] ce.sharif.edu , <a
         href="https://github.com/SeyedAlirezaFatemi">GitHub</a> , <a
@@ -84,6 +92,8 @@ export function HomeSection() {
       <Typography variant="subtitle1" className={classes.paragraph}>
         Highly motivated, energetic and creative individual seeking new adventures.
       </Typography>
+
+      <Divider />
       <CVSection title={"Research Interests"}>
         <ul className={classes.interestsList}>
           <li>Computer Vision & Image Processing</li>
@@ -92,6 +102,8 @@ export function HomeSection() {
           <li>Software Engineering</li>
         </ul>
       </CVSection>
+
+      <Divider />
       <CVSection title={"Education"}>
         <Typography variant="body1" className={classes.paragraph}>
           <span className={classes.headline}>Sharif University of Technology</span>
@@ -106,6 +118,8 @@ export function HomeSection() {
           Diploma | National Organization for Development of Exceptional Talents(NODET) | Shiraz | 2012 – 2016
         </Typography>
       </CVSection>
+
+      <Divider />
       <CVSection title={"Publications"}>
         <ol className={classes.interestsList}>
           <li>A. Khani, <strong>S.A. Fatemi Jahromi</strong>, H. Otroshi Shahreza, H. Behroozi, M. Soleymani Baghshah,

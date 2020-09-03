@@ -58,7 +58,7 @@ const Layout = ({ children, page }) => {
       <div className="main-container">
         <CssBaseline />
         <main>{children}</main>
-        <Divider className="divider" />
+        <Divider style={{marginTop: 36}} />
       </div>
     </ThemeProvider>
   )

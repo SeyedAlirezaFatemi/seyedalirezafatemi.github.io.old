@@ -577,10 +577,6 @@ body {
   /*transition: all 1s;*/
 }
 
-.divider {
-  margin-top: 12px;
-}
-
 .main-container {
   margin: 0 auto;
   max-width: 960px;

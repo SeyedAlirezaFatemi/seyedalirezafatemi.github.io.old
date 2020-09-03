@@ -1,6 +1,6 @@
-import './work.css'
+import "./work.css"
 
-import { Typography } from "@material-ui/core"
+import { Divider, Typography } from "@material-ui/core"
 import { makeStyles } from "@material-ui/core/styles"
 import clsx from "clsx"
 import React from "react"
@@ -70,7 +70,8 @@ export function WorkSection() {
           Researcher | March, 2019 – Present
         </Typography>
         <Typography variant="body1" className={classes.paragraph}>
-          A project funded by Iran&apos;s National Elites Foundation and supervised by Prof. Behroozi and Prof. Soleymani. My
+          A project funded by Iran&apos;s National Elites Foundation and supervised by Prof. Behroozi and Prof.
+          Soleymani. My
           Responsibilities include:
         </Typography>
         <ul className={classes.workResponsibilitiesList}>
@@ -111,7 +112,41 @@ export function WorkSection() {
                                           rel="noopener noreferrer">GitHub</a>.
         </Typography>
       </CVSection>
+
+      <Divider />
       <CVSection title={"Other Projects"}>
+        <Typography variant="body1" className={classes.paragraph}>
+          <a className={classes.link} target="_blank" rel="noopener noreferrer"
+             href="https://github.com/SeyedAlirezaFatemi/decaf-compiler">
+            Lark Decaf Compiler
+          </a>
+        </Typography>
+        <Typography variant="subtitle1" className={classes.paragraph}>
+          Summer 2020
+        </Typography>
+        <Typography variant="body1" className={classes.paragraph}>
+          This was the project for Compiler Design course. It is is a compiler for Decaf programming language written in
+          python using lark. It compiles Decaf to mips assembly language. The code
+          is available on <a href="https://github.com/SeyedAlirezaFatemi/decaf-compiler" target="_blank"
+                             rel="noopener noreferrer">GitHub</a>.
+        </Typography>
+
+        <Typography variant="body1" className={classes.paragraph}>
+          <a className={classes.link} target="_blank" rel="noopener noreferrer"
+             href="https://github.com/IAmS4n/CTLabeling">
+            Privacy-focused DICOM web panel
+          </a>
+        </Typography>
+        <Typography variant="subtitle1" className={classes.paragraph}>
+          Summer 2020
+        </Typography>
+        <Typography variant="body1" className={classes.paragraph}>
+          This web app is developed based on the Flask framework for the easy labeling of DICOM images with Privacy
+          in mind. The code
+          is available on <a href="https://github.com/IAmS4n/CTLabeling" target="_blank"
+                             rel="noopener noreferrer">GitHub</a>.
+        </Typography>
+
         <Typography variant="body1" className={classes.paragraph}>
           <a className={classes.link} target="_blank" rel="noopener noreferrer"
              href="https://github.com/SeyedAlirezaFatemi/p2p_network_project">

@@ -45,7 +45,8 @@ export function HonorsSection() {
       }}>
         <li>
           <HonorIcon />
-          Recipient of the grant and membership of <strong>Iran&apos;s National Elites Foundation</strong>, for outstanding
+          Recipient of the grant and membership of <strong>Iran&apos;s National Elites Foundation</strong>, for
+          outstanding
           academic success and participation in Shahid Ahmadi Roshan Project.
           <Date>Summer 2016 - Present</Date>
         </li>
@@ -58,7 +59,8 @@ export function HonorsSection() {
         <li>
           <HonorIcon />
           Ranked <strong>5th</strong> in <a href="https://monusac-2020.grand-challenge.org/Results/">MoNuSAC 2020
-          Challenge</a> which was an official satellite event of ISBI 2020.
+          Challenge</a> and Ranked <strong>3rd</strong> in Post-Challenge Leaderboard. MoNuSAC 2020 Challenge was an
+          official satellite event of ISBI 2020.
           I was one of the three members of Sharif HooshPardaz Team. We were invited to present
           our method in the MoNuSAC 2020 Workshop.
           <Date>Spring 2020</Date>
@@ -80,7 +82,8 @@ export function HonorsSection() {
         <li>
           <HonorIcon />
           Ranked <strong>8th</strong> in the <a href="https://gleason2019.grand-challenge.org/Results/">MICCAI Automatic
-          Prostate Gleason Grading Challenge 2019</a>. We were invited to present our method in MICCAI 2019 conference, which was held in October 2019, Shenzhen, China.
+          Prostate Gleason Grading Challenge 2019</a>. We were invited to present our method in MICCAI 2019 conference,
+          which was held in October 2019, Shenzhen, China.
           <Date>Fall 2019</Date>
         </li>
         <li>
