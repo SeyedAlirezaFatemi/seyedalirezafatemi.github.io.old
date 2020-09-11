@@ -1,8 +1,8 @@
-import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
+import React from "react"
 
-function Avatar(props) {
+export function Avatar(props) {
   const data = useStaticQuery(graphql`
     query {
       placeholderImage: file(relativePath: { eq: "avatar1.jpg" }) {
@@ -40,5 +40,3 @@ function Avatar(props) {
       title={title} />
   )
 }
-
-export { Avatar }

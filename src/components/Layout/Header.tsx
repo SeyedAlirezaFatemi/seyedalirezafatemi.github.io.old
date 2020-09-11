@@ -2,12 +2,12 @@ import "./hamburgers.css"
 
 import { AppBar, Grid, Hidden, List, ListItem, ListItemText, SwipeableDrawer, Typography } from "@material-ui/core"
 import { makeStyles, useTheme } from "@material-ui/core/styles"
-import { graphql, Link, useStaticQuery } from "gatsby"
-import Img from "gatsby-image"
+import { Link} from "gatsby"
 import React, { useCallback } from "react"
 import { Helmet } from "react-helmet"
 
 import { Sections } from "../../utils"
+import { Torch } from "../media"
 
 const colorModeTransition =
   "background 0.25s var(--ease-in-out-quad), color 0.25s var(--ease-in-out-quad)"
@@ -53,12 +53,6 @@ const useStyles = makeStyles(theme => {
       "&:focus ": {
         outline: "none",
       },
-    },
-    logo: {
-      cursor: "pointer",
-      width: 100,
-      marginRight: theme.spacing(10),
-      marginLeft: theme.spacing(10),
     },
     moonOrSun: {
       position: "relative",
@@ -203,26 +197,7 @@ const DarkModeToggle = ({ toggleDayNight }) => {
 }
 
 const Header = ({ siteTitle, onChangeThemeMode, page }) => {
-  const theme = useTheme()
   const classes = useStyles()
-  const data = useStaticQuery(graphql`
-    query {
-      on: file(relativePath: { eq: "on.png" }) {
-        childImageSharp {
-          fluid {
-            ...GatsbyImageSharpFluid_noBase64
-          }
-        }
-      }
-      off: file(relativePath: { eq: "off.png" }) {
-        childImageSharp {
-          fluid {
-            ...GatsbyImageSharpFluid_noBase64
-          }
-        }
-      }
-    }
-  `)
   return (
     <header className={classes.header}>
       <Helmet>
@@ -254,11 +229,7 @@ const Header = ({ siteTitle, onChangeThemeMode, page }) => {
             </button>
           </Link>
         </Hidden>
-        <div onClick={onChangeThemeMode}>
-          <Img fluid={theme.palette.type === "dark" ? data.off.childImageSharp.fluid : data.on.childImageSharp.fluid}
-               alt="Fatemi Logo"
-               className={classes.logo} />
-        </div>
+        <Torch onChangeThemeMode={onChangeThemeMode} />
         <Hidden smDown>
           <Link to={Sections.honors.path}>
             <button className={page === Sections.honors.name ? classes.buttonActive : classes.button}>

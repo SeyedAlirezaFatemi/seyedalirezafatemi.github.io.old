@@ -1,7 +1,8 @@
 import { Divider, Grid, Typography } from "@material-ui/core"
 import { makeStyles } from "@material-ui/core/styles"
 import React from "react"
-import { Avatar } from "../Avatar"
+
+import { Avatar } from "../media"
 
 const useStyles = makeStyles(theme => ({
   name: {
@@ -80,7 +81,7 @@ export function HomeSection() {
         href="https://github.com/SeyedAlirezaFatemi">GitHub</a> , <a
         href="https://www.linkedin.com/in/seyed-alireza-fatemi-jahromi">LinkedIn</a>
         <br />
-        <a href={"Seyed Alireza Fatemi Jahromi.pdf"}>Download CV</a>
+        <a href="SeyedAlirezaFatemiJahromi.pdf">Download CV</a>
       </Typography>
 
       <Typography variant="body1" className={classes.paragraph}>

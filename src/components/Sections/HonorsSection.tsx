@@ -46,8 +46,7 @@ export function HonorsSection() {
         <li>
           <HonorIcon />
           Recipient of the grant and membership of <strong>Iran&apos;s National Elites Foundation</strong>, for
-          outstanding
-          academic success and participation in Shahid Ahmadi Roshan Project.
+          outstanding academic success and participation in Shahid Ahmadi Roshan Project.
           <Date>Summer 2016 - Present</Date>
         </li>
         <li>
@@ -62,12 +61,13 @@ export function HonorsSection() {
           Challenge</a> and Ranked <strong>3rd</strong> in Post-Challenge Leaderboard. MoNuSAC 2020 Challenge was an
           official satellite event of ISBI 2020.
           I was one of the three members of Sharif HooshPardaz Team. We were invited to present
-          our method in the MoNuSAC 2020 Workshop.
+          our method in the MoNuSAC 2020 Workshop. <a href="MoNuSAC2020.pdf">Certificate of Participation</a>.
           <Date>Spring 2020</Date>
         </li>
         <li>
           <HonorIcon />
           Ranked <strong>3rd</strong> in the Eleventh <a
+          target="_blank" rel="noopener noreferrer"
           href="http://vccup.sharif.ir/11/%db%8c%d8%a7%d8%b2%d8%af%d9%87%d9%85%db%8c%d9%86-%d8%ac%d8%b4%d9%86%d9%88%d8%a7%d8%b1%d9%87-%da%a9%d8%a7%d8%b1%d8%a2%d9%81%d8%b1%db%8c%d9%86%db%8c-%da%a9%d8%b3%d8%a8%e2%80%8c%d9%88%da%a9%d8%a7%d8%b1/">Sharif
           VC Cup</a>.
           I was a member of Sharif HooshPardaz Team.
@@ -81,7 +81,9 @@ export function HonorsSection() {
         </li>
         <li>
           <HonorIcon />
-          Ranked <strong>8th</strong> in the <a href="https://gleason2019.grand-challenge.org/Results/">MICCAI Automatic
+          Ranked <strong>8th</strong> in the <a
+          target="_blank" rel="noopener noreferrer"
+          href="https://gleason2019.grand-challenge.org/Results/">MICCAI Automatic
           Prostate Gleason Grading Challenge 2019</a>. We were invited to present our method in MICCAI 2019 conference,
           which was held in October 2019, Shenzhen, China.
           <Date>Fall 2019</Date>
@@ -94,7 +96,11 @@ export function HonorsSection() {
         </li>
         <li>
           <HonorIcon />
-          Ranked <strong>1st</strong> in the third Sharif ICT Challenge (Fintech) among 65 chosen teams.
+          Ranked <strong>1st</strong> in the third &nbsp;
+          <a
+            href="http://ictchallenge.sharif.ir/?page_id=6798"
+            target="_blank" rel="noopener noreferrer"
+          >Sharif ICT Challenge (Fintech)</a> among 65 chosen teams.
           <Date>Summer 2019</Date>
         </li>
         <li>

@@ -3,10 +3,10 @@ import "./layout.css"
 import { CssBaseline, Divider } from "@material-ui/core"
 import { createMuiTheme, responsiveFontSizes, ThemeProvider } from "@material-ui/core/styles"
 import { graphql, useStaticQuery } from "gatsby"
-import React, { useCallback, useState } from "react"
+import React, { useCallback } from "react"
 
 import { useLocalStorage } from "../../utils"
-import Header from "./header"
+import Header from "./Header"
 
 const lightTheme = responsiveFontSizes(createMuiTheme({
   palette: {
