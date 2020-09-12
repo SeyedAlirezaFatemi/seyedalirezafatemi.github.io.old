@@ -2,6 +2,7 @@ const path = require("path")
 
 module.exports = {
   siteMetadata: {
+    siteUrl: 'https://seyedalirezafatemi.github.io',
     title: `Seyed Alireza Fatemi Jahromi`,
     description: `Seyed Alireza Fatemi Jahromi`,
     author: `Seyed Alireza Fatemi Jahromi`,
@@ -30,16 +31,7 @@ module.exports = {
         icon: `static/icon.png`,
       },
     },
-    {
-      resolve: `gatsby-plugin-gtag`,
-      options: {
-        trackingId: "UA-107408319-2",
-        // Puts tracking script in the head instead of the body
-        // head: false,
-        // enable ip anonymization
-        // anonymize: true,
-      },
-    },
+    `gatsby-plugin-preact`,
     "gatsby-plugin-webpack-bundle-analyser-v2",
   ],
 }
