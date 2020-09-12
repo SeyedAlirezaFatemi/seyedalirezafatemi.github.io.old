@@ -1,5 +1,3 @@
-import "./work.css"
-
 import { Divider, Typography } from "@material-ui/core"
 import { makeStyles } from "@material-ui/core/styles"
 import clsx from "clsx"
@@ -16,6 +14,7 @@ const useStyles = makeStyles(theme => ({
   },
   paragraph: {
     marginBottom: "0.25rem",
+    textAlign: "justify",
   },
   link: {
     // transition: "box-shadow 160ms ease 0s",
@@ -72,24 +71,30 @@ export function WorkSection() {
         <Typography variant="subtitle1" className={classes.paragraph}>
           Researcher | March, 2019 – Present
         </Typography>
-        <Typography variant="body1" className={classes.paragraph}>
+        <Typography variant="body1" className={classes.paragraph} align="justify">
           A project funded by Iran&apos;s National Elites Foundation and supervised by Prof. Behroozi and Prof.
           Soleymani. My
           Responsibilities include:
         </Typography>
         <ul className={classes.workResponsibilitiesList}>
           <li>
-            Researching state-of-the-art Deep Learning techniques and applying them to different applications in the
-            medical field such as digital pathology. My research is focused on the classification and segmentation of
-            different types of cancer in digital pathology images. I work with Whole Slide Images from various organs
-            such as Liver, Colon, and Prostate. I also worked with 3D brain MRI images for the task of grading
-            Periventricular White Matter Changes, Deep White Matter Changes, and Global Cortical Atrophy.
+            <Typography align="justify">
+              Researching state-of-the-art Deep Learning techniques and applying them to different applications in the
+              medical field such as digital pathology. My research is focused on the classification and segmentation of
+              different types of cancer in digital pathology images. I work with Whole Slide Images from various organs
+              such as Liver, Colon, and Prostate. I also worked with 3D brain MRI images for the task of grading
+              Periventricular White Matter Changes, Deep White Matter Changes, and Global Cortical Atrophy.
+            </Typography>
           </li>
           <li>
-            Meeting with hospital, clinic, and laboratory managers for requirements engineering and data gathering.
+            <Typography align="justify">
+              Meeting with hospital, clinic, and laboratory managers for requirements engineering and data gathering.
+            </Typography>
           </li>
           <li>
-            Designing and developing software products.
+            <Typography align="justify">
+              Designing and developing software products.
+            </Typography>
           </li>
         </ul>
         <Typography variant="body1" className={classes.paragraph}>
@@ -100,23 +105,25 @@ export function WorkSection() {
         <Typography variant="subtitle1" className={classes.paragraph}>
           Software Engineer & Team Leader | Summer 2018
         </Typography>
-        <Typography variant="body1" className={classes.paragraph}>
+        <Typography variant="body1" className={classes.paragraph} align="justify">
           During the 7-week internship program, I gained experience in the following areas of Software Development:
         </Typography>
         <ul className={classes.workResponsibilitiesList}>
-          <li>Teamwork</li>
-          <li>Scrum</li>
-          <li>UI/UX</li>
-          <li>Full Stack Development</li>
+          <Typography>
+            <li>Teamwork</li>
+            <li>Scrum</li>
+            <li>UI/UX</li>
+            <li>Full Stack Development</li>
+          </Typography>
         </ul>
-        <Typography variant="body1" className={classes.paragraph}>
+        <Typography variant="body1" className={classes.paragraph} align="justify">
           My teammates and I developed a social media application (similar to Instagram). The project is
           open-source and available on <a href="https://github.com/Mangeneh" target="_blank"
                                           rel="noopener noreferrer">GitHub</a>.
         </Typography>
       </CVSection>
 
-      <Divider className={classes.divider}/>
+      <Divider className={classes.divider} />
       <CVSection title={"Projects"}>
         <Typography variant="body1" className={classes.paragraph}>
           <a className={classes.link} target="_blank" rel="noopener noreferrer"

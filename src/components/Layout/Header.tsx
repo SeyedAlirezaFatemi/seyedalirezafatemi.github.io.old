@@ -2,7 +2,7 @@ import "./hamburgers.css"
 
 import { AppBar, Grid, Hidden, List, ListItem, ListItemText, SwipeableDrawer, Typography } from "@material-ui/core"
 import { makeStyles, useTheme } from "@material-ui/core/styles"
-import { Link} from "gatsby"
+import { Link } from "gatsby"
 import React, { useCallback } from "react"
 import { Helmet } from "react-helmet"
 
@@ -177,10 +177,10 @@ const DarkModeToggle = ({ toggleDayNight }) => {
   const classes = useStyles()
   const isDark = theme.palette.type === `dark`
 
-  function toggleColorMode(event) {
+  const toggleColorMode = useCallback((event) => {
     event.preventDefault()
     toggleDayNight()
-  }
+  }, [toggleDayNight])
 
   return (
     <div
