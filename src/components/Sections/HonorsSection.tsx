@@ -18,9 +18,15 @@ const useStyles = makeStyles(theme => ({
     float: "right",
   },
   honorsList: {
+    listStyle: "none",
+    marginLeft: 0,
+    textAlign: "justify",
     "& li": {
       marginBottom: theme.spacing(2),
     },
+  },
+  icon: {
+    marginBottom: -6,
   },
 }))
 
@@ -29,31 +35,20 @@ export function HonorsSection() {
   const theme = useTheme()
   const isDark = theme.palette.type === "dark"
   const HonorIcon = useCallback(() => (
-    <img src={isDark ? "/trophy_dark.svg" : "/trophy_light.svg"} alt="Honor" width={24} style={{
-      marginBottom: -6,
-    }} />), [isDark])
+    <img src={isDark ? "/trophy_dark.svg" : "/trophy_light.svg"} alt="Honor" width={24}
+         className={classes.icon} />), [isDark])
   const Date = useCallback(({ children }) => (<span className={classes.date}>{children}</span>), [classes])
   return (
     <>
       <Typography variant="h1" className={classes.name} align="center">
         Seyed Alireza Fatemi Jahromi Honors
       </Typography>
-      <ul className={classes.honorsList} style={{
-        listStyle: "none",
-        marginLeft: 0,
-        textAlign: "justify",
-      }}>
+      <ul className={classes.honorsList}>
         <li>
           <HonorIcon />
           Recipient of the grant and membership of <strong>Iran&apos;s National Elites Foundation</strong>, for
           outstanding academic success and participation in Shahid Ahmadi Roshan Project.
           <Date>Summer 2016 - Present</Date>
-        </li>
-        <li>
-          <HonorIcon />
-          Participant of the third and the fourth round of Shahid Ahmadi Roshan Project which is funded by Iran&apos;s
-          National Elites Foundation and supervised by Prof. Behroozi and Prof. Soleymani.
-          <Date>Spring 2019 - Present</Date>
         </li>
         <li>
           <HonorIcon />

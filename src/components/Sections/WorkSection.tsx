@@ -69,34 +69,43 @@ export function WorkSection() {
           </a>
         </Typography>
         <Typography variant="subtitle1" className={classes.paragraph}>
-          Researcher | March, 2019 – Present
+          Researcher | Spring 2019 - Summer 2020 (18 months)
         </Typography>
         <Typography variant="body1" className={classes.paragraph} align="justify">
-          A project funded by Iran&apos;s National Elites Foundation and supervised by Prof. Behroozi and Prof.
-          Soleymani. My
-          Responsibilities include:
+          I was a member of a project funded by Iran's National Elites Foundation and supervised by Prof.
+          Behroozi and Prof. Soleymani, focused on Medical Image Analysis. My Responsibilities included:
         </Typography>
         <ul className={classes.workResponsibilitiesList}>
           <li>
             <Typography align="justify">
               Researching state-of-the-art Deep Learning techniques and applying them to different applications in the
-              medical field such as digital pathology. My research is focused on the classification and segmentation of
-              different types of cancer in digital pathology images. I work with Whole Slide Images from various organs
-              such as Liver, Colon, and Prostate. I also worked with 3D brain MRI images for the task of grading
-              Periventricular White Matter Changes, Deep White Matter Changes, and Global Cortical Atrophy.
+              medical field, such as digital pathology. My research was focused on the classification and segmentation
+              of
+              different types of cancer in digital pathology images. I worked with Whole Slide Images from various
+              organs
+              such as Liver, Colon, and Prostate. I also worked on classifying and segmenting Covid-19 patients' CT Scan
+              images and 3D brain MRI images.
             </Typography>
           </li>
           <li>
             <Typography align="justify">
-              Meeting with hospital, clinic, and laboratory managers for requirements engineering and data gathering.
-            </Typography>
-          </li>
-          <li>
-            <Typography align="justify">
-              Designing and developing software products.
+              Meeting with hospital, clinic, and laboratory managers for requirements engineering and data collection.
             </Typography>
           </li>
         </ul>
+        <Typography variant="body1" className={classes.paragraph}>
+          <a className={classes.link} target="_blank" rel="noopener noreferrer" href="https://bmn.ir/">
+            Iran&apos;s National Elites Foundation, Shahid Ahmadi Roshan Project
+          </a>
+        </Typography>
+        <Typography variant="subtitle1" className={classes.paragraph}>
+          Front-end Web Developer | Spring 2019 - Summer 2019 (6 months)
+        </Typography>
+        <Typography variant="body1" className={classes.paragraph} align="justify">
+          I was a member of a project funded by Iran's National Elites Foundation and supervised by Prof. Heydarnoori,
+          focused on developing a Real-time locating system.
+          I worked as a Front-end Web Developer, and my main task was to develop the admin panel of this system.
+        </Typography>
         <Typography variant="body1" className={classes.paragraph}>
           <a className={classes.link} target="_blank" rel="noopener noreferrer" href="https://rahnemacollege.com/">
             Rahnema College
