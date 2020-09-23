@@ -17,7 +17,7 @@ const useStyles = makeStyles(theme => ({
   },
   honorsList: {
     listStyle: "none",
-    marginLeft: 0,
+    paddingLeft: 0,
     textAlign: "justify",
     "& li": {
       marginBottom: theme.spacing(2),
