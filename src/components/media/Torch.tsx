@@ -6,9 +6,9 @@ import React from "react"
 const useStyles = makeStyles(theme => ({
     logo: {
       cursor: "pointer",
-      width: 100,
-      marginRight: theme.spacing(10),
-      marginLeft: theme.spacing(10),
+      width: 80,
+      marginRight: theme.spacing(5),
+      marginLeft: theme.spacing(5),
     },
   }),
 )

@@ -52,11 +52,13 @@ export function HonorsSection() {
         </li>
         <li>
           <HonorIcon />
-          Ranked <strong>5th</strong> in <a href="https://monusac-2020.grand-challenge.org/Results/">MoNuSAC 2020
+          Ranked <strong>5th</strong> in <a href="https://monusac-2020.grand-challenge.org/Results/" target="_blank"
+                                            rel="noopener noreferrer">MoNuSAC 2020
           Challenge</a> and Ranked <strong>3rd</strong> in Post-Challenge Leaderboard. MoNuSAC 2020 Challenge was an
           official satellite event of ISBI 2020.
           I was one of the three members of Sharif HooshPardaz Team. We were invited to present
-          our method in the MoNuSAC 2020 Workshop. <a href="MoNuSAC2020.pdf">Certificate of Participation</a>.
+          our method in the MoNuSAC 2020 Workshop. <a href="MoNuSAC2020.pdf" target="_blank" rel="noopener noreferrer">Certificate
+          of Participation</a>.
           <Date>Spring 2020</Date>
         </li>
         <li>

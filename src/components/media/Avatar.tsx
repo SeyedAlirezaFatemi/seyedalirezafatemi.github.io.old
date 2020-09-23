@@ -1,7 +1,7 @@
+import { makeStyles } from "@material-ui/core/styles"
 import { graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
 import React from "react"
-import { makeStyles } from "@material-ui/core/styles"
 
 const useStyles = makeStyles(theme => ({
   avatar: {

@@ -1,6 +1,16 @@
 import "./hamburgers.css"
 
-import { AppBar, Grid, Hidden, List, ListItem, ListItemText, SwipeableDrawer, Typography } from "@material-ui/core"
+import {
+  AppBar,
+  Button,
+  Grid,
+  Hidden,
+  List,
+  ListItem,
+  ListItemText,
+  SwipeableDrawer,
+  Typography,
+} from "@material-ui/core"
 import { makeStyles, useTheme } from "@material-ui/core/styles"
 import { Link } from "gatsby"
 import React, { useCallback } from "react"
@@ -169,6 +179,9 @@ const useStyles = makeStyles(theme => {
         color: "inherit",
       },
     },
+    switch: {
+      borderRadius: "10%",
+    },
   })
 })
 
@@ -196,6 +209,19 @@ const DarkModeToggle = ({ toggleDayNight }) => {
   )
 }
 
+const MenuButton = ({section, page, text}) => {
+  const classes = useStyles()
+  return (
+    <Link to={section.path}>
+      <button className={page === section.name ? classes.buttonActive : classes.button}>
+        <Typography variant="button" color="textPrimary">
+          {text}
+        </Typography>
+      </button>
+    </Link>
+  )
+}
+
 const Header = ({ siteTitle, onChangeThemeMode, page }) => {
   const classes = useStyles()
   return (
@@ -214,37 +240,13 @@ const Header = ({ siteTitle, onChangeThemeMode, page }) => {
           <MobileNavigation />
         </Hidden>
         <Hidden smDown>
-          <Link to={Sections.home.path}>
-            <button className={page === Sections.home.name ? classes.buttonActive : classes.button}>
-              <Typography variant="button" color="textPrimary">
-                HOME
-              </Typography>
-            </button>
-          </Link>
-          <Link to={Sections.work.path}>
-            <button className={page === Sections.work.name ? classes.buttonActive : classes.button}>
-              <Typography variant="button" color="textPrimary">
-                WORK
-              </Typography>
-            </button>
-          </Link>
+          <MenuButton section={Sections.home} page={page} text={"HOME"}/>
+          <MenuButton section={Sections.work} page={page} text={"WORK"}/>
         </Hidden>
         <Torch onChangeThemeMode={onChangeThemeMode} />
         <Hidden smDown>
-          <Link to={Sections.honors.path}>
-            <button className={page === Sections.honors.name ? classes.buttonActive : classes.button}>
-              <Typography variant="button" color="textPrimary">
-                HONORS
-              </Typography>
-            </button>
-          </Link>
-          <Link to={Sections.about.path}>
-            <button className={page === Sections.about.name ? classes.buttonActive : classes.button}>
-              <Typography variant="button" color="textPrimary">
-                ABOUT
-              </Typography>
-            </button>
-          </Link>
+          <MenuButton section={Sections.honors} page={page} text={"HONORS"}/>
+          <MenuButton section={Sections.about} page={page} text={"ABOUT"}/>
         </Hidden>
       </Grid>
     </header>

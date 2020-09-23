@@ -6,6 +6,7 @@ import { graphql, useStaticQuery } from "gatsby"
 import React, { useCallback } from "react"
 
 import { useLocalStorage } from "../../utils"
+import { Footer } from "./Footer/Footer"
 import Header from "./Header"
 
 const lightTheme = responsiveFontSizes(createMuiTheme({
@@ -40,13 +41,13 @@ const darkTheme = responsiveFontSizes(createMuiTheme({
 
 const Layout = ({ children, page }) => {
   const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
+      query SiteTitleQuery {
+          site {
+              siteMetadata {
+                  title
+              }
+          }
       }
-    }
   `)
   const [theme, setTheme] = useLocalStorage("theme", "light")
   const handleThemeModeChange = useCallback(() => {
@@ -54,11 +55,12 @@ const Layout = ({ children, page }) => {
   }, [theme])
   return (
     <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
+      <CssBaseline />
       <Header siteTitle={data.site.siteMetadata.title} onChangeThemeMode={handleThemeModeChange} page={page} />
       <div className="main-container">
-        <CssBaseline />
         <main>{children}</main>
-        <Divider style={{marginTop: 36}} />
+        <Divider style={{ marginTop: 36 }} />
+        <Footer />
       </div>
     </ThemeProvider>
   )
