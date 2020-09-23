@@ -1,5 +1,5 @@
 import { Grid, IconButton } from "@material-ui/core"
-import { Email, Github, Instagram, Linkedin, Twitter } from "mdi-material-ui"
+import { Email, Github, Instagram, Linkedin, Twitter, Telegram } from "mdi-material-ui"
 import React from "react"
 
 export function Footer() {
@@ -23,6 +23,11 @@ export function Footer() {
       <a href="https://twitter.com/alir3zafa" target="_blank" rel="noopener noreferrer">
         <IconButton aria-label="Twitter">
           <Twitter />
+        </IconButton>
+      </a>
+      <a href="https://t.me/OriginalAngel" target="_blank" rel="noopener noreferrer">
+        <IconButton aria-label="Telegram  ">
+          <Telegram />
         </IconButton>
       </a>
       <a href="mailto:alirezafa@rocketmail.com" target="_blank" rel="noopener noreferrer">
