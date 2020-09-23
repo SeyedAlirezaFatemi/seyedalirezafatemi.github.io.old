@@ -2,7 +2,6 @@ import { Grid, IconButton } from "@material-ui/core"
 import { Email, Github, Instagram, Linkedin, Twitter } from "mdi-material-ui"
 import React from "react"
 
-
 export function Footer() {
   return (
     <Grid container justify="center">

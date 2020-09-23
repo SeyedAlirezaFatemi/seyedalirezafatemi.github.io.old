@@ -1,16 +1,6 @@
 import "./hamburgers.css"
 
-import {
-  AppBar,
-  Button,
-  Grid,
-  Hidden,
-  List,
-  ListItem,
-  ListItemText,
-  SwipeableDrawer,
-  Typography,
-} from "@material-ui/core"
+import { AppBar, Grid, Hidden, List, ListItem, ListItemText, SwipeableDrawer, Typography } from "@material-ui/core"
 import { makeStyles, useTheme } from "@material-ui/core/styles"
 import { Link } from "gatsby"
 import React, { useCallback } from "react"
@@ -38,7 +28,6 @@ const useStyles = makeStyles(theme => {
       marginRight: 25,
       padding: 10,
       cursor: "pointer",
-      fontSize: 24,
       backgroundColor: "transparent",
       borderTopColor: "transparent",
       borderLeftColor: "transparent",
@@ -54,7 +43,6 @@ const useStyles = makeStyles(theme => {
       marginRight: 25,
       padding: 10,
       cursor: "pointer",
-      fontSize: 24,
       backgroundColor: "transparent",
       borderTopColor: "transparent",
       borderLeftColor: "transparent",
@@ -209,7 +197,7 @@ const DarkModeToggle = ({ toggleDayNight }) => {
   )
 }
 
-const MenuButton = ({section, page, text}) => {
+const MenuButton = ({ section, page, text }) => {
   const classes = useStyles()
   return (
     <Link to={section.path}>
@@ -239,15 +227,27 @@ const Header = ({ siteTitle, onChangeThemeMode, page }) => {
         <Hidden mdUp>
           <MobileNavigation />
         </Hidden>
-        <Hidden smDown>
-          <MenuButton section={Sections.home} page={page} text={"HOME"}/>
-          <MenuButton section={Sections.work} page={page} text={"WORK"}/>
-        </Hidden>
-        <Torch onChangeThemeMode={onChangeThemeMode} />
-        <Hidden smDown>
-          <MenuButton section={Sections.honors} page={page} text={"HONORS"}/>
-          <MenuButton section={Sections.about} page={page} text={"ABOUT"}/>
-        </Hidden>
+        <Grid container justify="space-evenly" alignItems="center">
+          <Hidden smDown>
+            <Grid item>
+              <MenuButton section={Sections.home} page={page} text={"HOME"} />
+            </Grid>
+            <Grid item>
+              <MenuButton section={Sections.work} page={page} text={"WORK"} />
+            </Grid>
+          </Hidden>
+          <Grid item>
+            <Torch onChangeThemeMode={onChangeThemeMode} />
+          </Grid>
+          <Hidden smDown>
+            <Grid item>
+              <MenuButton section={Sections.honors} page={page} text={"HONORS"} />
+            </Grid>
+            <Grid item>
+              <MenuButton section={Sections.about} page={page} text={"ABOUT"} />
+            </Grid>
+          </Hidden>
+        </Grid>
       </Grid>
     </header>
   )

@@ -1,7 +1,5 @@
-import "./layout.css"
-
 import { CssBaseline, Divider } from "@material-ui/core"
-import { createMuiTheme, responsiveFontSizes, ThemeProvider } from "@material-ui/core/styles"
+import { createMuiTheme, makeStyles, responsiveFontSizes, ThemeProvider } from "@material-ui/core/styles"
 import { graphql, useStaticQuery } from "gatsby"
 import React, { useCallback } from "react"
 
@@ -9,37 +7,74 @@ import { useLocalStorage } from "../../utils"
 import { Footer } from "./Footer/Footer"
 import Header from "./Header"
 
+const themeOptions = {
+  overrides: {
+    MuiCssBaseline: {
+      "@global": {
+        html: {
+          font: "112.5%/1.45em georgia, serif",
+          boxSizing: "border-box",
+          overflowY: "scroll",
+        },
+        a: {
+          color: "deepskyblue",
+          backgroundColor: "transparent",
+          "&:hover": {
+            outlineWidth: 0,
+          },
+          "&:active": {
+            outlineWidth: 0,
+          },
+        },
+      },
+    },
+  },
+  typography: {
+    fontFamily: "-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, Cantarell, Roboto, Helvetica, Arial, Noto Sans,\n      sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'",
+    subtitle1: {
+      color: "#96999b",
+    },
+  },
+}
+
+// @ts-ignore
 const lightTheme = responsiveFontSizes(createMuiTheme({
   palette: {
     type: "light",
   },
-  typography: {
-    // @ts-ignore
-    WebkitFontSmoothing: "antialiased",
-    MozOsxFontSmoothing: "grayscale",
-    fontFamily: "-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, Cantarell, Roboto, Helvetica, Arial, Noto Sans,\n      sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'",
-    subtitle1: {
-      color: "#96999b",
-    },
-  },
+  ...themeOptions,
 }))
 
+// @ts-ignore
 const darkTheme = responsiveFontSizes(createMuiTheme({
   palette: {
     type: "dark",
   },
-  typography: {
-    // @ts-ignore
-    WebkitFontSmoothing: "antialiased",
-    MozOsxFontSmoothing: "grayscale",
-    fontFamily: "-apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, Cantarell, Roboto, Helvetica, Arial, Noto Sans,\n      sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'",
-    subtitle1: {
-      color: "#96999b",
-    },
+  ...themeOptions,
+}))
+
+const MasterWrapper = ({ children, theme }) => {
+  return (
+    <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
+      <CssBaseline />
+      {children}
+    </ThemeProvider>
+  )
+}
+
+const useStyles = makeStyles(theme => ({
+  container: {
+    margin: "0 auto",
+    maxWidth: "960px",
+    padding: "0 1.0875rem 1.45rem",
+  },
+  divider: {
+    marginTop: 36,
   },
 }))
 
-const Layout = ({ children, page }) => {
+export const Layout = ({ children, page }) => {
+  const classes = useStyles()
   const data = useStaticQuery(graphql`
       query SiteTitleQuery {
           site {
@@ -54,16 +89,13 @@ const Layout = ({ children, page }) => {
     setTheme(theme === "light" ? "dark" : "light")
   }, [theme])
   return (
-    <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
-      <CssBaseline />
-      <Header siteTitle={data.site.siteMetadata.title} onChangeThemeMode={handleThemeModeChange} page={page} />
-      <div className="main-container">
+    <MasterWrapper theme={theme}>
+      <div className={classes.container}>
+        <Header siteTitle={data.site.siteMetadata.title} onChangeThemeMode={handleThemeModeChange} page={page} />
         <main>{children}</main>
-        <Divider style={{ marginTop: 36 }} />
+        <Divider className={classes.divider}  />
         <Footer />
       </div>
-    </ThemeProvider>
+    </MasterWrapper>
   )
 }
-
-export { Layout }

@@ -1,23 +1,21 @@
 import { Divider, Grid, Typography } from "@material-ui/core"
 import { makeStyles } from "@material-ui/core/styles"
+import clsx from "clsx"
 import React from "react"
 
 import { Avatar } from "../media"
 
 const useStyles = makeStyles(theme => ({
   name: {
-    fontSize: 30,
     fontWeight: 600,
     textTransform: "uppercase",
   },
   title: {
     marginTop: "1rem",
-    fontSize: 20,
     textAlign: "center",
     fontWeight: 600,
     textTransform: "uppercase",
     letterSpacing: 1.2,
-    // color: "#c9cccf",
   },
   paragraph: {
     marginBottom: "0.25rem",
@@ -30,15 +28,7 @@ const useStyles = makeStyles(theme => ({
       listStyle: "disc",
     },
   },
-  headline: {
-    display: "block",
-    textTransform: "uppercase",
-    fontWeight: 600,
-    fontSize: 18,
-    letterSpacing: 1.2,
-    paddingTop: "0.25rem",
-    paddingBottom: "0.25rem",
-  },
+  headline: {},
   interestsList: {
     marginTop: theme.spacing(2),
     "& li": {
@@ -58,7 +48,7 @@ export function CVSection({ title, children }) {
   const classes = useStyles()
   return (
     <div className={classes.section}>
-      <Typography variant="h2" className={classes.title}>{title}</Typography>
+      <Typography variant="h6" className={classes.title}>{title}</Typography>
       <div>
         {children}
       </div>
@@ -70,7 +60,7 @@ export function HomeSection() {
   const classes = useStyles()
   return (
     <>
-      <Typography className={classes.name} variant="h1" align="center">
+      <Typography className={classes.name} variant="h5" align="center">
         Seyed Alireza Fatemi Jahromi
       </Typography>
       <Grid container justify="flex-start" direction="row" alignItems="center" className={classes.avatar}>
@@ -111,16 +101,16 @@ export function HomeSection() {
       <CVSection title={"Education"}>
         <ul>
           <li>
-            <Typography variant="body1" className={classes.paragraph}>
-              <span className={classes.headline}>Sharif University of Technology</span>
+            <Typography variant="body1" className={clsx(classes.paragraph, classes.headline)}>
+              Sharif University of Technology
             </Typography>
             <Typography variant="subtitle1" className={classes.paragraph}>
               Bachelor of Science in Computer Engineering | Tehran | 2016 – Current
             </Typography>
           </li>
           <li>
-            <Typography variant="body1" className={classes.paragraph}>
-              <span className={classes.headline}>Shahid Dastgheib High School</span>
+            <Typography variant="body1" className={clsx(classes.paragraph, classes.headline)}>
+              Shahid Dastgheib High School
             </Typography>
             <Typography variant="subtitle1" className={classes.paragraph}>
               Diploma | National Organization for Development of Exceptional Talents(NODET) | Shiraz | 2012 – 2016

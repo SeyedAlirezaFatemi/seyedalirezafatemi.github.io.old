@@ -4,13 +4,11 @@ import React, { useCallback } from "react"
 
 const useStyles = makeStyles(theme => ({
   name: {
-    fontSize: 30,
     fontWeight: 600,
     textTransform: "uppercase",
     marginBottom: "2rem",
   },
   date: {
-    fontSize: 12,
     fontWeight: 600,
     textTransform: "uppercase",
     letterSpacing: 1.2,
@@ -30,6 +28,15 @@ const useStyles = makeStyles(theme => ({
   },
 }))
 
+export function Date({children}){
+  const classes = useStyles()
+  return (
+    <Typography variant="caption" className={classes.date}>
+      {children}
+    </Typography>
+  )
+}
+
 export function HonorsSection() {
   const classes = useStyles()
   const theme = useTheme()
@@ -37,10 +44,9 @@ export function HonorsSection() {
   const HonorIcon = useCallback(() => (
     <img src={isDark ? "/trophy_dark.svg" : "/trophy_light.svg"} alt="Honor" width={24}
          className={classes.icon} />), [isDark])
-  const Date = useCallback(({ children }) => (<span className={classes.date}>{children}</span>), [classes])
   return (
     <>
-      <Typography variant="h1" className={classes.name} align="center">
+      <Typography variant="h5" className={classes.name} align="center">
         Seyed Alireza Fatemi Jahromi Honors
       </Typography>
       <ul className={classes.honorsList}>

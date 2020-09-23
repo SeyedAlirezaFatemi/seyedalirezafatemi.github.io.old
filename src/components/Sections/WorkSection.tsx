@@ -1,13 +1,11 @@
 import { Divider, Typography } from "@material-ui/core"
 import { makeStyles } from "@material-ui/core/styles"
-import clsx from "clsx"
 import React from "react"
 
 import { CVSection } from "./HomeSection"
 
 const useStyles = makeStyles(theme => ({
   name: {
-    fontSize: 30,
     fontWeight: 600,
     textTransform: "uppercase",
     marginBottom: "2rem",
@@ -17,21 +15,14 @@ const useStyles = makeStyles(theme => ({
     textAlign: "justify",
   },
   link: {
-    // transition: "box-shadow 160ms ease 0s",
-    // boxShadow: "rgb(238, 251, 255) 0px -9px 0px inset",
-    // borderBottom: "2px solid rgb(207, 243, 255)",
     textDecoration: "none",
     color: "inherit",
     display: "block",
     textTransform: "uppercase",
     fontWeight: 600,
-    fontSize: 18,
     letterSpacing: 1.2,
     paddingTop: "2rem",
     width: "fit-content",
-    // "&:hover": {
-    //   boxShadow: "rgb(207, 243, 255) 0px -1.2em 0px inset",
-    // },
     "&:link": {
       color: "inherit",
     },
@@ -54,20 +45,36 @@ const useStyles = makeStyles(theme => ({
   },
 }))
 
+interface TitleProps {
+  link?: string
+  title: string
+}
+
+export function Title({ link, title }: TitleProps) {
+  const classes = useStyles()
+  return (
+    <Typography variant="h6" className={classes.paragraph}>
+      {link ?
+        <a className={classes.link} target="_blank" rel="noopener noreferrer" href={link}>
+          {title}
+        </a> : <span className={classes.link}>{title}</span>}
+    </Typography>
+  )
+}
+
 
 export function WorkSection() {
   const classes = useStyles()
   return (
     <>
-      <Typography variant="h1" className={classes.name} align="center">
+      <Typography variant="h5" className={classes.name} align="center">
         Seyed Alireza Fatemi Jahromi Work
       </Typography>
       <CVSection title={"Work Experiences"}>
-        <Typography variant="body1" className={classes.paragraph}>
-          <a className={classes.link} target="_blank" rel="noopener noreferrer" href="https://bmn.ir/">
-            Iran&apos;s National Elites Foundation, Shahid Ahmadi Roshan Project
-          </a>
-        </Typography>
+        <Title
+          link={"https://bmn.ir/"}
+          title={"Iran's National Elites Foundation, Shahid Ahmadi Roshan Project"}
+        />
         <Typography variant="subtitle1" className={classes.paragraph}>
           Researcher | Spring 2019 - Summer 2020 (18 months)
         </Typography>
@@ -93,11 +100,10 @@ export function WorkSection() {
             </Typography>
           </li>
         </ul>
-        <Typography variant="body1" className={classes.paragraph}>
-          <a className={classes.link} target="_blank" rel="noopener noreferrer" href="https://bmn.ir/">
-            Iran&apos;s National Elites Foundation, Shahid Ahmadi Roshan Project
-          </a>
-        </Typography>
+        <Title
+          link={"https://bmn.ir/"}
+          title={"Iran's National Elites Foundation, Shahid Ahmadi Roshan Project"}
+        />
         <Typography variant="subtitle1" className={classes.paragraph}>
           Front-end Web Developer | Spring 2019 - Summer 2019 (6 months)
         </Typography>
@@ -106,11 +112,10 @@ export function WorkSection() {
           focused on developing a Real-time locating system.
           I worked as a Front-end Web Developer, and my main task was to develop the admin panel of this system.
         </Typography>
-        <Typography variant="body1" className={classes.paragraph}>
-          <a className={classes.link} target="_blank" rel="noopener noreferrer" href="https://rahnemacollege.com/">
-            Rahnema College
-          </a>
-        </Typography>
+        <Title
+          link={"https://rahnemacollege.com/"}
+          title={"Rahnema College"}
+        />
         <Typography variant="subtitle1" className={classes.paragraph}>
           Software Engineer & Team Leader | Summer 2018
         </Typography>
@@ -134,12 +139,10 @@ export function WorkSection() {
 
       <Divider className={classes.divider} />
       <CVSection title={"Projects"}>
-        <Typography variant="body1" className={classes.paragraph}>
-          <a className={classes.link} target="_blank" rel="noopener noreferrer"
-             href="https://github.com/SeyedAlirezaFatemi/decaf-compiler">
-            Lark Decaf Compiler
-          </a>
-        </Typography>
+        <Title
+          link={"https://github.com/SeyedAlirezaFatemi/decaf-compiler"}
+          title={"Lark Decaf Compiler"}
+        />
         <Typography variant="subtitle1" className={classes.paragraph}>
           Summer 2020
         </Typography>
@@ -149,13 +152,10 @@ export function WorkSection() {
           is available on <a href="https://github.com/SeyedAlirezaFatemi/decaf-compiler" target="_blank"
                              rel="noopener noreferrer">GitHub</a>.
         </Typography>
-
-        <Typography variant="body1" className={classes.paragraph}>
-          <a className={classes.link} target="_blank" rel="noopener noreferrer"
-             href="https://github.com/IAmS4n/CTLabeling">
-            Privacy-focused DICOM web panel
-          </a>
-        </Typography>
+        <Title
+          link={"https://github.com/IAmS4n/CTLabeling"}
+          title={"Privacy-focused DICOM web panel"}
+        />
         <Typography variant="subtitle1" className={classes.paragraph}>
           Summer 2020
         </Typography>
@@ -165,13 +165,10 @@ export function WorkSection() {
           is available on <a href="https://github.com/IAmS4n/CTLabeling" target="_blank"
                              rel="noopener noreferrer">GitHub</a>.
         </Typography>
-
-        <Typography variant="body1" className={classes.paragraph}>
-          <a className={classes.link} target="_blank" rel="noopener noreferrer"
-             href="https://github.com/SeyedAlirezaFatemi/p2p_network_project">
-            P2P(A Peer-to-Peer Network)
-          </a>
-        </Typography>
+        <Title
+          link={"https://github.com/SeyedAlirezaFatemi/p2p_network_project"}
+          title={"P2P(A Peer-to-Peer Network)"}
+        />
         <Typography variant="subtitle1" className={classes.paragraph}>
           Fall 2018
         </Typography>
@@ -180,12 +177,11 @@ export function WorkSection() {
           is available on <a href="https://github.com/SeyedAlirezaFatemi/p2p_network_project" target="_blank"
                              rel="noopener noreferrer">GitHub</a>.
         </Typography>
-        <Typography variant="body1" className={classes.paragraph}>
-          <a className={classes.link} target="_blank" rel="noopener noreferrer"
-             href="https://github.com/SeyedAlirezaFatemi/gem5">
-            Improving SHA Algorithm by Adding Dedicated Hardware
-          </a>
-        </Typography>
+
+        <Title
+          link={"https://github.com/SeyedAlirezaFatemi/gem5"}
+          title={"Improving SHA Algorithm by Adding Dedicated Hardware"}
+        />
         <Typography variant="subtitle1" className={classes.paragraph}>
           Fall 2018
         </Typography>
@@ -195,12 +191,11 @@ export function WorkSection() {
           Simulations were done using gem5. The code is available on <a
           href="https://github.com/SeyedAlirezaFatemi/gem5" target="_blank" rel="noopener noreferrer">GitHub</a>.
         </Typography>
-        <Typography variant="body1" className={classes.paragraph}>
-          <a className={classes.link} target="_blank" rel="noopener noreferrer"
-             href="https://github.com/ImanHosseini/JAA">
-            JAA(Java Arm Accelerator)
-          </a>
-        </Typography>
+
+        <Title
+          link={"https://github.com/ImanHosseini/JAA"}
+          title={"JAA(Java Arm Accelerator)"}
+        />
         <Typography variant="subtitle1" className={classes.paragraph}>
           Spring 2017
         </Typography>
@@ -212,11 +207,11 @@ export function WorkSection() {
           href="https://github.com/ImanHosseini/JAA"
           target="_blank" rel="noopener noreferrer">GitHub</a>.
         </Typography>
-        <Typography variant="body1" className={classes.paragraph}>
-          <a className={classes.link} target="_blank" rel="noopener noreferrer" href="https://www.aparat.com/v/KtZps">
-            Dawnguard Game
-          </a>
-        </Typography>
+
+        <Title
+          link={"https://www.aparat.com/v/KtZps"}
+          title={"Dawnguard Game"}
+        />
         <Typography variant="subtitle1" className={classes.paragraph}>
           Spring 2017
         </Typography>
@@ -225,12 +220,11 @@ export function WorkSection() {
           the best projects of the course in that semester. The game is developed using Java, Kotlin, and JavaFX and it
           has a beautiful interface and supports multiplayer and chat through socket.
         </Typography>
-        <Typography variant="body1" className={classes.paragraph}>
-          <a className={classes.link} target="_blank" rel="noopener noreferrer"
-             href="https://github.com/SeyedAlirezaFatemi/TheSafe">
-            The Safe
-          </a>
-        </Typography>
+
+        <Title
+          link={"https://github.com/SeyedAlirezaFatemi/TheSafe"}
+          title={"The Safe"}
+        />
         <Typography variant="subtitle1" className={classes.paragraph}>
           Fall 2017
         </Typography>
@@ -239,9 +233,10 @@ export function WorkSection() {
           Xilinix Spartan 6 FPGA. The code is available on <a href="https://github.com/SeyedAlirezaFatemi/TheSafe"
                                                               target="_blank" rel="noopener noreferrer">GitHub</a>.
         </Typography>
-        <Typography variant="body1" className={clsx(classes.paragraph, classes.link)}>
-          Who Killed Martin?
-        </Typography>
+
+        <Title
+          title={"Who Killed Martin?"}
+        />
         <Typography variant="subtitle1" className={classes.paragraph}>
           Fall 2016
         </Typography>

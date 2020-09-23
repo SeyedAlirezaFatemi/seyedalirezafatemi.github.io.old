@@ -38,7 +38,6 @@ export const Torch = ({ onChangeThemeMode }) => {
     <div onClick={onChangeThemeMode}>
       <Img
         fluid={theme.palette.type === "dark" ? data.off.childImageSharp.fluid : data.on.childImageSharp.fluid}
-        alt="Torch"
         className={classes.logo}
       />
     </div>
