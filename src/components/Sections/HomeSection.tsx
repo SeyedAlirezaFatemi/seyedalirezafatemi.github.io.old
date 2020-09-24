@@ -69,7 +69,7 @@ export function HomeSection() {
         </Grid>
         <Grid item md={8} xs={12}>
           <Typography variant="body1" className={classes.paragraph}>
-            Computer Engineering Student Specializing in Deep Learning & Computer Vision
+            Computer Engineering Student Specializing in Machine Learning & Visual Computing
           </Typography>
           <Typography variant="subtitle1" className={classes.paragraph}>
             Highly motivated, energetic and creative individual seeking new adventures.
@@ -89,7 +89,7 @@ export function HomeSection() {
       <CVSection title={"Research Interests"}>
         <Typography variant="body2" className={classes.interests}>
           <ul className={classes.interestsList}>
-            <li>Computer Vision & Image Processing</li>
+            <li>Computer Vision & Graphics</li>
             <li>Machine Learning & Deep Learning</li>
             <li>Artificial Intelligence</li>
             <li>Software Engineering</li>

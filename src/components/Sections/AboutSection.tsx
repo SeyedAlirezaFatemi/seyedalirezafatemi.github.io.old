@@ -46,21 +46,23 @@ export function AboutSection() {
       <Img alt="Quote" fluid={isDark ? data.off.childImageSharp.fluid : data.on.childImageSharp.fluid}
            className={classes.image} />
       Welcome! My name is Seyed Alireza Fatemi Jahromi. I'm currently an undergraduate student of Computer Engineering
-      at Sharif
-      University of Technology. My main research focus is on Machine Learning & Computer Vision. I'm fascinated by the
-      use of AI and Machine Learning in various fields of Computer Vision such as Medical Image Analysis, Satellite &
-      Aerial Image Analysis, Art & Image Generation, Deepfakes, Image Enhancement, etc.
+      at Sharif University of Technology.
+      My main research focus is on Machine Learning & Visual Computing & AI. I'm fascinated by the
+      use of AI and Machine Learning in various fields of Computer Vision & Graphics such as Medical Image Analysis,
+      Satellite & Aerial Image Analysis, Art & Image Generation, Deepfakes, Image Enhancement, etc.
       <br />
-      When I worked as a researcher at Shahid Ahmadi Roshan Project, I gained experience and knowledge of different
-      machine learning and deep learning algorithms. I applied these algorithms on classification and segmentation of
+      During the time I worked as a researcher at Shahid Ahmadi Roshan Project, I gained experience and knowledge of
+      different machine learning and deep learning algorithms.
+      I applied these algorithms on classification and segmentation of
       Gigapixel Whole-Slide Histopathology images of various organs (such as Prostate, Liver, and Colon), Nuclei
       segmentation and classification, classification of 3D brain MRI images, classification & segmentation of chest CT
-      scans of Covid-19 patients, classification of EEG signals, etc.
+      scans of Covid-19 patients, classification of EEG signals, etc. I also have a lot of experience in designing and
+      implementing mobile and web applications. I've worked with various frameworks and libraries such as React, React
+      Native, Gatsby, Next, Django, Flask, etc.
       <br />
-      I also have a lot of experience in designing and implementing mobile and web applications. I plan to expand my
-      knowledge in Artificial Intelligence & Computer Vision & Graphics + Software Engineering. I believe that with
-      knowledge and skills in these fields, we can create innovative products and solutions that can impact people's
-      lives.
+      I plan to expand my knowledge in Artificial Intelligence & Visual Computing & Software Engineering. I
+      believe that with knowledge and skills in these fields, we can create innovative products and solutions that can
+      impact people's lives.
       <br />
       I'm comfortable with working alone as well as working in large teams of diverse people. I take my responsibilities
       seriously, and I try my best to positively influence and help the people and the world around me. I'm a fast and
