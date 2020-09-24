@@ -5,7 +5,7 @@ import React, { useCallback } from "react"
 
 import { useLocalStorage } from "../../utils"
 import { Footer } from "./Footer/Footer"
-import Header from "./Header"
+import Header from "./Header/Header"
 
 const themeOptions = {
   overrides: {

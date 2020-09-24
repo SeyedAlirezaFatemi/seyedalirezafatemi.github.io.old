@@ -6,8 +6,9 @@ import { Link } from "gatsby"
 import React, { useCallback } from "react"
 import { Helmet } from "react-helmet"
 
-import { Sections } from "../../utils"
-import { Torch } from "../media"
+import { Sections } from "../../../utils"
+import { Torch } from "../../Media"
+import clsx from "clsx"
 
 const colorModeTransition =
   "background 0.25s var(--ease-in-out-quad), color 0.25s var(--ease-in-out-quad)"
@@ -18,15 +19,12 @@ const useStyles = makeStyles(theme => {
   const primary = isDark ? "#fff" : "#000"
   return ({
     header: {
-      marginTop: 50,
+      marginTop: 25,
       marginBottom: 25,
       textAlign: "center",
     },
     button: {
       width: "calc(120px + 1.5vw)",
-      marginLeft: 25,
-      marginRight: 25,
-      padding: 10,
       cursor: "pointer",
       backgroundColor: "transparent",
       borderTopColor: "transparent",
@@ -38,19 +36,7 @@ const useStyles = makeStyles(theme => {
       },
     },
     buttonActive: {
-      width: "calc(120px + 1.5vw)",
-      marginLeft: 25,
-      marginRight: 25,
-      padding: 10,
-      cursor: "pointer",
-      backgroundColor: "transparent",
-      borderTopColor: "transparent",
-      borderLeftColor: "transparent",
-      borderRightColor: "transparent",
       borderBottomColor: theme.palette.text.primary,
-      "&:focus ": {
-        outline: "none",
-      },
     },
     moonOrSun: {
       position: "relative",
@@ -170,6 +156,11 @@ const useStyles = makeStyles(theme => {
     switch: {
       borderRadius: "10%",
     },
+    torch: {
+      [theme.breakpoints.down("sm")]: {
+        margin: "0 auto",
+      },
+    },
   })
 })
 
@@ -201,7 +192,7 @@ const MenuButton = ({ section, page, text }) => {
   const classes = useStyles()
   return (
     <Link to={section.path}>
-      <button className={page === section.name ? classes.buttonActive : classes.button}>
+      <button className={clsx(classes.button, page === section.name && classes.buttonActive)}>
         <Typography variant="button" color="textPrimary">
           {text}
         </Typography>
@@ -227,7 +218,7 @@ const Header = ({ siteTitle, onChangeThemeMode, page }) => {
         <Hidden mdUp>
           <MobileNavigation />
         </Hidden>
-        <Grid container justify="space-evenly" alignItems="center">
+        <Grid container justify="space-between" alignItems="center">
           <Hidden smDown>
             <Grid item>
               <MenuButton section={Sections.home} page={page} text={"HOME"} />
@@ -236,7 +227,7 @@ const Header = ({ siteTitle, onChangeThemeMode, page }) => {
               <MenuButton section={Sections.work} page={page} text={"WORK"} />
             </Grid>
           </Hidden>
-          <Grid item>
+          <Grid item className={classes.torch}>
             <Torch onChangeThemeMode={onChangeThemeMode} />
           </Grid>
           <Hidden smDown>

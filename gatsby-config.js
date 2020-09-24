@@ -4,7 +4,7 @@ module.exports = {
   siteMetadata: {
     siteUrl: 'https://seyedalirezafatemi.github.io',
     title: `Seyed Alireza Fatemi Jahromi`,
-    description: `Seyed Alireza Fatemi Jahromi`,
+    description: `Personal Website of Seyed Alireza Fatemi Jahromi`,
     author: `Seyed Alireza Fatemi Jahromi`,
   },
   plugins: [

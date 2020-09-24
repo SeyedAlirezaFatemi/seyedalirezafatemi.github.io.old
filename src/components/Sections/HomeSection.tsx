@@ -3,7 +3,7 @@ import { makeStyles } from "@material-ui/core/styles"
 import clsx from "clsx"
 import React from "react"
 
-import { Avatar } from "../media"
+import { Avatar } from "../Media"
 
 const useStyles = makeStyles(theme => ({
   name: {
