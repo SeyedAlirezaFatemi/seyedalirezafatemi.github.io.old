@@ -2,13 +2,13 @@ import "./hamburgers.css"
 
 import { AppBar, Grid, Hidden, List, ListItem, ListItemText, SwipeableDrawer, Typography } from "@material-ui/core"
 import { makeStyles, useTheme } from "@material-ui/core/styles"
+import clsx from "clsx"
 import { Link } from "gatsby"
 import React, { useCallback } from "react"
 import { Helmet } from "react-helmet"
 
 import { Sections } from "../../../utils"
 import { Torch } from "../../Media"
-import clsx from "clsx"
 
 const colorModeTransition =
   "background 0.25s var(--ease-in-out-quad), color 0.25s var(--ease-in-out-quad)"

@@ -34,6 +34,9 @@ const themeOptions = {
     subtitle1: {
       color: "#96999b",
     },
+    caption: {
+      color: "#96999b",
+    },
   },
 }
 

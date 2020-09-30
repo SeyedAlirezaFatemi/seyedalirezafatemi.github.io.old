@@ -86,7 +86,8 @@ export function WorkSection() {
           <li>
             <Typography align="justify">
               Researching state-of-the-art Deep Learning techniques and applying them to different applications in the
-              medical field, such as digital pathology. My research was focused on the classification and segmentation
+              medical field, such as digital pathology. This was my main objective in this project. My research was
+              focused on the classification and segmentation
               of
               different types of cancer in digital pathology images. I worked with Whole Slide Images from various
               organs
@@ -97,6 +98,15 @@ export function WorkSection() {
           <li>
             <Typography align="justify">
               Meeting with hospital, clinic, and laboratory managers for requirements engineering and data collection.
+            </Typography>
+          </li>
+          <li>
+            <Typography align="justify">
+              During this time, I also led a software team of two plus myself as a side-project. We developed a
+              follow-up automation software used to discharge patients and help hospitals and clinics stay in touch with
+              their patients and coordinate patients' next check-ups. It also provided patients with educational
+              content. We developed this system for Sina Hospital. Some of the technologies we used in this project
+              comprise React, Next.js, GraphQL, WordPress, Django, Firebase.
             </Typography>
           </li>
         </ul>
@@ -111,6 +121,7 @@ export function WorkSection() {
           I was a member of a project funded by Iran's National Elites Foundation and supervised by Prof. Heydarnoori,
           focused on developing a Real-time locating system.
           I worked as a Front-end Web Developer, and my main task was to develop the admin panel of this system.
+          Some of the technologies I used in this project comprise React, Redux, Redux Saga.
         </Typography>
         <Title
           link={"https://rahnemacollege.com/"}
@@ -147,10 +158,25 @@ export function WorkSection() {
           Summer 2020
         </Typography>
         <Typography variant="body1" className={classes.paragraph}>
-          This was the project for Compiler Design course. It is is a compiler for Decaf programming language written in
+          This was the project for Compiler Design course. It is a compiler for Decaf programming language written in
           python using lark. It compiles Decaf to mips assembly language. The code
           is available on <a href="https://github.com/SeyedAlirezaFatemi/decaf-compiler" target="_blank"
                              rel="noopener noreferrer">GitHub</a>.
+        </Typography>
+        <Title
+          link={"https://github.com/SeyedAlirezaFatemi/modern-information-retrieval"}
+          title={"Modern Information Retrieval"}
+        />
+        <Typography variant="subtitle1" className={classes.paragraph}>
+          Spring 2020
+        </Typography>
+        <Typography variant="body1" className={classes.paragraph}>
+          This was the project for Modern Information Retrieval course. The code
+          is available on <a href="https://github.com/SeyedAlirezaFatemi/decaf-compiler" target="_blank"
+                             rel="noopener noreferrer">GitHub</a>.
+          The repo contains different algorithms related to information retrieval including indexing, searching, various
+          evaluation metrics (MAP, F-Measure, R-Precision, NDCG, etc.), classification and clustering algorithms (Naive
+          Bayes, Random Forest, SVM, KNN, and KMeans), etc.
         </Typography>
         <Title
           link={"https://github.com/IAmS4n/CTLabeling"}
@@ -167,7 +193,7 @@ export function WorkSection() {
         </Typography>
         <Title
           link={"https://github.com/SeyedAlirezaFatemi/p2p_network_project"}
-          title={"P2P(A Peer-to-Peer Network)"}
+          title={"P2P (A Peer-to-Peer Network)"}
         />
         <Typography variant="subtitle1" className={classes.paragraph}>
           Fall 2018
@@ -194,7 +220,7 @@ export function WorkSection() {
 
         <Title
           link={"https://github.com/ImanHosseini/JAA"}
-          title={"JAA(Java Arm Accelerator)"}
+          title={"JAA (Java Arm Accelerator)"}
         />
         <Typography variant="subtitle1" className={classes.paragraph}>
           Spring 2017

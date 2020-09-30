@@ -28,7 +28,7 @@ const useStyles = makeStyles(theme => ({
   },
 }))
 
-export function Date({children}){
+export function Date({ children }) {
   const classes = useStyles()
   return (
     <Typography variant="caption" className={classes.date}>
@@ -58,8 +58,11 @@ export function HonorsSection() {
         </li>
         <li>
           <HonorIcon />
-          Ranked <strong>5th</strong> in <a href="https://monusac-2020.grand-challenge.org/Results/" target="_blank"
-                                            rel="noopener noreferrer">MoNuSAC 2020
+          Ranked <strong>5th</strong> in <a
+          href="https://monusac-2020.grand-challenge.org/Results/"
+          target="_blank"
+          rel="noopener noreferrer">
+          Multi-organ Nuclei Segmentation and Classification (MoNuSAC) 2020
           Challenge</a> and Ranked <strong>3rd</strong> in Post-Challenge Leaderboard. MoNuSAC 2020 Challenge was an
           official satellite event of ISBI 2020.
           I was one of the three members of Sharif HooshPardaz Team. We were invited to present
@@ -113,7 +116,7 @@ export function HonorsSection() {
         </li>
         <li>
           <HonorIcon />
-          Ranked <strong>top 0.08</strong> in the National Entrance Exam (Konkoor) among all Iranian Students (Ranked
+          Ranked <strong>top 0.08%</strong> in the National Entrance Exam (Konkoor) among all Iranian Students (Ranked
           131th among approximately 163000 applicants) in Math. & Physics.
           <Date>Summer 2016</Date>
         </li>

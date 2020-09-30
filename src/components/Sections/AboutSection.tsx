@@ -1,3 +1,4 @@
+import { Typography } from "@material-ui/core"
 import { makeStyles, useTheme } from "@material-ui/core/styles"
 import { graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
@@ -42,7 +43,7 @@ export function AboutSection() {
       }
   `)
   return (
-    <div className={classes.about}>
+    <Typography variant="body1" className={classes.about}>
       <Img alt="Quote" fluid={isDark ? data.off.childImageSharp.fluid : data.on.childImageSharp.fluid}
            className={classes.image} />
       Welcome! My name is Seyed Alireza Fatemi Jahromi. I'm currently an undergraduate student of Computer Engineering
@@ -73,7 +74,15 @@ export function AboutSection() {
       hackathons. My favorite games are &quot;The Elder
       Scrolls V: Skyrim&quot; & &quot;Control&quot; & &quot;Fable&quot; and my favorite series are &quot;The
       OA&quot;, &quot;Looking for Alaska&quot;, &quot;Sharp Objects&quot;, &quot;Castle Rock&quot;, &quot;The
-      Magicians&quot;, and &quot;The Witcher&quot;.
-    </div>
+      Magicians&quot;, &quot;The Haunting of Hill House&quot;, and &quot;The Witcher&quot;.
+      <br />
+      <Typography variant="caption">
+        Quote image from <a
+        href="https://dribbble.com/shots/1587554-I-go-to-seek-a-great-perhaps"
+        target="_blank"
+        rel="noopener noreferrer">
+        source</a>
+      </Typography>
+    </Typography>
   )
 }
