@@ -249,12 +249,17 @@ function MobileNavigation() {
   const [open, setOpen] = React.useState(false)
   // @ts-ignore
   const iOS = process.browser && /iPad|iPhone|iPod/.test(navigator.userAgent)
-
-  const toggleDrawer = useCallback((open) => event => {
-    if (event && event.type === "keydown" && (event.key === "Tab" || event.key === "Shift")) {
+  const toggleDrawer = useCallback((open: boolean) => (
+    event: React.KeyboardEvent | React.MouseEvent,
+  ) => {
+    if (
+      event &&
+      event.type === "keydown" &&
+      ((event as React.KeyboardEvent).key === "Tab" ||
+        (event as React.KeyboardEvent).key === "Shift")
+    ) {
       return
     }
-
     setOpen(open)
   }, [setOpen])
 
@@ -290,7 +295,8 @@ function MobileNavigation() {
       </AppBar>
       <div id="navigation">
         <SwipeableDrawer
-          disableBackdropTransition={!iOS} disableDiscovery={iOS}
+          disableBackdropTransition={!iOS}
+          disableDiscovery={iOS}
           open={open}
           onClose={toggleDrawer(false)}
           onOpen={toggleDrawer(true)}
