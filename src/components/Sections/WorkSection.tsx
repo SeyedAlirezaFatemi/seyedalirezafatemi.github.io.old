@@ -72,6 +72,18 @@ export function WorkSection() {
       </Typography>
       <CVSection title={"Work Experiences"}>
         <Title
+          link={""}
+          title={"Robust and Interpretable Machine Learning Lab"}
+        />
+        <Typography variant="subtitle1" className={classes.paragraph}>
+          Researcher | Summer 2020 - Present
+        </Typography>
+        <Typography variant="body1" className={classes.paragraph} align="justify">
+          I'm currently working on my undergraduate thesis in the Robust and Interpretable Machine Learning Lab under
+          the supervision of Prof. Rohban. My thesis is about the use of Semi-Supervised Learning and Self-Supervised
+          Learning in the context of Adversarial Robustness.
+        </Typography>
+        <Title
           link={"https://bmn.ir/"}
           title={"Iran's National Elites Foundation, Shahid Ahmadi Roshan Project"}
         />
@@ -87,12 +99,12 @@ export function WorkSection() {
             <Typography align="justify">
               Researching state-of-the-art Deep Learning techniques and applying them to different applications in the
               medical field, such as digital pathology. This was my main objective in this project. My research was
-              focused on the classification and segmentation
-              of
-              different types of cancer in digital pathology images. I worked with Whole Slide Images from various
-              organs
-              such as Liver, Colon, and Prostate. I also worked on classifying and segmenting Covid-19 patients' CT Scan
-              images and 3D brain MRI images.
+              focused on the classification and segmentation of different types of cancer in digital pathology images. I
+              worked with Whole Slide Images from various
+              organs such as Liver, Colon, and Prostate. I also worked on classifying and segmenting Covid-19 patients'
+              CT Scan images and 3D brain MRI images. I gained experience working with different learning paradigms such
+              as Self-Supervised Learning, Semi-Supervised Learning, Fully-Supervised Learning, Multiple-Instance
+              Learning.
             </Typography>
           </li>
           <li>
