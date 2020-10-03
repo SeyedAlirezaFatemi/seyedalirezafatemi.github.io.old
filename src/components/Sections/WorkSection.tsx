@@ -103,7 +103,7 @@ export function WorkSection() {
               worked with Whole Slide Images from various
               organs such as Liver, Colon, and Prostate. I also worked on classifying and segmenting Covid-19 patients'
               CT Scan images and 3D brain MRI images. I gained experience working with different learning paradigms such
-              as Self-Supervised Learning, Semi-Supervised Learning, Fully-Supervised Learning, Multiple-Instance
+              as Self-Supervised Learning, Semi-Supervised Learning, Fully-Supervised Learning, and Multiple-Instance
               Learning.
             </Typography>
           </li>
