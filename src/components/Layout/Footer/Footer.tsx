@@ -1,8 +1,8 @@
 import { Grid, IconButton, Typography } from "@material-ui/core"
 import { makeStyles } from "@material-ui/core/styles"
+import { Link } from "gatsby"
 import { Email, Github, Instagram, Linkedin, Telegram, Twitter } from "mdi-material-ui"
 import React from "react"
-import { Link } from "gatsby"
 
 const useStyles = makeStyles(theme => ({
   quote: {
