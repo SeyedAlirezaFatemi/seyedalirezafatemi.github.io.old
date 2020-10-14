@@ -31,7 +31,7 @@ module.exports = {
         icon: `static/icon.png`,
       },
     },
-    // `gatsby-plugin-preact`,
+    `gatsby-plugin-preact`,
     "gatsby-plugin-webpack-bundle-analyser-v2",
   ],
 }
