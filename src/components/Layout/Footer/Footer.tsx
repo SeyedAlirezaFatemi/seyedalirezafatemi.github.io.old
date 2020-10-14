@@ -1,7 +1,7 @@
 import { Grid, IconButton, Typography } from "@material-ui/core"
 import { makeStyles } from "@material-ui/core/styles"
 import { Link } from "gatsby"
-import { Email, Github, Instagram, Linkedin, Telegram, Twitter } from "mdi-material-ui"
+import { Email, Github, Gmail, Instagram, Linkedin, Telegram, Twitter } from "mdi-material-ui"
 import React from "react"
 
 const useStyles = makeStyles(theme => ({
@@ -10,7 +10,7 @@ const useStyles = makeStyles(theme => ({
     marginBottom: theme.spacing(1),
   },
   link: {
-    "& a":{
+    "& a": {
       color: theme.palette.text.disabled,
     },
   },
@@ -64,6 +64,11 @@ export function Footer() {
       <a href="mailto:alirezafa@rocketmail.com" target="_blank" rel="noopener noreferrer">
         <IconButton aria-label="Email">
           <Email />
+        </IconButton>
+      </a>
+      <a href="mailto:seyedalirezafatemijahromi@gmail.com" target="_blank" rel="noopener noreferrer">
+        <IconButton aria-label="Gmail">
+          <Gmail />
         </IconButton>
       </a>
       <Grid container item xs={12} justify="center" spacing={1}>

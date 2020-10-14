@@ -50,7 +50,7 @@ export function AboutSection() {
       at Sharif University of Technology.
       My main research focus is on Machine Learning & Visual Computing & AI. I'm fascinated by the
       use of AI and Machine Learning in various fields of Computer Vision & Graphics such as Medical Image Analysis,
-      Satellite & Aerial Image Analysis, Art & Image Generation, Deepfakes, Image Enhancement, etc.
+      Satellite & Aerial Image Analysis, Art & Image Generation, AI Rendering, Deepfakes, Image Enhancement, etc.
       <br />
       During the time I worked as a researcher at Shahid Ahmadi Roshan Project, I gained experience and knowledge of
       different machine learning and deep learning algorithms.
@@ -60,6 +60,10 @@ export function AboutSection() {
       scans of Covid-19 patients, classification of EEG signals, etc. I also have a lot of experience in designing and
       implementing mobile and web applications. I've worked with various frameworks and libraries such as React, React
       Native, Gatsby, Next, Django, Flask, etc.
+      <br />
+      I'm currently working on my undergraduate thesis in the Robust and Interpretable Machine Learning Lab under the
+      supervision of Prof. Rohban. My thesis is about the use of Self-Supervised Learning and Semi-Supervised Learning
+      in the context of Adversarial Robustness.
       <br />
       I plan to expand my knowledge in Artificial Intelligence & Visual Computing & Software Engineering. I
       believe that with knowledge and skills in these fields, we can create innovative products and solutions that can
@@ -74,7 +78,7 @@ export function AboutSection() {
       hackathons. My favorite games are &quot;The Elder
       Scrolls V: Skyrim&quot; & &quot;Control&quot; & &quot;Fable&quot; and my favorite series are &quot;The
       OA&quot;, &quot;Looking for Alaska&quot;, &quot;Sharp Objects&quot;, &quot;Castle Rock&quot;, &quot;The
-      Magicians&quot;, &quot;The Haunting of Hill House&quot;, and &quot;The Witcher&quot;.
+      Magicians&quot;, &quot;The Haunting of Hill House&quot;, "The Haunting of Bly Manor", and &quot;The Witcher&quot;.
       <br />
       <Typography variant="caption">
         Quote image from <a

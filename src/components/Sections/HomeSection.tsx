@@ -4,6 +4,7 @@ import clsx from "clsx"
 import React from "react"
 
 import { Avatar } from "../Media"
+import { HonorIcon } from "./HonorsSection"
 
 const useStyles = makeStyles(theme => ({
   name: {
@@ -42,6 +43,13 @@ const useStyles = makeStyles(theme => ({
     marginTop: theme.spacing(2),
     marginBottom: theme.spacing(2),
   },
+  honorsList: {
+    listStyle: "none",
+    textAlign: "justify",
+    "& li": {
+      marginBottom: theme.spacing(2),
+    },
+  },
 }))
 
 export function CVSection({ title, children }) {
@@ -53,6 +61,30 @@ export function CVSection({ title, children }) {
         {children}
       </div>
     </div>
+  )
+}
+
+export function News() {
+
+  const classes = useStyles()
+  return (
+    <CVSection title={"News"}>
+      <Typography variant="body2" className={classes.interests}>
+        <ul className={classes.honorsList}>
+          <li>
+            <HonorIcon /> Ranked among the <strong>top 10</strong> teams in <a
+            href="https://paip2020.grand-challenge.org/"
+            target="_blank" rel="noopener noreferrer">PAIP2020 Challenge</a>. We are invited to present our method
+            at the 2020
+            virtual KOSOMBE Conference: PAIP2020, AI Pathology Challenge Workshop - South Korea, Nov 12, 2020.
+            I am one of the two members of Sharif HooshPardaz Team, Supervised by Prof. Soleymani and Prof. Behroozi.
+            The challenge is about the automated classification of molecular subtypes in colorectal cancer for
+            whole-slide image analysis and its task comprises MSI-H prediction and segmentation of the whole tumor area.
+            Final ranking not disclosed yet.
+          </li>
+        </ul>
+      </Typography>
+    </CVSection>
   )
 }
 
@@ -87,6 +119,9 @@ export function HomeSection() {
           </Typography>
         </Grid>
       </Grid>
+
+      <Divider />
+      <News />
 
       <Divider />
       <CVSection title={"Research Interests"}>
@@ -132,18 +167,16 @@ export function HomeSection() {
       <CVSection title={"Publications"}>
         <Typography variant="body2">
           <ol className={classes.interestsList}>
-            <li>* A. Khani, <strong>S.A. Fatemi Jahromi</strong>, H. Otroshi Shahreza, H. Behroozi, M. Soleymani Baghshah,
+            <li>* A. Khani, <strong>S.A. Fatemi Jahromi</strong>, H. Otroshi Shahreza, H. Behroozi, M. Soleymani
+              Baghshah,
               <a href="https://ieeexplore.ieee.org/document/9066019" target="_blank" rel="noreferrer"><i>&quot;Towards
-                Automatic Prostate Gleason Grading
-                via
-                Deep Convolutional Neural Networks&quot;</i></a>, The 5th Iranian
+                Automatic Prostate Gleason Grading via Deep Convolutional Neural Networks&quot;</i></a>, The 5th Iranian
               Conference on Signal Processing and Intelligent Systems (ICSPIS 2019), Shahrood, Iran, 2019
             </li>
             <li>
-              * <strong>S.A. Fatemi Jahromi</strong>, A. Khani, H. Otroshi Shahreza, B. Otroshi Shahreza, H. Behroozi, M.
-              Soleymani Baghshah, <i>&quot;A Deep Learning Framework for Viable Tumor Burden Estimation&quot;</i>, To be
-              submitted
-              soon
+              * <strong>S.A. Fatemi Jahromi</strong>, A. Khani, H. Otroshi Shahreza, B. Otroshi Shahreza, H. Behroozi,
+              M. Soleymani Baghshah, <i>&quot;A Deep Learning Framework for Viable Tumor Burden Estimation&quot;</i>, To
+              be submitted soon
             </li>
           </ol>
         </Typography>

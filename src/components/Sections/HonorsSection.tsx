@@ -1,6 +1,6 @@
 import { Typography } from "@material-ui/core"
 import { makeStyles, useTheme } from "@material-ui/core/styles"
-import React, { useCallback } from "react"
+import React from "react"
 
 const useStyles = makeStyles(theme => ({
   name: {
@@ -37,13 +37,16 @@ export function Date({ children }) {
   )
 }
 
-export function HonorsSection() {
-  const classes = useStyles()
+export function HonorIcon() {
   const theme = useTheme()
   const isDark = theme.palette.type === "dark"
-  const HonorIcon = useCallback(() => (
-    <img src={isDark ? "/trophy_dark.svg" : "/trophy_light.svg"} alt="Honor" width={24}
-         className={classes.icon} />), [isDark])
+  const classes = useStyles()
+  return (<img src={isDark ? "/trophy_dark.svg" : "/trophy_light.svg"} alt="Honor" width={24}
+               className={classes.icon} />)
+}
+
+export function HonorsSection() {
+  const classes = useStyles()
   return (
     <>
       <Typography variant="h5" className={classes.name} align="center">
@@ -55,6 +58,17 @@ export function HonorsSection() {
           Recipient of the grant and membership of <strong>Iran&apos;s National Elites Foundation</strong>, for
           outstanding academic success and participation in Shahid Ahmadi Roshan Project.
           <Date>Summer 2016 - Present</Date>
+        </li>
+        <li>
+          <HonorIcon /> Ranked among the <strong>top 10</strong> teams in <a
+          href="https://paip2020.grand-challenge.org/"
+          target="_blank" rel="noopener noreferrer">PAIP2020 Challenge</a>. We are invited to present our method
+          at the 2020
+          virtual KOSOMBE Conference: PAIP2020, AI Pathology Challenge Workshop - South Korea, Nov 12, 2020.
+          I am one of the two members of Sharif HooshPardaz Team, Supervised by Prof. Soleymani and Prof. Behroozi.
+          The challenge is about the automated classification of molecular subtypes in colorectal cancer for
+          whole-slide image analysis and its task comprises MSI-H prediction and segmentation of the whole tumor area.
+          Final ranking not disclosed yet.
         </li>
         <li>
           <HonorIcon />
