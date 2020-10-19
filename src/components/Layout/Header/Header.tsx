@@ -201,15 +201,13 @@ const MenuButton = ({ section, page, text }) => {
   )
 }
 
-const Header = ({ siteTitle, onChangeThemeMode, page }) => {
+const Header = ({ onChangeThemeMode, page }) => {
   const classes = useStyles()
+  const theme = useTheme()
   return (
     <header className={classes.header}>
       <Helmet>
-        <meta httpEquiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
-        <meta httpEquiv="Pragma" content="no-cache" />
-        <meta httpEquiv="Expires" content="0" />
-        <title>{siteTitle}</title>
+        <meta name="theme-color" content={theme.palette.background.default} />
       </Helmet>
       <Grid container alignItems="center" justify="center">
         <Grid container alignItems="center" justify="center">
@@ -306,10 +304,6 @@ function MobileNavigation() {
       </div>
     </nav>
   )
-}
-
-Header.defaultProps = {
-  siteTitle: ``,
 }
 
 export default Header

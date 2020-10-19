@@ -25,8 +25,9 @@ module.exports = {
         name: `Seyed Alireza Fatemi Jahromi`,
         short_name: `Fatemi`,
         start_url: `/`,
-        background_color: `#fff`,
-        theme_color: `#fff`,
+        background_color: `#fafafa`,
+        theme_color: `#fafafa`,
+        theme_color_in_head: false, // This will avoid adding theme-color meta tag.
         display: `standalone`,
         icon: `static/icon.png`,
       },
