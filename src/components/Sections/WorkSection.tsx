@@ -91,25 +91,19 @@ export function WorkSection() {
           Researcher | Spring 2019 - Summer 2020 (18 months)
         </Typography>
         <Typography variant="body1" className={classes.paragraph} align="justify">
-          I was a member of a project funded by Iran's National Elites Foundation and supervised by Prof.
-          Behroozi and Prof. Soleymani, focused on Medical Image Analysis. My Responsibilities included:
+          I was a member of a project funded by Iran's National Elites Foundation, supervised by Prof. Behroozi and
+          Prof. Soleymani, and focused on Medical Image Analysis.
         </Typography>
         <ul className={classes.workResponsibilitiesList}>
           <li>
             <Typography align="justify">
-              Researching state-of-the-art Deep Learning techniques and applying them to different applications in the
-              medical field, such as digital pathology. This was my main objective in this project. My research was
-              focused on the classification and segmentation of different types of cancer in digital pathology images. I
-              worked with Whole Slide Images from various
-              organs such as Liver, Colon, and Prostate. I also worked on classifying and segmenting Covid-19 patients'
-              CT Scan images and 3D brain MRI images. I gained experience working with different learning paradigms such
-              as Self-Supervised Learning, Semi-Supervised Learning, Fully-Supervised Learning, and Multiple-Instance
-              Learning.
-            </Typography>
-          </li>
-          <li>
-            <Typography align="justify">
-              Meeting with hospital, clinic, and laboratory managers for requirements engineering and data collection.
+              My main objective in this project was to research state-of-the-art Deep Learning and Computer Vision
+              methods and apply them to different applications in Medical Image Analysis. My research was focused on the
+              classification and segmentation of different types of cancer in digital pathology images. I worked with
+              gigapixel whole slide images from various organs such as the Liver, Colon, and Prostate. I also worked on
+              classifying and segmenting COVID-19 patients' CT Scan images and 3D brain MRI images. I gained experience
+              working with different learning paradigms such as Self-Supervised Learning, Semi-Supervised Learning, and
+              Multiple-Instance Learning.
             </Typography>
           </li>
           <li>
@@ -131,9 +125,9 @@ export function WorkSection() {
         </Typography>
         <Typography variant="body1" className={classes.paragraph} align="justify">
           I was a member of a project funded by Iran's National Elites Foundation and supervised by Prof. Heydarnoori,
-          focused on developing a Real-time locating system.
-          I worked as a Front-end Web Developer, and my main task was to develop the admin panel of this system.
-          Some of the technologies I used in this project comprise React, Redux, Redux Saga.
+          focused on developing a Real-time locating system. I worked as a Front-end Web Developer, and my main task was
+          to create the admin panel of this system. Some of the technologies I used in this project comprise React,
+          Redux, Redux-Saga.
         </Typography>
         <Title
           link={"https://rahnemacollege.com/"}
