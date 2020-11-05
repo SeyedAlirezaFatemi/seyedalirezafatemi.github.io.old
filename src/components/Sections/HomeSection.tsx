@@ -143,7 +143,7 @@ export function HomeSection() {
               Sharif University of Technology
             </Typography>
             <Typography variant="subtitle2" className={classes.paragraph}>
-              GPA: 18.62/20
+              GPA: 18.62/20 (3.9/4) | Last two years' GPA: 19.36/20 (4/4)
             </Typography>
             <Typography variant="subtitle1" className={classes.paragraph}>
               Bachelor of Science in Computer Engineering | Tehran | 2016 – Current

@@ -118,7 +118,9 @@ export function HonorsSection() {
           organized by <a
           href="http://nbml.ir/EN/posts/732364"
           target="_blank" rel="noopener noreferrer"
-        >National Brain Mapping Lab (NBML)</a>.
+        >National Brain Mapping Lab (NBML)</a>. <a
+          href="NBML.pdf"
+          target="_blank" rel="noopener noreferrer">Certificate</a>.
           <Date>Summer 2019</Date>
         </li>
         <li>

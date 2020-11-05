@@ -68,9 +68,9 @@ export function WorkSection() {
   return (
     <>
       <Typography variant="h5" className={classes.name} align="center">
-        Seyed Alireza Fatemi Jahromi Work
+        Seyed Alireza Fatemi Jahromi Research & Work
       </Typography>
-      <CVSection title={"Work Experiences"}>
+      <CVSection title={"Research & Work Experiences"}>
         <Title
           link={""}
           title={"Robust and Interpretable Machine Learning Lab"}
@@ -100,7 +100,7 @@ export function WorkSection() {
               My main objective in this project was to research state-of-the-art Deep Learning and Computer Vision
               methods and apply them to different applications in Medical Image Analysis. My research was focused on the
               classification and segmentation of different types of cancer in digital pathology images. I worked with
-              gigapixel whole slide images from various organs such as the Liver, Colon, and Prostate. I also worked on
+              gigapixel whole-slide images from various organs such as the Liver, Colon, and Prostate. I also worked on
               classifying and segmenting COVID-19 patients' CT Scan images and 3D brain MRI images. I gained experience
               working with different learning paradigms such as Self-Supervised Learning, Semi-Supervised Learning, and
               Multiple-Instance Learning.
@@ -134,7 +134,9 @@ export function WorkSection() {
           title={"Rahnema College"}
         />
         <Typography variant="subtitle1" className={classes.paragraph}>
-          Software Engineer & Team Leader | Summer 2018
+          Software Engineer & Team Leader | Summer 2018 | <a
+          href="RahnemaCollege.pdf"
+          target="_blank" rel="noopener noreferrer">Certificate</a>
         </Typography>
         <Typography variant="body1" className={classes.paragraph} align="justify">
           During the 7-week internship program, I gained experience in the following areas of Software Development:
