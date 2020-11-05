@@ -44,7 +44,8 @@ const useStyles = makeStyles(theme => ({
     marginBottom: theme.spacing(2),
   },
   honorsList: {
-    listStyle: "none",
+    listStyle: "none !important",
+    paddingLeft: 0,
     textAlign: "justify",
     "& li": {
       marginBottom: theme.spacing(2),
@@ -65,7 +66,6 @@ export function CVSection({ title, children }) {
 }
 
 export function News() {
-
   const classes = useStyles()
   return (
     <CVSection title={"News"}>
@@ -79,7 +79,7 @@ export function News() {
             virtual KOSOMBE Conference: PAIP2020, AI Pathology Challenge Workshop - South Korea, Nov 12, 2020.
             I am one of the two members of Sharif HooshPardaz Team, Supervised by Prof. Soleymani and Prof. Behroozi.
             The challenge is about the automated classification of molecular subtypes in colorectal cancer for
-            whole-slide image analysis and its task comprises MSI-H prediction and segmentation of the whole tumor area.
+            whole-slide image analysis and its tasks comprise MSI-H prediction and segmentation of the whole tumor area.
             Final ranking not disclosed yet.
           </li>
         </ul>
