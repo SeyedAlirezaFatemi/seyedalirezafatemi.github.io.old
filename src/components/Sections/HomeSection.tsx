@@ -143,7 +143,7 @@ export function HomeSection() {
               Sharif University of Technology
             </Typography>
             <Typography variant="subtitle2" className={classes.paragraph}>
-              GPA: 18.62/20 (3.9/4) | Last two years' GPA: 19.36/20 (4/4)
+              GPA: <strong>18.62/20</strong> (<strong>3.9/4</strong>) | Last two years' GPA: <strong>19.36/20</strong> (<strong>4/4</strong>)
             </Typography>
             <Typography variant="subtitle1" className={classes.paragraph}>
               Bachelor of Science in Computer Engineering | Tehran | 2016 – Current
@@ -154,10 +154,34 @@ export function HomeSection() {
               Shahid Dastgheib High School
             </Typography>
             <Typography variant="subtitle2" className={classes.paragraph}>
-              GPA: 19.69/20
+              GPA: <strong>19.69/20</strong>
             </Typography>
             <Typography variant="subtitle1" className={classes.paragraph}>
               Diploma | National Organization for Development of Exceptional Talents(NODET) | Shiraz | 2012 – 2016
+            </Typography>
+          </li>
+        </ul>
+      </CVSection>
+
+      <Divider />
+      <CVSection title={"Languages"}>
+        <ul>
+          <li>
+            <Typography variant="body1" className={clsx(classes.paragraph, classes.headline)}>
+              Persian
+            </Typography>
+            <Typography variant="subtitle2" className={classes.paragraph}>
+              Mother Tongue
+            </Typography>
+          </li>
+          <li>
+            <Typography variant="body1" className={clsx(classes.paragraph, classes.headline)}>
+              English
+            </Typography>
+            <Typography variant="subtitle2" className={classes.paragraph}>
+              Fluent | TOEFL (31 October 2020): Internet-Based Test <strong>113/120</strong><br />
+              Reading(<strong>30/30</strong>), Listening(<strong>30/30</strong>), Speaking(<strong>26/30</strong>),
+              Writing(<strong>27/30</strong>)
             </Typography>
           </li>
         </ul>
