@@ -60,15 +60,13 @@ export function HonorsSection() {
           <Date>Summer 2016 - Present</Date>
         </li>
         <li>
-          <HonorIcon /> Ranked among the <strong>top 10</strong> teams in <a
-          href="https://paip2020.grand-challenge.org/"
-          target="_blank" rel="noopener noreferrer">PAIP2020 Challenge</a>. We are invited to present our method
-          at the 2020
-          virtual KOSOMBE Conference: PAIP2020, AI Pathology Challenge Workshop - South Korea, Nov 12, 2020.
-          I am one of the two members of Sharif HooshPardaz Team, Supervised by Prof. Soleymani and Prof. Behroozi.
-          The challenge is about the automated classification of molecular subtypes in colorectal cancer for
+          <HonorIcon />Ranked <strong>5th</strong> in <a
+          href="https://paip2020.grand-challenge.org/rank/"
+          target="_blank" rel="noopener noreferrer">PAIP2020 Challenge</a>. I presented our method
+          at the 2020 virtual KOSOMBE Conference: PAIP2020, AI Pathology Challenge Workshop - South Korea, Nov 12,
+          2020. I was one of the two members of Sharif HooshPardaz Team, Supervised by Prof. Soleymani and Prof.
+          Behroozi. The challenge was about the automated classification of molecular subtypes in colorectal cancer for
           whole-slide image analysis and its tasks comprise MSI-H prediction and segmentation of the whole tumor area.
-          Final ranking not disclosed yet.
           <Date>Fall 2020</Date>
         </li>
         <li>
@@ -82,7 +80,7 @@ export function HonorsSection() {
           MoNuSAC 2020 Challenge was an
           official satellite event of ISBI 2020.
           I was one of the three members of Sharif HooshPardaz Team, Supervised by Prof. Soleymani and Prof. Behroozi.
-          We were invited to present our method in the MoNuSAC 2020 Workshop. <a
+          I presented our method in the MoNuSAC 2020 Workshop. <a
           href="MoNuSAC2020.pdf"
           target="_blank" rel="noopener noreferrer">
           Certificate of Participation</a>.
