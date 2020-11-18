@@ -135,7 +135,7 @@ export function WorkSection() {
         />
         <Typography variant="subtitle1" className={classes.paragraph}>
           Software Engineer & Team Leader | Summer 2018 | <a
-          href="RahnemaCollege.pdf"
+          href="/RahnemaCollege.pdf"
           target="_blank" rel="noopener noreferrer">Certificate</a>
         </Typography>
         <Typography variant="body1" className={classes.paragraph} align="justify">

@@ -77,7 +77,8 @@ export function News() {
             target="_blank" rel="noopener noreferrer">PAIP2020 Challenge</a>. I presented our method
             at the 2020 virtual KOSOMBE Conference: PAIP2020, AI Pathology Challenge Workshop - South Korea, Nov 12,
             2020. I was one of the two members of Sharif HooshPardaz Team, Supervised by Prof. Soleymani and Prof.
-            Behroozi. The challenge was about the automated classification of molecular subtypes in colorectal cancer for
+            Behroozi. The challenge was about the automated classification of molecular subtypes in colorectal cancer
+            for
             whole-slide image analysis and its tasks comprise MSI-H prediction and segmentation of the whole tumor area.
           </li>
         </ul>
@@ -99,7 +100,7 @@ export function HomeSection() {
         </Grid>
         <Grid item md={8} xs={12}>
           <Typography variant="body1" className={classes.paragraph}>
-            Computer Engineering Student Specializing in Machine Learning & Visual Computing
+            Computer Engineering Student Specializing in Visual Computing & Machine Learning
           </Typography>
           <Typography variant="subtitle1" className={classes.paragraph}>
             Born October 8<sup>th</sup>, 1998
@@ -113,7 +114,7 @@ export function HomeSection() {
             <a href="https://www.linkedin.com/in/seyed-alireza-fatemi-jahromi" target="_blank"
                rel="noopener noreferrer">LinkedIn</a>
             <br />
-            <a href="SeyedAlirezaFatemiJahromi.pdf" target="_blank" rel="noreferrer">Download CV</a>
+            <a href="/SeyedAlirezaFatemiJahromi.pdf" target="_blank" rel="noreferrer">Download CV</a>
           </Typography>
         </Grid>
       </Grid>
@@ -127,8 +128,9 @@ export function HomeSection() {
           <ul className={classes.interestsList}>
             <li>Computer Vision & Graphics</li>
             <li>Machine Learning & Deep Learning</li>
+            <li>Geometry Processing</li>
             <li>Artificial Intelligence</li>
-            <li>Software Engineering</li>
+            {/*<li>Software Engineering</li>*/}
           </ul>
         </Typography>
       </CVSection>
@@ -196,9 +198,9 @@ export function HomeSection() {
               Conference on Signal Processing and Intelligent Systems (ICSPIS 2019), Shahrood, Iran, 2019
             </li>
             <li>
-              * <strong>S.A. Fatemi Jahromi</strong>, A. Khani, H. Otroshi Shahreza, B. Otroshi Shahreza, H. Behroozi,
-              M. Soleymani Baghshah, <i>&quot;A Deep Learning Framework for Viable Tumor Burden Estimation&quot;</i>, To
-              be submitted soon
+              * <strong>S.A. Fatemi Jahromi</strong>, A. Khani, H. Otroshi Shahreza, H. Behroozi,
+              M. Soleymani Baghshah, <i>&quot;A Deep Learning Framework for Viable Tumor Burden Estimation&quot;</i>,
+              The 6th Iranian Conference on Signal Processing and Intelligent Systems (ICSPIS 2020), Mashhad, Iran, 2020
             </li>
           </ol>
         </Typography>

@@ -66,7 +66,10 @@ export function HonorsSection() {
           at the 2020 virtual KOSOMBE Conference: PAIP2020, AI Pathology Challenge Workshop - South Korea, Nov 12,
           2020. I was one of the two members of Sharif HooshPardaz Team, Supervised by Prof. Soleymani and Prof.
           Behroozi. The challenge was about the automated classification of molecular subtypes in colorectal cancer for
-          whole-slide image analysis and its tasks comprise MSI-H prediction and segmentation of the whole tumor area.
+          whole-slide image analysis and its tasks comprise MSI-H prediction and segmentation of the whole tumor area. <a
+          href="/PAIP2020.pdf"
+          target="_blank" rel="noopener noreferrer">
+          Certificate</a>.
           <Date>Fall 2020</Date>
         </li>
         <li>
@@ -81,7 +84,7 @@ export function HonorsSection() {
           official satellite event of ISBI 2020.
           I was one of the three members of Sharif HooshPardaz Team, Supervised by Prof. Soleymani and Prof. Behroozi.
           I presented our method in the MoNuSAC 2020 Workshop. <a
-          href="MoNuSAC2020.pdf"
+          href="/MoNuSAC2020.pdf"
           target="_blank" rel="noopener noreferrer">
           Certificate of Participation</a>.
           <Date>Spring 2020</Date>
@@ -92,13 +95,17 @@ export function HonorsSection() {
           target="_blank" rel="noopener noreferrer"
           href="http://vccup.sharif.ir/11/%db%8c%d8%a7%d8%b2%d8%af%d9%87%d9%85%db%8c%d9%86-%d8%ac%d8%b4%d9%86%d9%88%d8%a7%d8%b1%d9%87-%da%a9%d8%a7%d8%b1%d8%a2%d9%81%d8%b1%db%8c%d9%86%db%8c-%da%a9%d8%b3%d8%a8%e2%80%8c%d9%88%da%a9%d8%a7%d8%b1/">Sharif
           VC Cup</a>.
-          I was a member of Sharif HooshPardaz Team.
+          I was a member of Sharif HooshPardaz Team. <a
+          href="/VCCup.png"
+          target="_blank" rel="noopener noreferrer">Picture</a>.
           <Date>Winter 2020</Date>
         </li>
         <li>
           <HonorIcon />
           Reached the final stage of Artificial Intelligence Challenge in Medical Imaging 2019, Intelligent Assessment
-          of Imaging Biomarkers of Dementia.
+          of Imaging Biomarkers of Dementia. <a
+          href="/NBML-2.jpg"
+          target="_blank" rel="noopener noreferrer">Picture</a>.
           <Date>Fall 2019</Date>
         </li>
         <li>
@@ -117,7 +124,9 @@ export function HonorsSection() {
           href="http://nbml.ir/EN/posts/732364"
           target="_blank" rel="noopener noreferrer"
         >National Brain Mapping Lab (NBML)</a>. <a
-          href="NBML.pdf"
+          href="/NBML-1.jpg"
+          target="_blank" rel="noopener noreferrer">Picture</a> + <a
+          href="/NBML.pdf"
           target="_blank" rel="noopener noreferrer">Certificate</a>.
           <Date>Summer 2019</Date>
         </li>
@@ -127,12 +136,16 @@ export function HonorsSection() {
           <a
             href="http://ictchallenge.sharif.ir/?page_id=6798"
             target="_blank" rel="noopener noreferrer"
-          >Sharif ICT Challenge (Fintech)</a> among 65 chosen teams.
+          >Sharif ICT Challenge (Fintech)</a> among 65 chosen teams. <a
+          href="/Fintech.jpg"
+          target="_blank" rel="noopener noreferrer">Picture</a>.
           <Date>Summer 2019</Date>
         </li>
         <li>
           <HonorIcon />
-          Ranked <strong>12th</strong> in code-cup contest among approximately 3100 participants.
+          Ranked <strong>12th</strong> in code-cup contest among approximately 3100 participants. <a
+          href="/code-cup.jpg"
+          target="_blank" rel="noopener noreferrer">Picture</a>.
           <Date>Fall 2018</Date>
         </li>
         <li>
