@@ -128,7 +128,7 @@ export function HomeSection() {
           <ul className={classes.interestsList}>
             <li>Computer Vision & Graphics</li>
             <li>Machine Learning & Deep Learning</li>
-            <li>Geometry Processing</li>
+            <li>Geometry Processing & Geometric Deep Learning</li>
             <li>Artificial Intelligence</li>
             {/*<li>Software Engineering</li>*/}
           </ul>
