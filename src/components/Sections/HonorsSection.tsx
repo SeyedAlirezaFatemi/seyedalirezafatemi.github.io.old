@@ -66,10 +66,11 @@ export function HonorsSection() {
           at the 2020 virtual KOSOMBE Conference: PAIP2020, AI Pathology Challenge Workshop - South Korea, Nov 12,
           2020. I was one of the two members of Sharif HooshPardaz Team, Supervised by Prof. Soleymani and Prof.
           Behroozi. The challenge was about the automated classification of molecular subtypes in colorectal cancer for
-          whole-slide image analysis and its tasks comprise MSI-H prediction and segmentation of the whole tumor area. <a
+          whole-slide image analysis and its tasks comprise MSI-H prediction and segmentation of the whole tumor area.
+          Joint paper with the challenge organizers and participants on the way! <a
           href="/PAIP2020.pdf"
           target="_blank" rel="noopener noreferrer">
-          Certificate</a>.
+          Certificate of Award</a>.
           <Date>Fall 2020</Date>
         </li>
         <li>
@@ -83,7 +84,8 @@ export function HonorsSection() {
           MoNuSAC 2020 Challenge was an
           official satellite event of ISBI 2020.
           I was one of the three members of Sharif HooshPardaz Team, Supervised by Prof. Soleymani and Prof. Behroozi.
-          I presented our method in the MoNuSAC 2020 Workshop. <a
+          I presented our method in the MoNuSAC 2020 Workshop. Joint paper with the challenge organizers and participants on
+          the way! <a
           href="/MoNuSAC2020.pdf"
           target="_blank" rel="noopener noreferrer">
           Certificate of Participation</a>.
