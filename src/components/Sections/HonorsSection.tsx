@@ -50,7 +50,7 @@ export function HonorsSection() {
   return (
     <>
       <Typography variant="h5" className={classes.name} align="center">
-        Seyed Alireza Fatemi Jahromi Honors
+        Honors
       </Typography>
       <ul className={classes.honorsList}>
         <li>
@@ -62,12 +62,12 @@ export function HonorsSection() {
         <li>
           <HonorIcon />Ranked <strong>5th</strong> in <a
           href="https://paip2020.grand-challenge.org/rank/"
-          target="_blank" rel="noopener noreferrer">PAIP2020 Challenge</a>. I presented our method
-          at the 2020 virtual KOSOMBE Conference: PAIP2020, AI Pathology Challenge Workshop - South Korea, Nov 12,
-          2020. I was one of the two members of Sharif HooshPardaz Team, Supervised by Prof. Soleymani and Prof.
-          Behroozi. The challenge was about the automated classification of molecular subtypes in colorectal cancer for
-          whole-slide image analysis and its tasks comprise MSI-H prediction and segmentation of the whole tumor area.
-          Joint paper with the challenge organizers and participants on the way! <a
+          target="_blank" rel="noopener noreferrer">PAIP2020 Challenge</a>. I presented our method at the AI Pathology
+          Challenge Workshop at the Virtual KOSOMBE Conference, South Korea, on Nov 12, 2020. I was one of the two
+          members of Sharif HooshPardaz Team, Supervised by Prof. Soleymani and Prof. Behroozi. The challenge was about
+          the automated classification of molecular subtypes in colorectal cancer for whole-slide image analysis. It
+          consisted of two tasks, MSI-High Classification, and Whole Tumor Area Segmentation. Joint paper with the
+          challenge organizers and participants in the works. <a
           href="/PAIP2020.pdf"
           target="_blank" rel="noopener noreferrer">
           Certificate of Award</a>.
@@ -84,8 +84,8 @@ export function HonorsSection() {
           MoNuSAC 2020 Challenge was an
           official satellite event of ISBI 2020.
           I was one of the three members of Sharif HooshPardaz Team, Supervised by Prof. Soleymani and Prof. Behroozi.
-          I presented our method in the MoNuSAC 2020 Workshop. Joint paper with the challenge organizers and participants on
-          the way! <a
+          I presented our method at the MoNuSAC 2020 Workshop. Joint paper with the challenge organizers and
+          participants in the works. <a
           href="/MoNuSAC2020.pdf"
           target="_blank" rel="noopener noreferrer">
           Certificate of Participation</a>.
@@ -104,19 +104,19 @@ export function HonorsSection() {
         </li>
         <li>
           <HonorIcon />
-          Reached the final stage of Artificial Intelligence Challenge in Medical Imaging 2019, Intelligent Assessment
-          of Imaging Biomarkers of Dementia. <a
+          Reached the final stage of Artificial Intelligence Challenge in Medical Imaging focused on Intelligent
+          Assessment of Imaging Biomarkers of Dementia. <a
           href="/NBML-2.jpg"
           target="_blank" rel="noopener noreferrer">Picture</a>.
           <Date>Fall 2019</Date>
         </li>
         <li>
           <HonorIcon />
-          Ranked <strong>8th</strong> in the <a
+          Ranked <strong>8th</strong> in <a
           target="_blank" rel="noopener noreferrer"
-          href="https://gleason2019.grand-challenge.org/Results/">MICCAI Automatic
-          Prostate Gleason Grading Challenge 2019</a>. We were invited to present our method in MICCAI 2019 conference,
-          which was held in October 2019, Shenzhen, China.
+          href="https://gleason2019.grand-challenge.org/Results/">Gleason 2019 Challenge</a>, one of the three
+          challenges under the MICCAI 2019 Grand Challenge for Pathology. I presented our method at the Gleason 2019
+          Workshop.
           <Date>Fall 2019</Date>
         </li>
         <li>

@@ -61,11 +61,11 @@ export function Footer() {
           <Telegram />
         </IconButton>
       </a>
-      <a href="mailto:alirezafa@rocketmail.com" target="_blank" rel="noopener noreferrer">
-        <IconButton aria-label="Email">
-          <Email />
-        </IconButton>
-      </a>
+      {/*<a href="mailto:alirezafa@rocketmail.com" target="_blank" rel="noopener noreferrer">*/}
+      {/*  <IconButton aria-label="Email">*/}
+      {/*    <Email />*/}
+      {/*  </IconButton>*/}
+      {/*</a>*/}
       <a href="mailto:seyedalirezafatemijahromi@gmail.com" target="_blank" rel="noopener noreferrer">
         <IconButton aria-label="Gmail">
           <Gmail />
@@ -83,6 +83,7 @@ export function Footer() {
       <Grid item xs={12} className={classes.quote}>
         <Typography variant="subtitle1" align="center">
           "I choose the labyrinth."
+          {/*― John Green*/}
         </Typography>
       </Grid>
       <Grid item xs={12} container justify="center">

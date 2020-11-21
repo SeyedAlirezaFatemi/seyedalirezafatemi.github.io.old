@@ -68,7 +68,7 @@ export function WorkSection() {
   return (
     <>
       <Typography variant="h5" className={classes.name} align="center">
-        Seyed Alireza Fatemi Jahromi Research & Work
+        Research & Work
       </Typography>
       <CVSection title={"Research & Work Experiences"}>
         <Title
@@ -76,7 +76,7 @@ export function WorkSection() {
           title={"Robust and Interpretable Machine Learning Lab"}
         />
         <Typography variant="subtitle1" className={classes.paragraph}>
-          Researcher | Summer 2020 - Present
+          Research Assistant | Summer 2020 - Present
         </Typography>
         <Typography variant="body1" className={classes.paragraph} align="justify">
           I'm currently working on my undergraduate thesis in the Robust and Interpretable Machine Learning Lab under
@@ -88,11 +88,11 @@ export function WorkSection() {
           title={"Iran's National Elites Foundation, Shahid Ahmadi Roshan Project"}
         />
         <Typography variant="subtitle1" className={classes.paragraph}>
-          Researcher | Spring 2019 - Summer 2020 (18 months)
+          Research Assistant | Spring 2019 - Summer 2020 (18 months)
         </Typography>
         <Typography variant="body1" className={classes.paragraph} align="justify">
           I was a member of a project funded by Iran's National Elites Foundation, supervised by Prof. Behroozi and
-          Prof. Soleymani, and focused on Medical Image Analysis.
+          Prof. Soleymani, and focused on Medical Image Analysis using Deep Learning.
         </Typography>
         <ul className={classes.workResponsibilitiesList}>
           <li>
@@ -127,7 +127,7 @@ export function WorkSection() {
           I was a member of a project funded by Iran's National Elites Foundation and supervised by Prof. Heydarnoori,
           focused on developing a Real-time locating system. I worked as a Front-end Web Developer, and my main task was
           to create the admin panel of this system. Some of the technologies I used in this project comprise React,
-          Redux, Redux-Saga.
+          Redux, and Redux-Saga.
         </Typography>
         <Title
           link={"https://rahnemacollege.com/"}

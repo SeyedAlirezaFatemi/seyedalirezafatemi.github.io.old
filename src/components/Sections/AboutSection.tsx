@@ -46,11 +46,11 @@ export function AboutSection() {
     <Typography variant="body1" className={classes.about}>
       <Img alt="Quote" fluid={isDark ? data.off.childImageSharp.fluid : data.on.childImageSharp.fluid}
            className={classes.image} />
-      Welcome! My name is Seyed Alireza Fatemi Jahromi.
+      Welcome! My name is Seyed Alireza FatemiJahromi.
       I'm currently an undergraduate student in Computer Engineering at Sharif University of Technology, Tehran, Iran.
       My main research focus is on Visual Computing & Machine Learning.
-      I'm fascinated by the use of Machine Learning in various fields and applications of Computer Vision & Graphics
-      such as Medical Image Analysis, Satellite & Aerial Image Analysis, Art & Image Generation, AI Rendering,
+      I'm fascinated by the use of Machine Learning in various fields and applications of Computer Graphics & Vision
+      such as Geometric Deep Learning, 3D Reconstruction, AI Rendering, Satellite & Aerial Image Analysis, Art & Image Generation,
       Deepfakes, Image Enhancement, etc.
       <br />
       During my undergraduate, I have worked on several research projects in Computer Vision, and I believe I have
@@ -64,8 +64,7 @@ export function AboutSection() {
       supervision of Prof. Rohban. My thesis is about Self-Supervised Learning and Semi-Supervised Learning
       in the context of Adversarial Robustness in Computer Vision.
       <br />
-      I plan to continue my research and expand my knowledge, as a graduate student, in Machine Learning & Visual
-      Computing & Software Engineering.
+      I plan to continue my research and expand my knowledge, as a graduate student, in Visual Computing & Machine Learning.
       I believe that with knowledge and skills in these fields, we can create innovative solutions and methods that can
       impact people's lives.
       <br />

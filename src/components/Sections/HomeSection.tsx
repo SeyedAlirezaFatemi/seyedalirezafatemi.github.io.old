@@ -74,12 +74,11 @@ export function News() {
           <li>
             <HonorIcon /> Ranked <strong>5th</strong> in <a
             href="https://paip2020.grand-challenge.org/rank/"
-            target="_blank" rel="noopener noreferrer">PAIP2020 Challenge</a>. I presented our method
-            at the 2020 virtual KOSOMBE Conference: PAIP2020, AI Pathology Challenge Workshop - South Korea, Nov 12,
-            2020. I was one of the two members of Sharif HooshPardaz Team, Supervised by Prof. Soleymani and Prof.
-            Behroozi. The challenge was about the automated classification of molecular subtypes in colorectal cancer
-            for
-            whole-slide image analysis and its tasks comprise MSI-H prediction and segmentation of the whole tumor area.
+            target="_blank" rel="noopener noreferrer">PAIP2020 Challenge</a>. I presented our method at the AI Pathology
+            Challenge Workshop at the Virtual KOSOMBE Conference, South Korea, on Nov 12, 2020. I was one of the two
+            members of Sharif HooshPardaz Team, Supervised by Prof. Soleymani and Prof. Behroozi. The challenge was about
+            the automated classification of molecular subtypes in colorectal cancer for whole-slide image analysis. It
+            consisted of two tasks, MSI-High Classification, and Whole Tumor Area Segmentation.
           </li>
         </ul>
       </Typography>
@@ -92,7 +91,7 @@ export function HomeSection() {
   return (
     <>
       <Typography className={classes.name} variant="h5" align="center">
-        Seyed Alireza Fatemi Jahromi
+        Seyed Alireza FatemiJahromi
       </Typography>
       <Grid container justify="flex-start" direction="row" alignItems="center" className={classes.avatar}>
         <Grid container item md={4} xs={12} justify="center" className={classes.avatar}>
@@ -100,7 +99,7 @@ export function HomeSection() {
         </Grid>
         <Grid item md={8} xs={12}>
           <Typography variant="body1" className={classes.paragraph}>
-            Computer Engineering Student Specializing in Visual Computing & Machine Learning
+            Computer Engineering Student Researching on Visual Computing & Machine Learning
           </Typography>
           <Typography variant="subtitle1" className={classes.paragraph}>
             Born October 8<sup>th</sup>, 1998
@@ -109,12 +108,10 @@ export function HomeSection() {
           {/*  Highly motivated, energetic and creative individual seeking new adventures.*/}
           {/*</Typography>*/}
           <Typography variant="subtitle2">
-            alirezafa [at] rocketmail.com , afatemi [at] ce.sharif.edu ,&nbsp;
+            seyedalirezafatemijahromi [at] gmail.com , afatemi [at] ce.sharif.edu<br />
             <a href="https://github.com/SeyedAlirezaFatemi" target="_blank" rel="noopener noreferrer">GitHub</a> ,&nbsp;
             <a href="https://www.linkedin.com/in/seyed-alireza-fatemi-jahromi" target="_blank"
-               rel="noopener noreferrer">LinkedIn</a>
-            <br />
-            <a href="/SeyedAlirezaFatemiJahromi.pdf" target="_blank" rel="noreferrer">Download CV</a>
+               rel="noopener noreferrer">LinkedIn</a>, <a href="/SeyedAlirezaFatemiJahromi.pdf" target="_blank" rel="noreferrer">Download CV</a>
           </Typography>
         </Grid>
       </Grid>
