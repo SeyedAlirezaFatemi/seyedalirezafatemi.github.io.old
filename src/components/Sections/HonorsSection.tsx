@@ -56,7 +56,7 @@ export function HonorsSection() {
         <li>
           <HonorIcon />
           Recipient of the grant and membership of <strong>Iran&apos;s National Elites Foundation</strong>, for
-          outstanding academic success and participation in Shahid Ahmadi Roshan Project.
+          outstanding academic success.
           <Date>Summer 2016 - Present</Date>
         </li>
         <li>
