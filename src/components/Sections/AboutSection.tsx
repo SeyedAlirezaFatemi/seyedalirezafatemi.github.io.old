@@ -55,7 +55,7 @@ export function AboutSection() {
       <br />
       During my undergraduate, I have worked on several research projects in Computer Vision, and I believe I have
       proved myself as a self-motivated and hardworking researcher. My research was mainly focused on Medical Image
-      Analysis using Deep Learning. I worked on classifying and segmenting digital pathology whole-slide images,
+      Analysis using Deep Learning. I worked on classifying and segmenting giga-pixel digital pathology whole-slide images,
       COVID-19 patients' CT scan images, and 3D brain MRI images.
       I also have a lot of experience in designing and implementing mobile and web applications. I've worked with
       various frameworks and libraries such as React, React Native, Gatsby, Next, Django, Flask, etc.

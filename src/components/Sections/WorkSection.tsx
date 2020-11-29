@@ -73,7 +73,7 @@ export function WorkSection() {
       <CVSection title={"Research & Work Experiences"}>
         <Title
           link={""}
-          title={"Robust and Interpretable Machine Learning Lab"}
+          title={"Robust and Interpretable Machine Learning Lab, Tehran, Iran"}
         />
         <Typography variant="subtitle1" className={classes.paragraph}>
           Research Assistant | Summer 2020 - Present
@@ -85,7 +85,7 @@ export function WorkSection() {
         </Typography>
         <Title
           link={"https://bmn.ir/"}
-          title={"Iran's National Elites Foundation, Shahid Ahmadi Roshan Project"}
+          title={"Iran's National Elites Foundation, Tehran, Iran"}
         />
         <Typography variant="subtitle1" className={classes.paragraph}>
           Research Assistant | Spring 2019 - Summer 2020 (18 months)
@@ -118,7 +118,7 @@ export function WorkSection() {
         </ul>
         <Title
           link={"https://bmn.ir/"}
-          title={"Iran's National Elites Foundation, Shahid Ahmadi Roshan Project"}
+          title={"Iran's National Elites Foundation, Tehran, Iran"}
         />
         <Typography variant="subtitle1" className={classes.paragraph}>
           Front-end Web Developer | Spring 2019 - Summer 2019 (6 months)
@@ -131,7 +131,7 @@ export function WorkSection() {
         </Typography>
         <Title
           link={"https://rahnemacollege.com/"}
-          title={"Rahnema College"}
+          title={"Rahnema College, Tehran, Iran"}
         />
         <Typography variant="subtitle1" className={classes.paragraph}>
           Software Engineer & Team Leader | Summer 2018 | <a
