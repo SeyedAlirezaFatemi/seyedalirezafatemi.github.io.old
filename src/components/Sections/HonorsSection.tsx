@@ -30,6 +30,7 @@ const useStyles = makeStyles(theme => ({
   },
   icon: {
     marginBottom: -6,
+    marginLeft: -6,
   },
   minorHack: {
     marginTop: 30,
