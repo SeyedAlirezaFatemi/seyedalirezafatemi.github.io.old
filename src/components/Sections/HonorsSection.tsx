@@ -22,10 +22,18 @@ const useStyles = makeStyles(theme => ({
     "& li": {
       marginBottom: theme.spacing(2),
     },
+    // https://stackoverflow.com/questions/1530685/html-sup-tag-affecting-line-height-how-to-make-it-consistent
+    "& sup": {
+      verticalAlign: 'top',
+      fontSize: '0.6em',
+    },
   },
   icon: {
     marginBottom: -6,
   },
+  minorHack: {
+    marginTop: 30,
+  }
 }))
 
 export function Date({ children }) {
@@ -59,8 +67,8 @@ export function HonorsSection() {
           outstanding academic success.
           <Date>Summer 2016 - Present</Date>
         </li>
-        <li>
-          <HonorIcon />Ranked <strong>5th</strong> in <a
+        <li className={classes.minorHack}>
+          <HonorIcon />Ranked <strong>5<sup>th</sup></strong> in <a
           href="https://paip2020.grand-challenge.org/rank/"
           target="_blank" rel="noopener noreferrer">PAIP2020 Challenge</a>. I presented our method at the AI Pathology
           Challenge Workshop at the Virtual KOSOMBE Conference, South Korea, on Nov 12, 2020. I was one of the two
@@ -75,12 +83,12 @@ export function HonorsSection() {
         </li>
         <li>
           <HonorIcon />
-          Ranked <strong>5th</strong> in <a
+          Ranked <strong>5<sup>th</sup></strong> in <a
           href="https://monusac-2020.grand-challenge.org/Results/"
           target="_blank"
           rel="noopener noreferrer">
           Multi-organ Nuclei Segmentation and Classification (MoNuSAC) 2020
-          Challenge</a> and Ranked <strong>3rd</strong> in Post-Challenge Leaderboard.
+          Challenge</a> and Ranked <strong>3<sup>rd</sup></strong> in Post-Challenge Leaderboard.
           MoNuSAC 2020 Challenge was an
           official satellite event of ISBI 2020.
           I was one of the three members of Sharif HooshPardaz Team, Supervised by Prof. Soleymani and Prof. Behroozi.
@@ -93,7 +101,7 @@ export function HonorsSection() {
         </li>
         <li>
           <HonorIcon />
-          Ranked <strong>3rd</strong> in the Eleventh <a
+          Ranked <strong>3<sup>rd</sup></strong> in the Eleventh <a
           target="_blank" rel="noopener noreferrer"
           href="http://vccup.sharif.ir/11/%db%8c%d8%a7%d8%b2%d8%af%d9%87%d9%85%db%8c%d9%86-%d8%ac%d8%b4%d9%86%d9%88%d8%a7%d8%b1%d9%87-%da%a9%d8%a7%d8%b1%d8%a2%d9%81%d8%b1%db%8c%d9%86%db%8c-%da%a9%d8%b3%d8%a8%e2%80%8c%d9%88%da%a9%d8%a7%d8%b1/">Sharif
           VC Cup</a>.
@@ -112,7 +120,7 @@ export function HonorsSection() {
         </li>
         <li>
           <HonorIcon />
-          Ranked <strong>8th</strong> in <a
+          Ranked <strong>8<sup>th</sup></strong> in <a
           target="_blank" rel="noopener noreferrer"
           href="https://gleason2019.grand-challenge.org/Results/">Gleason 2019 Challenge</a>, one of the three
           challenges under the MICCAI 2019 Grand Challenge for Pathology. I presented our method at the Gleason 2019
@@ -121,7 +129,8 @@ export function HonorsSection() {
         </li>
         <li>
           <HonorIcon />
-          Ranked <strong>3rd</strong> in the First National EEG Data Analysis Competition with Clinical Applications
+          Ranked <strong>3<sup>rd</sup></strong> in the First National EEG Data Analysis Competition with Clinical
+          Applications
           organized by <a
           href="http://nbml.ir/EN/posts/732364"
           target="_blank" rel="noopener noreferrer"
@@ -134,7 +143,7 @@ export function HonorsSection() {
         </li>
         <li>
           <HonorIcon />
-          Ranked <strong>1st</strong> in the third &nbsp;
+          Ranked <strong>1<sup>st</sup></strong> in the third &nbsp;
           <a
             href="http://ictchallenge.sharif.ir/?page_id=6798"
             target="_blank" rel="noopener noreferrer"
@@ -145,21 +154,23 @@ export function HonorsSection() {
         </li>
         <li>
           <HonorIcon />
-          Ranked <strong>12th</strong> in code-cup contest among approximately 3100 participants. <a
+          Ranked <strong>12<sup>th</sup></strong> in code-cup contest among approximately 3100 participants. <a
           href="/code-cup.jpg"
           target="_blank" rel="noopener noreferrer">Picture</a>.
           <Date>Fall 2018</Date>
         </li>
         <li>
           <HonorIcon />
-          Ranked <strong>top 0.08%</strong> in the National Entrance Exam (Konkoor) among all Iranian Students (Ranked
-          131th among approximately 163000 applicants) in Math. & Physics.
+          Ranked among <strong>top 0.08%</strong> in Iran's National University Entrance Exam (Konkoor) among all
+          Iranian Students (Ranked <strong>131<sup>st</sup></strong> among approximately 163000 applicants) in Math. &
+          Physics.
           <Date>Summer 2016</Date>
         </li>
         <li>
           <HonorIcon />
-          Ranked <strong>top 0.1%</strong> in the National Entrance Exam (Konkoor) among all Iranian Students (Ranked
-          229th among approximately 115000 applicants) in Foreign Languages.
+          Ranked among <strong>top 0.1%</strong> in Iran's National University Entrance Exam (Konkoor) among all Iranian
+          Students (Ranked <strong>229<sup>th</sup></strong> among approximately 115000 applicants) in Foreign
+          Languages.
           <Date>Summer 2016</Date>
         </li>
       </ul>

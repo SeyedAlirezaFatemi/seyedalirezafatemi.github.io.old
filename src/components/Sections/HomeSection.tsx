@@ -72,7 +72,7 @@ export function News() {
       <Typography variant="body2" className={classes.interests}>
         <ul className={classes.honorsList}>
           <li>
-            <HonorIcon /> Ranked <strong>5th</strong> in <a
+            <HonorIcon /> Ranked <strong>5<sup>th</sup></strong> in <a
             href="https://paip2020.grand-challenge.org/rank/"
             target="_blank" rel="noopener noreferrer">PAIP2020 Challenge</a>. I presented our method at the AI Pathology
             Challenge Workshop at the Virtual KOSOMBE Conference, South Korea, on Nov 12, 2020. I was one of the two
@@ -126,7 +126,8 @@ export function HomeSection() {
             <li>Computer Vision & Graphics</li>
             <li>Machine Learning & Deep Learning</li>
             <li>Geometry Processing & Geometric Deep Learning</li>
-            <li>Artificial Intelligence</li>
+            <li>Rendering</li>
+            {/*<li>Artificial Intelligence</li>*/}
             {/*<li>Software Engineering</li>*/}
           </ul>
         </Typography>
