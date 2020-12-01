@@ -55,7 +55,7 @@ export function AboutSection() {
       <br />
       During my undergraduate, I have worked on several research projects in Computer Vision, and I believe I have
       proved myself as a self-motivated and hardworking researcher. My research was mainly focused on Medical Image
-      Analysis using Deep Learning. I worked on classifying and segmenting giga-pixel digital pathology whole-slide images,
+      Analysis using Deep Learning. I worked on classifying and segmenting gigapixel digital pathology whole-slide images,
       COVID-19 patients' CT scan images, and 3D brain MRI images.
       I also have a lot of experience in designing and implementing mobile and web applications. I've worked with
       various frameworks and libraries such as React, React Native, Gatsby, Next, Django, Flask, etc.
@@ -71,7 +71,7 @@ export function AboutSection() {
       I'm comfortable with working alone as well as working in large teams of diverse people. I take my responsibilities
       seriously, and I try my best to positively influence and help the people and the world around me. I'm a fast and
       eager learner, and I love working with new people in new environments. I'm always trying to learn new things by
-      watching courses on YouTube, trying out new tools, reading new papers, having discussions with friends, etc.
+      watching lectures on YouTube, trying out new tools, reading new papers, having discussions with friends, etc.
       <br />
       I love playing games, watching series, traveling, running, swimming, and participating in challenges and
       hackathons. My favorite games are &quot;The Elder

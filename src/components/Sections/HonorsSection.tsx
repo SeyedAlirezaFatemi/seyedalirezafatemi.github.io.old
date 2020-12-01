@@ -24,8 +24,8 @@ const useStyles = makeStyles(theme => ({
     },
     // https://stackoverflow.com/questions/1530685/html-sup-tag-affecting-line-height-how-to-make-it-consistent
     "& sup": {
-      verticalAlign: 'top',
-      fontSize: '0.6em',
+      verticalAlign: "top",
+      fontSize: "0.6em",
     },
   },
   icon: {
@@ -34,7 +34,7 @@ const useStyles = makeStyles(theme => ({
   },
   minorHack: {
     marginTop: 30,
-  }
+  },
 }))
 
 export function Date({ children }) {
@@ -72,14 +72,19 @@ export function HonorsSection() {
           <HonorIcon />Ranked <strong>5<sup>th</sup></strong> in <a
           href="https://paip2020.grand-challenge.org/rank/"
           target="_blank" rel="noopener noreferrer">PAIP2020 Challenge</a>. I presented our method at the AI Pathology
-          Challenge Workshop at the Virtual KOSOMBE Conference, South Korea, on Nov 12, 2020. I was one of the two
+          Challenge Workshop at the <a
+          href="https://www.kosombe.or.kr/"
+          target="_blank" rel="noopener noreferrer">Virtual KOSOMBE Conference</a>, South Korea, on Nov 12, 2020. I was one of the two
           members of Sharif HooshPardaz Team, Supervised by Prof. Soleymani and Prof. Behroozi. The challenge was about
           the automated classification of molecular subtypes in colorectal cancer for whole-slide image analysis. It
           consisted of two tasks, MSI-High Classification, and Whole Tumor Area Segmentation. Joint paper with the
           challenge organizers and participants in the works. <a
           href="/PAIP2020.pdf"
           target="_blank" rel="noopener noreferrer">
-          Certificate of Award</a>.
+          Certificate of Award</a> + <a
+          href="https://paip2020.grand-challenge.org/workshop/"
+          target="_blank" rel="noopener noreferrer">
+          Workshop Material</a>.
           <Date>Fall 2020</Date>
         </li>
         <li>
@@ -89,15 +94,21 @@ export function HonorsSection() {
           target="_blank"
           rel="noopener noreferrer">
           Multi-organ Nuclei Segmentation and Classification (MoNuSAC) 2020
-          Challenge</a> and Ranked <strong>3<sup>rd</sup></strong> in Post-Challenge Leaderboard.
+          Challenge</a> and Ranked <strong>3<sup>rd</sup></strong> in the Post-Challenge Leaderboard.
           MoNuSAC 2020 Challenge was an
-          official satellite event of ISBI 2020.
+          official satellite event of <a
+          href="http://2020.biomedicalimaging.org/"
+          target="_blank" rel="noopener noreferrer">
+          ISBI 2020</a>.
           I was one of the three members of Sharif HooshPardaz Team, Supervised by Prof. Soleymani and Prof. Behroozi.
           I presented our method at the MoNuSAC 2020 Workshop. Joint paper with the challenge organizers and
-          participants in the works. <a
+          participants in the works (will potentially be published in IEEE Transactions on Medical Imaging). <a
           href="/MoNuSAC2020.pdf"
           target="_blank" rel="noopener noreferrer">
-          Certificate of Participation</a>.
+          Certificate of Participation</a> + <a
+          href="https://www.youtube.com/watch?v=QztsH4IYQRA&t=149s"
+          target="_blank" rel="noopener noreferrer">
+          Workshop</a>.
           <Date>Spring 2020</Date>
         </li>
         <li>
@@ -105,7 +116,7 @@ export function HonorsSection() {
           Ranked <strong>3<sup>rd</sup></strong> in the Eleventh <a
           target="_blank" rel="noopener noreferrer"
           href="http://vccup.sharif.ir/11/%db%8c%d8%a7%d8%b2%d8%af%d9%87%d9%85%db%8c%d9%86-%d8%ac%d8%b4%d9%86%d9%88%d8%a7%d8%b1%d9%87-%da%a9%d8%a7%d8%b1%d8%a2%d9%81%d8%b1%db%8c%d9%86%db%8c-%da%a9%d8%b3%d8%a8%e2%80%8c%d9%88%da%a9%d8%a7%d8%b1/">Sharif
-          VC Cup</a>.
+          Sharif Festival of Entrepreneurship and Business Development (VC cup)</a>.
           I was a member of Sharif HooshPardaz Team. <a
           href="/VCCup.png"
           target="_blank" rel="noopener noreferrer">Picture</a>.
@@ -124,8 +135,8 @@ export function HonorsSection() {
           Ranked <strong>8<sup>th</sup></strong> in <a
           target="_blank" rel="noopener noreferrer"
           href="https://gleason2019.grand-challenge.org/Results/">Gleason 2019 Challenge</a>, one of the three
-          challenges under the MICCAI 2019 Grand Challenge for Pathology. I presented our method at the Gleason 2019
-          Workshop.
+          challenges under the MICCAI 2019 Grand Challenge for Pathology. This challenge was about Automatic Gleason
+          Grading of Prostate Cancer in Digital Histopathology. I presented our method at the Gleason 2019 Workshop.
           <Date>Fall 2019</Date>
         </li>
         <li>
@@ -162,14 +173,15 @@ export function HonorsSection() {
         </li>
         <li>
           <HonorIcon />
-          Ranked among <strong>top 0.08%</strong> in Iran's National University Entrance Exam (Konkoor) among all
+          Ranked among the <strong>top 0.08%</strong> in Iran's National University Entrance Exam (Konkoor) among all
           Iranian Students (Ranked <strong>131<sup>st</sup></strong> among approximately 163000 applicants) in Math. &
           Physics.
           <Date>Summer 2016</Date>
         </li>
         <li>
           <HonorIcon />
-          Ranked among <strong>top 0.1%</strong> in Iran's National University Entrance Exam (Konkoor) among all Iranian
+          Ranked among the <strong>top 0.1%</strong> in Iran's National University Entrance Exam (Konkoor) among all
+          Iranian
           Students (Ranked <strong>229<sup>th</sup></strong> among approximately 115000 applicants) in Foreign
           Languages.
           <Date>Summer 2016</Date>
