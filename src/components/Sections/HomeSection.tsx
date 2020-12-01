@@ -77,8 +77,10 @@ export function News() {
             target="_blank" rel="noopener noreferrer">PAIP2020 Challenge</a>. I presented our method at the AI Pathology
             Challenge Workshop at the <a
             href="https://www.kosombe.or.kr/"
-            target="_blank" rel="noopener noreferrer">Virtual KOSOMBE Conference</a>, South Korea, on Nov 12, 2020. I was one of the two
-            members of Sharif HooshPardaz Team, Supervised by Prof. Soleymani and Prof. Behroozi. The challenge was about
+            target="_blank" rel="noopener noreferrer">Virtual KOSOMBE Conference</a>, South Korea, on Nov 12, 2020. I
+            was one of the two
+            members of Sharif HooshPardaz Team, Supervised by Prof. Soleymani and Prof. Behroozi. The challenge was
+            about
             the automated classification of molecular subtypes in colorectal cancer for whole-slide image analysis. It
             consisted of two tasks, MSI-High Classification, and Whole Tumor Area Segmentation. <a
             href="/PAIP2020.pdf"
@@ -107,11 +109,14 @@ export function HomeSection() {
         </Grid>
         <Grid item md={8} xs={12}>
           <Typography variant="body1" className={classes.paragraph}>
-            Computer Engineering Student Researching on Visual Computing & Machine Learning
+            Computer Engineering Student at Sharif University of Technology
           </Typography>
           <Typography variant="subtitle1" className={classes.paragraph}>
-            Born September 23<sup>th</sup>, 1998
+            Researching on Visual Computing & Machine Learning
           </Typography>
+          {/*<Typography variant="subtitle1" className={classes.paragraph}>*/}
+          {/*  Born September 23<sup>th</sup>, 1998*/}
+          {/*</Typography>*/}
           {/*<Typography variant="subtitle1" className={classes.paragraph}>*/}
           {/*  Highly motivated, energetic and creative individual seeking new adventures.*/}
           {/*</Typography>*/}
@@ -119,7 +124,8 @@ export function HomeSection() {
             seyedalirezafatemijahromi [at] gmail.com , afatemi [at] ce.sharif.edu<br />
             <a href="https://github.com/SeyedAlirezaFatemi" target="_blank" rel="noopener noreferrer">GitHub</a> ,&nbsp;
             <a href="https://www.linkedin.com/in/seyed-alireza-fatemi-jahromi" target="_blank"
-               rel="noopener noreferrer">LinkedIn</a>, <a href="/SeyedAlirezaFatemiJahromi.pdf" target="_blank" rel="noreferrer">Download CV</a>
+               rel="noopener noreferrer">LinkedIn</a>, <a href="/SeyedAlirezaFatemiJahromi.pdf" target="_blank"
+                                                          rel="noreferrer">Download CV</a>
           </Typography>
         </Grid>
       </Grid>
@@ -197,16 +203,16 @@ export function HomeSection() {
       <CVSection title={"Publications"}>
         <Typography variant="body2">
           <ol className={classes.interestsList}>
-            <li>* A. Khani, <strong>S.A. Fatemi Jahromi</strong>, H. Otroshi Shahreza, H. Behroozi, M. Soleymani
-              Baghshah,
-              <a href="https://ieeexplore.ieee.org/document/9066019" target="_blank" rel="noreferrer"><i>&quot;Towards
-                Automatic Prostate Gleason Grading via Deep Convolutional Neural Networks&quot;</i></a>, The 5<sup>th</sup> Iranian
-              Conference on Signal Processing and Intelligent Systems (ICSPIS 2019), Shahrood, Iran, 2019
+            <li>* A. A. Khani, <strong>S. A. Fatemi Jahromi</strong>, H. O. Shahreza, H. Behroozi and M. S. Baghshah, <a
+              href="https://ieeexplore.ieee.org/document/9066019" target="_blank" rel="noreferrer"><i>&quot;Towards
+              Automatic Prostate Gleason Grading via Deep Convolutional Neural Networks&quot;</i></a>, The
+              5<sup>th</sup> Iranian Conference on Signal Processing and Intelligent Systems (ICSPIS 2019), Shahrood, Iran, 2019
             </li>
             <li>
-              * <strong>S.A. Fatemi Jahromi</strong>, A. Khani, H. Otroshi Shahreza,
-              M. Soleymani Baghshah, H. Behroozi, <i>&quot;A Deep Learning Framework for Viable Tumor Burden Estimation&quot;</i>,
-              Accepted at The 6<sup>th</sup> Iranian Conference on Signal Processing and Intelligent Systems (ICSPIS 2020), Mashhad, Iran, 2020
+              * <strong>S. A. Fatemi Jahromi</strong>, A. A. Khani, H. O. Shahreza, M. S. Baghshah and H.
+              Behroozi, <i>&quot;A Deep Learning Framework for Viable Tumor Burden Estimation&quot;</i>,
+              Accepted in The 6<sup>th</sup> Iranian Conference on Signal Processing and Intelligent Systems (ICSPIS
+              2020), Mashhad, Iran, 2020
             </li>
           </ol>
         </Typography>
