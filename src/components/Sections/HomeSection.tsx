@@ -31,6 +31,7 @@ const useStyles = makeStyles(theme => ({
   },
   headline: {},
   interestsList: {
+    textAlign: "justify",
     marginTop: theme.spacing(2),
     "& li": {
       marginBottom: theme.spacing(1),
@@ -203,6 +204,7 @@ export function HomeSection() {
       <CVSection title={"Publications"}>
         <Typography variant="body2">
           <ol className={classes.interestsList}>
+            *Denotes first author or co-first author paper
             <li>* A. A. Khani, <strong>S. A. Fatemi Jahromi</strong>, H. O. Shahreza, H. Behroozi and M. S. Baghshah, <a
               href="https://ieeexplore.ieee.org/document/9066019" target="_blank" rel="noreferrer"><i>&quot;Towards
               Automatic Prostate Gleason Grading via Deep Convolutional Neural Networks&quot;</i></a>, The
