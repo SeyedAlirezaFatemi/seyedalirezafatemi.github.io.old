@@ -11,9 +11,9 @@ module.exports = {
     "@typescript-eslint",
     "react",
     "jsx-a11y",
+    "simple-import-sort",
     "import",
     "react-hooks",
-    "simple-import-sort"
   ],
   env: {
     browser: true,
@@ -38,11 +38,12 @@ module.exports = {
     },
   },
   rules: {
-    "simple-import-sort/sort": "warn",
+    "simple-import-sort/imports": "error",
+    "simple-import-sort/exports": "error",
     "sort-imports": "off",
-    "import/first": "warn",
-    "import/newline-after-import": "warn",
-    "import/no-duplicates": "warn",
+    "import/first": "error",
+    "import/newline-after-import": "error",
+    "import/no-duplicates": "error",
     "react/prop-types": "off",
   },
 }

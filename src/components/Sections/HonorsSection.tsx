@@ -76,7 +76,7 @@ export function HonorsSection() {
           href="https://www.kosombe.or.kr/"
           target="_blank" rel="noopener noreferrer">Virtual KOSOMBE Conference</a>, South Korea, on Nov 12, 2020. I was
           one of the two
-          members of Sharif HooshPardaz Team, Supervised by Prof. Soleymani and Prof. Behroozi. The challenge was about
+          members of Sharif HooshPardaz Team, supervised by Prof. Soleymani and Prof. Behroozi. The challenge was about
           the automated classification of molecular subtypes in colorectal cancer for whole-slide image analysis. It
           consisted of two tasks, MSI-High Classification, and Whole Tumor Area Segmentation. Joint paper with the
           challenge organizers and participants in the works. <a

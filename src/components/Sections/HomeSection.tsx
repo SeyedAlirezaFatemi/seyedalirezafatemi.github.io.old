@@ -80,7 +80,7 @@ export function News() {
             href="https://www.kosombe.or.kr/"
             target="_blank" rel="noopener noreferrer">Virtual KOSOMBE Conference</a>, South Korea, on Nov 12, 2020. I
             was one of the two
-            members of Sharif HooshPardaz Team, Supervised by Prof. Soleymani and Prof. Behroozi. The challenge was
+            members of Sharif HooshPardaz Team, supervised by Prof. Soleymani and Prof. Behroozi. The challenge was
             about
             the automated classification of molecular subtypes in colorectal cancer for whole-slide image analysis. It
             consisted of two tasks, MSI-High Classification, and Whole Tumor Area Segmentation. <a
@@ -204,14 +204,14 @@ export function HomeSection() {
       <CVSection title={"Publications"}>
         <Typography variant="body2">
           <ol className={classes.interestsList}>
-            *Denotes first author or co-first author paper
-            <li>* A. A. Khani, <strong>S. A. Fatemi Jahromi</strong>, H. O. Shahreza, H. Behroozi and M. S. Baghshah, <a
+            * Denotes first author or co-first author paper
+            <li>* A. A. Khani, <strong>* S. A. Fatemi Jahromi</strong>, H. O. Shahreza, H. Behroozi and M. S. Baghshah, <a
               href="https://ieeexplore.ieee.org/document/9066019" target="_blank" rel="noreferrer"><i>&quot;Towards
               Automatic Prostate Gleason Grading via Deep Convolutional Neural Networks&quot;</i></a>, The
               5<sup>th</sup> Iranian Conference on Signal Processing and Intelligent Systems (ICSPIS 2019), Shahrood, Iran, 2019
             </li>
             <li>
-              * <strong>S. A. Fatemi Jahromi</strong>, A. A. Khani, H. O. Shahreza, M. S. Baghshah and H.
+              <strong>* S. A. Fatemi Jahromi</strong>, * A. A. Khani, H. O. Shahreza, M. S. Baghshah and H.
               Behroozi, <i>&quot;A Deep Learning Framework for Viable Tumor Burden Estimation&quot;</i>,
               Accepted in The 6<sup>th</sup> Iranian Conference on Signal Processing and Intelligent Systems (ICSPIS
               2020), Mashhad, Iran, 2020

@@ -1,3 +1,3 @@
-export * from './SEO'
-export * from './Sections'
 export * from './Layout'
+export * from './Sections'
+export * from './SEO'
