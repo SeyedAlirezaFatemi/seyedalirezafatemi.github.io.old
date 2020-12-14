@@ -71,15 +71,14 @@ export function HonorsSection() {
         <li className={classes.minorHack}>
           <HonorIcon />Ranked <strong>5<sup>th</sup></strong> in <a
           href="https://paip2020.grand-challenge.org/rank/"
-          target="_blank" rel="noopener noreferrer">PAIP (Pathology AI Platform) 2020 Challenge</a>. I presented our
-          method at the AI Pathology Challenge Workshop at the <a
+          target="_blank" rel="noopener noreferrer">PAIP (Pathology AI Platform) 2020 Challenge</a>. I was
+          one of the two members of Sharif HooshPardaz Team, supervised by Prof. Soleymani and Prof. Behroozi. I
+          presented our method at the AI Pathology Challenge Workshop at the <a
           href="https://www.kosombe.or.kr/"
-          target="_blank" rel="noopener noreferrer">Virtual KOSOMBE Conference</a>, South Korea, on Nov 12, 2020. I was
-          one of the two
-          members of Sharif HooshPardaz Team, supervised by Prof. Soleymani and Prof. Behroozi. The challenge was about
-          the automated classification of molecular subtypes in colorectal cancer for whole-slide image analysis. It
-          consisted of two tasks, MSI-High Classification, and Whole Tumor Area Segmentation. Joint paper with the
-          challenge organizers and participants in the works. <a
+          target="_blank" rel="noopener noreferrer">Virtual KOSOMBE Conference</a>, South Korea, on Nov 12, 2020. The
+          challenge was about the automated classification of molecular subtypes in colorectal cancer for whole-slide
+          image analysis. It consisted of two tasks, MSI-High Classification, and Whole Tumor Area Segmentation. Joint
+          paper with the challenge organizers and participants in the works. <a
           href="/PAIP2020.pdf"
           target="_blank" rel="noopener noreferrer">
           Certificate of Award</a> + <a
