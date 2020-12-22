@@ -3,9 +3,9 @@ const path = require("path")
 module.exports = {
   siteMetadata: {
     siteUrl: 'https://seyedalirezafatemi.github.io',
-    title: `Seyed Alireza Fatemi Jahromi`,
-    description: `Personal Website of Seyed Alireza Fatemi Jahromi`,
-    author: `Seyed Alireza Fatemi Jahromi`,
+    title: `Seyed Alireza FatemiJahromi`,
+    description: `Personal Website of Seyed Alireza FatemiJahromi`,
+    author: `Seyed Alireza FatemiJahromi`,
   },
   plugins: [
     `gatsby-plugin-sharp`,
@@ -22,8 +22,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Seyed Alireza Fatemi Jahromi`,
-        short_name: `Fatemi`,
+        name: `Seyed Alireza FatemiJahromi`,
+        short_name: `FatemiJahromi`,
         start_url: `/`,
         background_color: `#fafafa`,
         theme_color: `#fafafa`,

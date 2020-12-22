@@ -1,7 +1,7 @@
 import { Grid, IconButton, Typography } from "@material-ui/core"
 import { makeStyles } from "@material-ui/core/styles"
 import { Link } from "gatsby"
-import { Email, Github, Gmail, Instagram, Linkedin, Telegram, Twitter } from "mdi-material-ui"
+import { Github, Gmail, Instagram, Linkedin, Telegram, Twitter } from "mdi-material-ui"
 import React from "react"
 
 const useStyles = makeStyles(theme => ({
@@ -61,11 +61,6 @@ export function Footer() {
           <Telegram />
         </IconButton>
       </a>
-      {/*<a href="mailto:alirezafa@rocketmail.com" target="_blank" rel="noopener noreferrer">*/}
-      {/*  <IconButton aria-label="Email">*/}
-      {/*    <Email />*/}
-      {/*  </IconButton>*/}
-      {/*</a>*/}
       <a href="mailto:seyedalirezafatemijahromi@gmail.com" target="_blank" rel="noopener noreferrer">
         <IconButton aria-label="Gmail">
           <Gmail />
@@ -82,13 +77,13 @@ export function Footer() {
       </Grid>
       <Grid item xs={12} className={classes.quote}>
         <Typography variant="subtitle1" align="center">
-          "I choose the labyrinth."
+          {"\"I choose the labyrinth.\""}
           {/*― John Green*/}
         </Typography>
       </Grid>
       <Grid item xs={12} container justify="center">
         <Typography variant="caption" align="center">
-          Design & Development By Seyed Alireza Fatemi Jahromi | Logo from <a
+          Design & Development By Seyed Alireza FatemiJahromi | Logo from <a
           href="https://dribbble.com/shots/7896171-Alone-In-The-Dark"
           target="_blank"
           rel="noopener noreferrer"

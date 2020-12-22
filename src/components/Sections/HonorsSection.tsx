@@ -155,18 +155,18 @@ export function HonorsSection() {
         </li>
         <li>
           <HonorIcon />
-          Ranked <strong>1<sup>st</sup></strong> in the third &nbsp;
-          <a
-            href="http://ictchallenge.sharif.ir/?page_id=6798"
-            target="_blank" rel="noopener noreferrer"
-          >Sharif ICT Challenge (Fintech)</a> among 65 chosen teams. <a
+          Ranked <strong>1<sup>st</sup></strong> in the <a
+          href="http://ictchallenge.sharif.ir/?page_id=6798"
+          target="_blank" rel="noopener noreferrer"
+        >Third Sharif ICT Challenge (Fintech)</a> among 65 chosen teams. <a
           href="/Fintech.jpg"
           target="_blank" rel="noopener noreferrer">Picture</a>.
           <Date>Summer 2019</Date>
         </li>
         <li>
           <HonorIcon />
-          Ranked <strong>12<sup>th</sup></strong> in code-cup contest among approximately 3100 participants. <a
+          Ranked <strong>12<sup>th</sup></strong> in the Fourth National Code Cup Contest among approximately 3100
+          participants. <a
           href="/code-cup.jpg"
           target="_blank" rel="noopener noreferrer">Picture</a>.
           <Date>Fall 2018</Date>
