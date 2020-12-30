@@ -136,10 +136,10 @@ export function HomeSection() {
       <CVSection title={"Research Interests"}>
         <Typography variant="body2" className={classes.interests}>
           <ul className={classes.interestsList}>
-            <li>Computer Vision & Graphics</li>
+            <li>Visual Computing (Computer Graphics & Vision)</li>
             <li>Machine Learning & Deep Learning</li>
+            <li>Rendering & Physics Simulation</li>
             <li>Geometry Processing & Geometric Deep Learning</li>
-            <li>Rendering</li>
             <li>Artificial Intelligence</li>
             {/*<li>Software Engineering</li>*/}
           </ul>
