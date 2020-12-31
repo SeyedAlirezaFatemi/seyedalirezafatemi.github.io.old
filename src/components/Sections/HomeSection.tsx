@@ -122,7 +122,8 @@ export function HomeSection() {
           <Typography variant="subtitle2">
             seyedalirezafatemijahromi [at] gmail.com , afatemi [at] ce.sharif.edu<br />
             <a href="https://github.com/SeyedAlirezaFatemi" target="_blank" rel="noopener noreferrer">GitHub</a> ,&nbsp;
-            <a href="https://www.linkedin.com/in/seyed-alireza-fatemi-jahromi" target="_blank"
+            <a href="https://scholar.google.com/citations?user=YxRB1PAAAAAJ&hl=en&authuser=2" target="_blank"
+               rel="noopener noreferrer">Google Scholar</a>, <a href="https://www.linkedin.com/in/seyed-alireza-fatemi-jahromi" target="_blank"
                rel="noopener noreferrer">LinkedIn</a>, <a href="/SeyedAlirezaFatemiJahromi.pdf" target="_blank"
                                                           rel="noreferrer">Download CV</a>
           </Typography>
