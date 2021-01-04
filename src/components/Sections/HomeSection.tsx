@@ -141,7 +141,7 @@ export function HomeSection() {
             <li>Machine Learning & Deep Learning</li>
             <li>Rendering & Physics Simulation</li>
             <li>Geometry Processing & Geometric Deep Learning</li>
-            <li>Artificial Intelligence</li>
+            <li>Video Games & Artificial Intelligence</li>
             {/*<li>Software Engineering</li>*/}
           </ul>
         </Typography>
