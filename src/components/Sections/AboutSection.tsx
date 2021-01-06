@@ -50,7 +50,7 @@ export function AboutSection() {
       I'm currently an undergraduate student in Computer Engineering at Sharif University of Technology, Tehran, Iran.
       My main research focus is on Visual Computing & Machine Learning.
       I'm fascinated by the use of Machine Learning in various fields and applications of Computer Graphics & Vision
-      such as Geometric Deep Learning, 3D Reconstruction, AI Rendering, Satellite & Aerial Image Analysis, Art & Image Generation,
+      such as Geometric Deep Learning, 2D/3D Reconstruction, AI Rendering, Satellite & Aerial Image Analysis, Art & Image Generation,
       Deepfakes, Image Enhancement, etc.
       <br />
       During my undergraduate, I have worked on several research projects in Computer Vision, and I believe I have
