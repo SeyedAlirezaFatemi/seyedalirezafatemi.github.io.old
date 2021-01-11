@@ -139,7 +139,7 @@ export function WorkSection() {
           target="_blank" rel="noopener noreferrer">Certificate</a>
         </Typography>
         <Typography variant="body1" className={classes.paragraph} align="justify">
-          During the 7-week internship program, I gained experience in the following areas of Software Development:
+          During this 7-week internship program, I gained experience in the following areas of Software Development:
         </Typography>
         <ul className={classes.workResponsibilitiesList}>
           <Typography>
@@ -167,7 +167,7 @@ export function WorkSection() {
         </Typography>
         <Typography variant="body1" className={classes.paragraph}>
           This was the project for Compiler Design course. It is a compiler for Decaf programming language written in
-          python using lark. It compiles Decaf to mips assembly language. The code
+          python using Lark parsing toolkit. It compiles Decaf to MIPS assembly language. The code
           is available on <a href="https://github.com/SeyedAlirezaFatemi/decaf-compiler" target="_blank"
                              rel="noopener noreferrer">GitHub</a>.
         </Typography>
@@ -194,10 +194,9 @@ export function WorkSection() {
           Summer 2020
         </Typography>
         <Typography variant="body1" className={classes.paragraph}>
-          This web app is developed based on the Flask framework for the easy labeling of DICOM images with Privacy
-          in mind. The code
-          is available on <a href="https://github.com/IAmS4n/CTLabeling" target="_blank"
-                             rel="noopener noreferrer">GitHub</a>.
+          This web app is developed using Flask for the easy labeling of DICOM images with privacy in mind.
+          The code is available on <a href="https://github.com/IAmS4n/CTLabeling" target="_blank"
+                                      rel="noopener noreferrer">GitHub</a>.
         </Typography>
         <Title
           link={"https://github.com/SeyedAlirezaFatemi/p2p_network_project"}
@@ -250,9 +249,14 @@ export function WorkSection() {
           Spring 2017
         </Typography>
         <Typography variant="body1" className={classes.paragraph}>
-          My teammates and I developed this game as the project of Advanced Programming course. It was chosen as one of
-          the best projects of the course in that semester. The game is developed using Java, Kotlin, and JavaFX and it
-          has a beautiful interface and supports multiplayer and chat through socket.
+          My teammates and I developed this game as the project for the Advanced Programming course. It was chosen as
+          one of
+          the best projects of the course in that semester. We developed this game using Java, Kotlin, and JavaFX, and
+          it has a beautiful interface and supports multiplayer and chat through socket programming. A video of the
+          gameplay is available at this <a
+          href="https://www.aparat.com/v/KtZps"
+          target="_blank" rel="noopener noreferrer"
+        >link</a>.
         </Typography>
 
         <Title
@@ -263,9 +267,10 @@ export function WorkSection() {
           Fall 2017
         </Typography>
         <Typography variant="body1" className={classes.paragraph}>
-          For the project of Logic Circuits course, I designed a digital safe in Verilog. It was successfully tested on
-          Xilinix Spartan 6 FPGA. The code is available on <a href="https://github.com/SeyedAlirezaFatemi/TheSafe"
-                                                              target="_blank" rel="noopener noreferrer">GitHub</a>.
+          I designed a digital safe using Verilog HDL for the project of Logic Circuits and Digital Systems course. It was
+          successfully tested on Xilinix Spartan 6 FPGA. The code is available on <a
+          href="https://github.com/SeyedAlirezaFatemi/TheSafe"
+          target="_blank" rel="noopener noreferrer">GitHub</a>.
         </Typography>
 
         <Title
@@ -275,8 +280,8 @@ export function WorkSection() {
           Fall 2016
         </Typography>
         <Typography variant="body1" className={classes.paragraph}>
-          I developed this game as the project of Fundamentals of Programming course. It was chosen as one of the best
-          projects of the course in that semester. The game is developed using the C programming language.
+          I developed this game as the project for Fundamentals of Programming course. It was chosen as one of the
+          best projects of the course in that semester. The game is written in C.
         </Typography>
       </CVSection>
     </>
