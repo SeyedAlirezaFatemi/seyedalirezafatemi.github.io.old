@@ -1,4 +1,4 @@
-import { Divider, Grid, Typography } from "@material-ui/core"
+import { Chip, Divider, Grid, Typography } from "@material-ui/core"
 import { makeStyles } from "@material-ui/core/styles"
 import clsx from "clsx"
 import React from "react"
@@ -52,6 +52,14 @@ const useStyles = makeStyles(theme => ({
       marginBottom: theme.spacing(2),
     },
   },
+  skills: {
+    "& .chip":{
+      margin: theme.spacing(0.5),
+    },
+  },
+  table: {
+    width: '100%',
+  },
 }))
 
 export function CVSection({ title, children }) {
@@ -95,6 +103,62 @@ export function News() {
   )
 }
 
+export function Skills() {
+  const classes = useStyles()
+  return (
+    <CVSection title={"Skills"}>
+      <Typography variant="body2" className={classes.interests}>
+        <table className={classes.table}>
+          <tr>
+            <td>Programming Languages</td>
+            <td className={classes.skills}>
+              {["C", "C++", "Java", "Kotlin", "Pyhton",
+                "JavaScript", "TypeScript", "Racket", "MATLAB"].map(label => (
+                <Chip key={label} label={label} className={"chip"}/>))}
+            </td>
+          </tr>
+          <tr>
+            <td>Machine Learning</td>
+            <td className={classes.skills}>
+              {["TensorFlow", "Keras", "PyTorch", "scikit-learn", "pandas", "NumPy"].map(label => (
+                <Chip key={label} label={label} className={"chip"}/>))}
+            </td>
+          </tr>
+          <tr>
+            <td>Software & Tools</td>
+            <td className={classes.skills}>
+              {["LaTeX", "Git", "JIRA", "Adobe XD"].map(label => (
+                <Chip key={label} label={label} className={"chip"}/>))}
+            </td>
+          </tr>
+          <tr>
+            <td>Web</td>
+            <td className={classes.skills}>
+              {["React", "ReactNative", "Django", "Gatsby", "Next", "GraphQL", "Docker",
+                "Flask"].map(label => (
+                <Chip key={label} label={label} className={"chip"}/>))}
+            </td>
+          </tr>
+          <tr>
+            <td>Databases</td>
+            <td className={classes.skills}>
+              {["MySQL", "MongoDB"].map(label => (
+                <Chip key={label} label={label} className={"chip"}/>))}
+            </td>
+          </tr>
+          <tr>
+            <td>HDL</td>
+            <td className={classes.skills}>
+              {["Verilog"].map(label => (
+                <Chip key={label} label={label} className={"chip"}/>))}
+            </td>
+          </tr>
+        </table>
+      </Typography>
+    </CVSection>
+  )
+}
+
 export function HomeSection() {
   const classes = useStyles()
   return (
@@ -123,9 +187,10 @@ export function HomeSection() {
             seyedalirezafatemijahromi [at] gmail.com , afatemi [at] ce.sharif.edu<br />
             <a href="https://github.com/SeyedAlirezaFatemi" target="_blank" rel="noopener noreferrer">GitHub</a> ,&nbsp;
             <a href="https://scholar.google.com/citations?user=YxRB1PAAAAAJ&hl=en&authuser=2" target="_blank"
-               rel="noopener noreferrer">Google Scholar</a>, <a href="https://www.linkedin.com/in/seyed-alireza-fatemi-jahromi" target="_blank"
-               rel="noopener noreferrer">LinkedIn</a>, <a href="/SeyedAlirezaFatemiJahromi.pdf" target="_blank"
-                                                          rel="noreferrer">Download CV</a>
+               rel="noopener noreferrer">Google Scholar</a>, <a
+            href="https://www.linkedin.com/in/seyed-alireza-fatemi-jahromi" target="_blank"
+            rel="noopener noreferrer">LinkedIn</a>, <a href="/SeyedAlirezaFatemiJahromi.pdf" target="_blank"
+                                                       rel="noreferrer">Download CV</a>
           </Typography>
         </Grid>
       </Grid>
@@ -141,8 +206,7 @@ export function HomeSection() {
             <li>Machine Learning & Deep Learning</li>
             <li>Rendering & Physics Simulation</li>
             <li>Geometry Processing & Geometric Deep Learning</li>
-            <li>Video Games & Artificial Intelligence</li>
-            {/*<li>Software Engineering</li>*/}
+            <li>Game Design & Artificial Intelligence</li>
           </ul>
         </Typography>
       </CVSection>
@@ -204,10 +268,12 @@ export function HomeSection() {
         <Typography variant="body2">
           <ol className={classes.interestsList}>
             * Denotes first author or co-first author paper
-            <li>* A. A. Khani, <strong>* S. A. Fatemi Jahromi</strong>, H. O. Shahreza, H. Behroozi and M. S. Baghshah, <a
-              href="https://ieeexplore.ieee.org/document/9066019" target="_blank" rel="noreferrer"><i>&quot;Towards
-              Automatic Prostate Gleason Grading via Deep Convolutional Neural Networks&quot;</i></a>, The
-              5<sup>th</sup> Iranian Conference on Signal Processing and Intelligent Systems (ICSPIS 2019), Shahrood, Iran, 2019
+            <li>* A. A. Khani, <strong>* S. A. Fatemi Jahromi</strong>, H. O. Shahreza, H. Behroozi and M. S.
+              Baghshah, <a
+                href="https://ieeexplore.ieee.org/document/9066019" target="_blank" rel="noreferrer"><i>&quot;Towards
+                Automatic Prostate Gleason Grading via Deep Convolutional Neural Networks&quot;</i></a>, The
+              5<sup>th</sup> Iranian Conference on Signal Processing and Intelligent Systems (ICSPIS 2019), Shahrood,
+              Iran, 2019
             </li>
             <li>
               <strong>* S. A. Fatemi Jahromi</strong>, * A. A. Khani, H. O. Shahreza, M. S. Baghshah and H.
@@ -218,6 +284,9 @@ export function HomeSection() {
           </ol>
         </Typography>
       </CVSection>
+
+      <Divider />
+      <Skills />
     </>
   )
 }
