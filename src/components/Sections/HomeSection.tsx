@@ -278,7 +278,7 @@ export function HomeSection() {
             <li>
               <strong>* S. A. Fatemi Jahromi</strong>, * A. A. Khani, H. O. Shahreza, M. S. Baghshah and H.
               Behroozi, <i>&quot;A Deep Learning Framework for Viable Tumor Burden Estimation&quot;</i>,
-              Accepted in The 6<sup>th</sup> Iranian Conference on Signal Processing and Intelligent Systems (ICSPIS
+              The 6<sup>th</sup> Iranian Conference on Signal Processing and Intelligent Systems (ICSPIS
               2020), Mashhad, Iran, 2020
             </li>
           </ol>
