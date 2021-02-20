@@ -74,7 +74,7 @@ export function AboutSection() {
       <br />
       I love playing games, watching series, traveling, running, swimming, and participating in challenges and
       hackathons. My favorite games are The Elder Scrolls V: Skyrim, Control, and Fable. My favorite series are
-      The OA, Looking for Alaska, Sharp Objects, Castle Rock, The Magicians, The Haunting of Hill House, The Haunting of Bly Manor, and The Witcher.
+      The OA, Looking for Alaska, Sharp Objects, Castle Rock, The Magicians, The Haunting of Hill House, The Haunting of Bly Manor, The Witcher, and 철인왕후.
       <br />
       If you have any queries, please feel free to reach out, and I'll gladly answer them.
       <br />

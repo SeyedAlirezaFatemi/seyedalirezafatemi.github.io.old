@@ -53,12 +53,12 @@ const useStyles = makeStyles(theme => ({
     },
   },
   skills: {
-    "& .chip":{
+    "& .chip": {
       margin: theme.spacing(0.5),
     },
   },
   table: {
-    width: '100%',
+    width: "100%",
   },
 }))
 
@@ -114,21 +114,21 @@ export function Skills() {
             <td className={classes.skills}>
               {["C", "C++", "Java", "Kotlin", "Pyhton",
                 "JavaScript", "TypeScript", "Racket", "MATLAB"].map(label => (
-                <Chip key={label} label={label} className={"chip"}/>))}
+                <Chip key={label} label={label} className={"chip"} />))}
             </td>
           </tr>
           <tr>
             <td>Machine Learning</td>
             <td className={classes.skills}>
               {["TensorFlow", "Keras", "PyTorch", "scikit-learn", "pandas", "NumPy"].map(label => (
-                <Chip key={label} label={label} className={"chip"}/>))}
+                <Chip key={label} label={label} className={"chip"} />))}
             </td>
           </tr>
           <tr>
             <td>Software & Tools</td>
             <td className={classes.skills}>
               {["LaTeX", "Git", "JIRA", "Adobe XD"].map(label => (
-                <Chip key={label} label={label} className={"chip"}/>))}
+                <Chip key={label} label={label} className={"chip"} />))}
             </td>
           </tr>
           <tr>
@@ -136,21 +136,21 @@ export function Skills() {
             <td className={classes.skills}>
               {["React", "ReactNative", "Django", "Gatsby", "Next", "GraphQL", "Docker",
                 "Flask"].map(label => (
-                <Chip key={label} label={label} className={"chip"}/>))}
+                <Chip key={label} label={label} className={"chip"} />))}
             </td>
           </tr>
           <tr>
             <td>Databases</td>
             <td className={classes.skills}>
               {["MySQL", "MongoDB"].map(label => (
-                <Chip key={label} label={label} className={"chip"}/>))}
+                <Chip key={label} label={label} className={"chip"} />))}
             </td>
           </tr>
           <tr>
             <td>HDL</td>
             <td className={classes.skills}>
               {["Verilog"].map(label => (
-                <Chip key={label} label={label} className={"chip"}/>))}
+                <Chip key={label} label={label} className={"chip"} />))}
             </td>
           </tr>
         </table>
@@ -219,7 +219,7 @@ export function HomeSection() {
               Sharif University of Technology
             </Typography>
             <Typography variant="subtitle2" className={classes.paragraph}>
-              GPA: <strong>18.62/20</strong> (<strong>3.9/4</strong>) | Last two years' GPA: <strong>19.36/20</strong> (<strong>4/4</strong>)
+              GPA: <strong>18.69/20</strong> (<strong>3.91/4</strong>) | Last two years' GPA: <strong>19.42/20</strong> (<strong>4/4</strong>)
             </Typography>
             <Typography variant="subtitle1" className={classes.paragraph}>
               Bachelor of Science in Computer Engineering | Tehran | Sep. 2016 - Expected Aug. 2021
@@ -277,7 +277,9 @@ export function HomeSection() {
             </li>
             <li>
               <strong>* S. A. Fatemi Jahromi</strong>, * A. A. Khani, H. O. Shahreza, M. S. Baghshah and H.
-              Behroozi, <i>&quot;A Deep Learning Framework for Viable Tumor Burden Estimation&quot;</i>,
+              Behroozi, <a
+              href="https://ieeexplore.ieee.org/abstract/document/9349569" target="_blank" rel="noreferrer"><i>&quot;A
+              Deep Learning Framework for Viable Tumor Burden Estimation&quot;</i></a>,
               The 6<sup>th</sup> Iranian Conference on Signal Processing and Intelligent Systems (ICSPIS
               2020), Mashhad, Iran, 2020
             </li>
