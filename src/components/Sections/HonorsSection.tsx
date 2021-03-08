@@ -116,7 +116,7 @@ export function HonorsSection() {
           Ranked <strong>3<sup>rd</sup></strong> in the Eleventh <a
           target="_blank" rel="noopener noreferrer"
           href="http://vccup.sharif.ir/11/%db%8c%d8%a7%d8%b2%d8%af%d9%87%d9%85%db%8c%d9%86-%d8%ac%d8%b4%d9%86%d9%88%d8%a7%d8%b1%d9%87-%da%a9%d8%a7%d8%b1%d8%a2%d9%81%d8%b1%db%8c%d9%86%db%8c-%da%a9%d8%b3%d8%a8%e2%80%8c%d9%88%da%a9%d8%a7%d8%b1/">Sharif
-          Sharif Festival of Entrepreneurship and Business Development (VC cup)</a>.
+          Festival of Entrepreneurship and Business Development (VC cup)</a>.
           I was a member of Sharif HooshPardaz Team. <a
           href="/VCCup.png"
           target="_blank" rel="noopener noreferrer">Picture</a>.
