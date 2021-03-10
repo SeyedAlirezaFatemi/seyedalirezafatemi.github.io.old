@@ -203,10 +203,10 @@ export function HomeSection() {
         <Typography variant="body2" className={classes.interests}>
           <ul className={classes.interestsList}>
             <li>Visual Computing (Computer Graphics & Vision)</li>
+            <li>Game Design & Artificial Intelligence</li>
             <li>Machine Learning & Deep Learning</li>
             <li>Rendering & Physics Simulation</li>
             <li>Geometry Processing & Geometric Deep Learning</li>
-            <li>Game Design & Artificial Intelligence</li>
           </ul>
         </Typography>
       </CVSection>
