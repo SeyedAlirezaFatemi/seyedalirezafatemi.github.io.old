@@ -66,7 +66,7 @@ export function HonorsSection() {
           <HonorIcon />
           Recipient of the grant and membership of <strong>Iran&apos;s National Elites Foundation</strong> for
           outstanding academic success.
-          <Date>Summer 2016 - Present</Date>
+          <Date>Summer 2016 - 2021</Date>
         </li>
         <li className={classes.minorHack}>
           <HonorIcon />Ranked <strong>5<sup>th</sup></strong> in <a

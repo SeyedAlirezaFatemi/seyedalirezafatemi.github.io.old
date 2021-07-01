@@ -80,10 +80,10 @@ export function News() {
     <CVSection title={"News"}>
       <Typography variant="body2" className={classes.interests}>
         <ul className={classes.honorsList}>
-          <li>
-            <HonorIcon />I will participate in <a href={"https://geometryinstitute.mit.edu/"} target="_blank"
-                                                  rel="noopener noreferrer">MIT's Summer Geometry Institute (SGI) 2021</a>.
-          </li>
+          {/*<li>*/}
+          {/*  <HonorIcon />I was participate in <a href={"https://geometryinstitute.mit.edu/"} target="_blank"*/}
+          {/*                                        rel="noopener noreferrer">MIT's Summer Geometry Institute (SGI) 2021</a>.*/}
+          {/*</li>*/}
           <li>
             <HonorIcon />Ranked <strong>5<sup>th</sup></strong> in <a
             href="https://paip2020.grand-challenge.org/rank/"
@@ -178,7 +178,7 @@ export function HomeSection()
           </Grid>
           <Grid item md={8} xs={12}>
             <Typography variant="body1" className={classes.paragraph}>
-              Computer Engineering Student at Sharif University of Technology
+              Master's Student in Computer Science at Aalto University
             </Typography>
             <Typography variant="subtitle1" className={classes.paragraph}>
               Researching on Visual Computing & Machine Learning
@@ -190,7 +190,7 @@ export function HomeSection()
             {/*  Highly motivated, energetic and creative individual seeking new adventures.*/}
             {/*</Typography>*/}
             <Typography variant="subtitle2">
-              seyedalirezafatemijahromi [at] gmail.com , afatemi [at] ce.sharif.edu<br />
+              seyedalirezafatemijahromi [at] gmail.com<br />
               <a href="https://github.com/SeyedAlirezaFatemi" target="_blank"
                  rel="noopener noreferrer">GitHub</a>,&nbsp;
               <a href="https://scholar.google.com/citations?user=YxRB1PAAAAAJ&hl=en&authuser=2" target="_blank"
@@ -202,8 +202,8 @@ export function HomeSection()
           </Grid>
         </Grid>
 
-        <Divider />
-        <News />
+        {/*<Divider />*/}
+        {/*<News />*/}
 
         <Divider />
         <CVSection title={"Research Interests"}>
@@ -223,14 +223,22 @@ export function HomeSection()
           <ul>
             <li>
               <Typography variant="body1" className={clsx(classes.paragraph, classes.headline)}>
+                Aalto University
+              </Typography>
+              <Typography variant="subtitle1" className={classes.paragraph}>
+                Master of Science in Computer Science | Espoo | Aug. 2021 - Expected Aug. 2023
+              </Typography>
+            </li>
+            <li>
+              <Typography variant="body1" className={clsx(classes.paragraph, classes.headline)}>
                 Sharif University of Technology
               </Typography>
               <Typography variant="subtitle2" className={classes.paragraph}>
-                GPA: <strong>18.69/20</strong> (<strong>3.91/4</strong>) | Last two years'
-                GPA: <strong>19.42/20</strong> (<strong>4/4</strong>)
+                GPA: <strong>18.60/20</strong> (<strong>3.89/4</strong>) | Last two years'
+                GPA: <strong>19.21/20</strong> (<strong>3.96/4</strong>)
               </Typography>
               <Typography variant="subtitle1" className={classes.paragraph}>
-                Bachelor of Science in Computer Engineering | Tehran | Sep. 2016 - Expected Aug. 2021
+                Bachelor of Science in Computer Engineering | Tehran | Sep. 2016 - May 2021
               </Typography>
             </li>
             <li>

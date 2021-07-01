@@ -76,11 +76,11 @@ export function WorkSection() {
           title={"Robust and Interpretable Machine Learning Lab, Tehran, Iran"}
         />
         <Typography variant="subtitle1" className={classes.paragraph}>
-          Research Assistant | Summer 2020 - Present
+          Research Assistant | Summer 2020 - Spring 2021
         </Typography>
         <Typography variant="body1" className={classes.paragraph} align="justify">
-          I'm currently working on my undergraduate thesis in the Robust and Interpretable Machine Learning Lab under
-          the supervision of Prof. Rohban. My thesis is about the use of Semi-Supervised Learning and Self-Supervised
+          I worked on my undergraduate thesis in the Robust and Interpretable Machine Learning Lab under
+          the supervision of Prof. Rohban. My thesis was about the use of Semi-Supervised Learning and Self-Supervised
           Learning in the context of Adversarial Robustness.
         </Typography>
         <Title
