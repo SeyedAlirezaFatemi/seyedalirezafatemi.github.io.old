@@ -1,9 +1,11 @@
-import { makeStyles, useTheme } from "@material-ui/core/styles"
+import { useTheme } from "@mui/material/styles"
 import { graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
 import React from "react"
 
-const useStyles = makeStyles(theme => ({
+import { makeStyles } from "../makeStyles"
+
+const useStyles = makeStyles()(theme => ({
     logo: {
       cursor: "pointer",
       width: 80,
@@ -14,8 +16,9 @@ const useStyles = makeStyles(theme => ({
 )
 
 export const Torch = ({ onChangeThemeMode }) => {
-  const theme = useTheme()
-  const classes = useStyles()
+  // const theme = useTheme()
+  const { classes, theme } = useStyles()
+  console.log(theme.palette.mode)
   const data = useStaticQuery(graphql`
       query {
           on: file(relativePath: { eq: "on.png" }) {
@@ -37,7 +40,7 @@ export const Torch = ({ onChangeThemeMode }) => {
   return (
     <div onClick={onChangeThemeMode}>
       <Img
-        fluid={theme.palette.type === "dark" ? data.off.childImageSharp.fluid : data.on.childImageSharp.fluid}
+        fluid={theme.palette.mode === "dark" ? data.off.childImageSharp.fluid : data.on.childImageSharp.fluid}
         className={classes.logo}
       />
     </div>

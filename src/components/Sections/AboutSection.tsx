@@ -1,10 +1,12 @@
-import { Typography } from "@material-ui/core"
-import { makeStyles, useTheme } from "@material-ui/core/styles"
+import { Typography } from "@mui/material"
+import { useTheme } from "@mui/material/styles";
 import { graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
 import React from "react"
 
-const useStyles = makeStyles(theme => ({
+import { makeStyles } from "../makeStyles"
+
+const useStyles = makeStyles()(theme => ({
   about: {
     textAlign: "justify",
   },
@@ -20,8 +22,8 @@ const useStyles = makeStyles(theme => ({
 // https://codepen.io/screeny05/pen/rxObWx?q=quote%20author&limit=all&order=popularity&depth=everything&show_forks=falsehttps://codepen.io/screeny05/pen/rxObWx
 export function AboutSection() {
   const theme = useTheme()
-  const classes = useStyles()
-  const isDark = theme.palette.type === "dark"
+  const { classes } = useStyles()
+  const isDark = theme.palette.mode === "dark"
   const data = useStaticQuery(graphql`
       query {
           on: file(relativePath: { eq: "quote-on.jpg" }) {

@@ -1,8 +1,9 @@
-import { Typography } from "@material-ui/core"
-import { makeStyles, useTheme } from "@material-ui/core/styles"
+import { Typography } from "@mui/material"
+import { useTheme } from "@mui/material/styles";
+import { makeStyles } from '../makeStyles';
 import React from "react"
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles()(theme => ({
   name: {
     fontWeight: 600,
     textTransform: "uppercase",
@@ -38,7 +39,7 @@ const useStyles = makeStyles(theme => ({
 }))
 
 export function Date({ children }) {
-  const classes = useStyles()
+  const { classes } = useStyles()
   return (
     <Typography variant="caption" className={classes.date}>
       {children}
@@ -48,14 +49,14 @@ export function Date({ children }) {
 
 export function HonorIcon() {
   const theme = useTheme()
-  const isDark = theme.palette.type === "dark"
-  const classes = useStyles()
+  const isDark = theme.palette.mode === "dark"
+  const { classes } = useStyles()
   return (<img src={isDark ? "/trophy_dark.svg" : "/trophy_light.svg"} alt="Honor" width={24}
                className={classes.icon} />)
 }
 
 export function HonorsSection() {
-  const classes = useStyles()
+  const { classes } = useStyles()
   return (
     <>
       <Typography variant="h5" className={classes.name} align="center">

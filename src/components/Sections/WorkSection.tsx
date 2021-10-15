@@ -1,10 +1,10 @@
-import { Divider, Typography } from "@material-ui/core"
-import { makeStyles } from "@material-ui/core/styles"
+import { Divider, Typography } from "@mui/material"
+import { makeStyles } from '../makeStyles';
 import React from "react"
 
 import { CVSection } from "./HomeSection"
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles()(theme => ({
   name: {
     fontWeight: 600,
     textTransform: "uppercase",
@@ -51,7 +51,7 @@ interface TitleProps {
 }
 
 export function Title({ link, title }: TitleProps) {
-  const classes = useStyles()
+  const { classes } = useStyles()
   return (
     <Typography variant="h6" className={classes.paragraph}>
       {link ?
@@ -64,7 +64,7 @@ export function Title({ link, title }: TitleProps) {
 
 
 export function WorkSection() {
-  const classes = useStyles()
+  const { classes } = useStyles()
   return (
     <>
       <Typography variant="h5" className={classes.name} align="center">

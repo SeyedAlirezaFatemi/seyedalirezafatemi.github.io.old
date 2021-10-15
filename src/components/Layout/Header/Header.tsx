@@ -1,23 +1,24 @@
 import "./hamburgers.css"
 
-import { AppBar, Grid, Hidden, List, ListItem, ListItemText, SwipeableDrawer, Typography } from "@material-ui/core"
-import { makeStyles, useTheme } from "@material-ui/core/styles"
+import { AppBar, Grid, Hidden, List, ListItem, ListItemText, SwipeableDrawer, Typography } from "@mui/material"
+import { useTheme } from "@mui/material/styles"
 import clsx from "clsx"
 import { Link } from "gatsby"
 import React, { useCallback } from "react"
 import { Helmet } from "react-helmet"
 
 import { Sections } from "../../../utils"
+import { makeStyles } from "../../makeStyles"
 import { Torch } from "../../Media"
 
 const colorModeTransition =
   "background 0.25s var(--ease-in-out-quad), color 0.25s var(--ease-in-out-quad)"
 
-const useStyles = makeStyles(theme => {
-  const isDark = theme.palette.type === "dark"
+const useStyles = makeStyles()(theme => {
+  const isDark = theme.palette.mode === "dark"
   const background = theme.palette.background.default
   const primary = isDark ? "#fff" : "#000"
-  return ({
+  return {
     header: {
       marginTop: 25,
       marginBottom: 25,
@@ -83,7 +84,7 @@ const useStyles = makeStyles(theme => {
         `,
         transform: `scale(${isDark ? 1 : 0})`,
         transition: "all 0.35s ease",
-        [theme.breakpoints.down("md")]: {
+        [theme.breakpoints.down("lg")]: {
           transform: `scale(${isDark ? 0.92 : 0})`,
         },
       },
@@ -116,7 +117,7 @@ const useStyles = makeStyles(theme => {
       "&:hover": {
         opacity: 1,
       },
-      [theme.breakpoints.down("md")]: {
+      [theme.breakpoints.down("lg")]: {
         display: "inline-flex",
         transform: "scale(0.708)",
         "&:hover": {
@@ -157,17 +158,17 @@ const useStyles = makeStyles(theme => {
       borderRadius: "10%",
     },
     torch: {
-      [theme.breakpoints.down("sm")]: {
+      [theme.breakpoints.down("md")]: {
         margin: "0 auto",
       },
     },
-  })
+  }
 })
 
 const DarkModeToggle = ({ toggleDayNight }) => {
   const theme = useTheme()
-  const classes = useStyles()
-  const isDark = theme.palette.type === `dark`
+  const { classes } = useStyles()
+  const isDark = theme.palette.mode === `dark`
 
   const toggleColorMode = useCallback((event) => {
     event.preventDefault()
@@ -189,7 +190,7 @@ const DarkModeToggle = ({ toggleDayNight }) => {
 }
 
 const MenuButton = ({ section, page, text }) => {
-  const classes = useStyles()
+  const { classes } = useStyles()
   return (
     <Link to={section.path}>
       <button className={clsx(classes.button, page === section.name && classes.buttonActive)}>
@@ -202,22 +203,22 @@ const MenuButton = ({ section, page, text }) => {
 }
 
 const Header = ({ onChangeThemeMode, page }) => {
-  const classes = useStyles()
+  const { classes } = useStyles()
   const theme = useTheme()
   return (
     <header className={classes.header}>
       <Helmet>
         <meta name="theme-color" content={theme.palette.background.default} />
       </Helmet>
-      <Grid container alignItems="center" justify="center">
-        <Grid container alignItems="center" justify="center">
+      <Grid container alignItems="center" justifyContent="center">
+        <Grid container alignItems="center" justifyContent="center">
           <DarkModeToggle toggleDayNight={onChangeThemeMode} />
         </Grid>
         <Hidden mdUp>
           <MobileNavigation />
         </Hidden>
-        <Grid container justify="space-between" alignItems="center">
-          <Hidden smDown>
+        <Grid container justifyContent="space-between" alignItems="center">
+          <Hidden mdDown>
             <Grid item>
               <MenuButton section={Sections.home} page={page} text={"HOME"} />
             </Grid>
@@ -228,7 +229,7 @@ const Header = ({ onChangeThemeMode, page }) => {
           <Grid item className={classes.torch}>
             <Torch onChangeThemeMode={onChangeThemeMode} />
           </Grid>
-          <Hidden smDown>
+          <Hidden mdDown>
             <Grid item>
               <MenuButton section={Sections.honors} page={page} text={"HONORS"} />
             </Grid>
@@ -243,10 +244,9 @@ const Header = ({ onChangeThemeMode, page }) => {
 }
 
 function MobileNavigation() {
-  const classes = useStyles()
+  const { classes } = useStyles()
   const [open, setOpen] = React.useState(false)
-  // @ts-ignore
-  const iOS = process.browser && /iPad|iPhone|iPod/.test(navigator.userAgent)
+  const iOS = typeof navigator !== "undefined" && /iPad|iPhone|iPod/.test(navigator.userAgent)
   const toggleDrawer = useCallback((open: boolean) => (
     event: React.KeyboardEvent | React.MouseEvent,
   ) => {
