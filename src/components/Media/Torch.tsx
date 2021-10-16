@@ -1,4 +1,3 @@
-import { useTheme } from "@mui/material/styles"
 import { graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
 import React from "react"
@@ -16,26 +15,25 @@ const useStyles = makeStyles()(theme => ({
 )
 
 export const Torch = ({ onChangeThemeMode }) => {
-  // const theme = useTheme()
   const { classes, theme } = useStyles()
   console.log(theme.palette.mode)
   const data = useStaticQuery(graphql`
-      query {
-          on: file(relativePath: { eq: "on.png" }) {
-              childImageSharp {
-                  fluid {
-                      ...GatsbyImageSharpFluid_noBase64
-                  }
-              }
+    query {
+      on: file(relativePath: { eq: "on.png" }) {
+        childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid_noBase64
           }
-          off: file(relativePath: { eq: "off.png" }) {
-              childImageSharp {
-                  fluid {
-                      ...GatsbyImageSharpFluid_noBase64
-                  }
-              }
-          }
+        }
       }
+      off: file(relativePath: { eq: "off.png" }) {
+        childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid_noBase64
+          }
+        }
+      }
+    }
   `)
   return (
     <div onClick={onChangeThemeMode}>

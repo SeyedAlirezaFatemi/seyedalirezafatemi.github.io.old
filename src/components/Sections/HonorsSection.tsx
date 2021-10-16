@@ -1,7 +1,7 @@
 import { Typography } from "@mui/material"
-import { useTheme } from "@mui/material/styles";
-import { makeStyles } from '../makeStyles';
 import React from "react"
+
+import { makeStyles } from "../makeStyles"
 
 const useStyles = makeStyles()(theme => ({
   name: {
@@ -48,9 +48,8 @@ export function Date({ children }) {
 }
 
 export function HonorIcon() {
-  const theme = useTheme()
+  const { classes, theme } = useStyles()
   const isDark = theme.palette.mode === "dark"
-  const { classes } = useStyles()
   return (<img src={isDark ? "/trophy_dark.svg" : "/trophy_light.svg"} alt="Honor" width={24}
                className={classes.icon} />)
 }

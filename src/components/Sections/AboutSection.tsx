@@ -1,5 +1,4 @@
 import { Typography } from "@mui/material"
-import { useTheme } from "@mui/material/styles";
 import { graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
 import React from "react"
@@ -21,8 +20,7 @@ const useStyles = makeStyles()(theme => ({
 // https://codepen.io/_Sabine/pen/EryxNr
 // https://codepen.io/screeny05/pen/rxObWx?q=quote%20author&limit=all&order=popularity&depth=everything&show_forks=falsehttps://codepen.io/screeny05/pen/rxObWx
 export function AboutSection() {
-  const theme = useTheme()
-  const { classes } = useStyles()
+  const { classes, theme } = useStyles()
   const isDark = theme.palette.mode === "dark"
   const data = useStaticQuery(graphql`
       query {

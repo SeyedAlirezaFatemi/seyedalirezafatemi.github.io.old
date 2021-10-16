@@ -1,5 +1,4 @@
 import { Chip, Divider, Grid, Typography } from "@mui/material"
-import clsx from "clsx"
 import React from "react"
 
 import { makeStyles } from "../makeStyles"
@@ -164,7 +163,7 @@ export function Skills() {
 }
 
 export function HomeSection() {
-  const { classes } = useStyles()
+  const { classes, cx } = useStyles()
   return <>
     <Typography className={classes.name} variant="h5" align="center">
       Seyed Alireza FatemiJahromi
@@ -219,7 +218,7 @@ export function HomeSection() {
     <CVSection title={"Education"}>
       <ul>
         <li>
-          <Typography variant="body1" className={clsx(classes.paragraph, classes.headline)}>
+          <Typography variant="body1" className={cx(classes.paragraph, classes.headline)}>
             Aalto University
           </Typography>
           <Typography variant="subtitle1" className={classes.paragraph}>
@@ -227,7 +226,7 @@ export function HomeSection() {
           </Typography>
         </li>
         <li>
-          <Typography variant="body1" className={clsx(classes.paragraph, classes.headline)}>
+          <Typography variant="body1" className={cx(classes.paragraph, classes.headline)}>
             Sharif University of Technology
           </Typography>
           <Typography variant="subtitle2" className={classes.paragraph}>
@@ -239,7 +238,7 @@ export function HomeSection() {
           </Typography>
         </li>
         <li>
-          <Typography variant="body1" className={clsx(classes.paragraph, classes.headline)}>
+          <Typography variant="body1" className={cx(classes.paragraph, classes.headline)}>
             Shahid Dastgheib High School
           </Typography>
           <Typography variant="subtitle2" className={classes.paragraph}>
@@ -256,7 +255,7 @@ export function HomeSection() {
     <CVSection title={"Languages"}>
       <ul>
         <li>
-          <Typography variant="body1" className={clsx(classes.paragraph, classes.headline)}>
+          <Typography variant="body1" className={cx(classes.paragraph, classes.headline)}>
             Persian
           </Typography>
           <Typography variant="subtitle2" className={classes.paragraph}>
@@ -264,7 +263,7 @@ export function HomeSection() {
           </Typography>
         </li>
         <li>
-          <Typography variant="body1" className={clsx(classes.paragraph, classes.headline)}>
+          <Typography variant="body1" className={cx(classes.paragraph, classes.headline)}>
             English
           </Typography>
           <Typography variant="subtitle2" className={classes.paragraph}>

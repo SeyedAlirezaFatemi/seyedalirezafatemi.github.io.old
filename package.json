@@ -8,7 +8,6 @@
     "@emotion/styled": "^11.3.0",
     "@mitch528/mdi-material-ui": "^7.0.0",
     "@mui/material": "^5.0.4",
-    "clsx": "^1.1.1",
     "gatsby": "^3.14.3",
     "gatsby-image": "^3.11.0",
     "gatsby-plugin-manifest": "^3.14.0",
@@ -23,7 +22,7 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-helmet": "^6.1.0",
-    "tss-react": "^1.0.3"
+    "tss-react": "^1.1.0"
   },
   "devDependencies": {
     "@types/node": "^16.11.0",

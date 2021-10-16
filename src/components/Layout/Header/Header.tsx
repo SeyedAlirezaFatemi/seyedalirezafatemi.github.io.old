@@ -1,8 +1,6 @@
 import "./hamburgers.css"
 
 import { AppBar, Grid, Hidden, List, ListItem, ListItemText, SwipeableDrawer, Typography } from "@mui/material"
-import { useTheme } from "@mui/material/styles"
-import clsx from "clsx"
 import { Link } from "gatsby"
 import React, { useCallback } from "react"
 import { Helmet } from "react-helmet"
@@ -166,8 +164,7 @@ const useStyles = makeStyles()(theme => {
 })
 
 const DarkModeToggle = ({ toggleDayNight }) => {
-  const theme = useTheme()
-  const { classes } = useStyles()
+  const { classes, theme } = useStyles()
   const isDark = theme.palette.mode === `dark`
 
   const toggleColorMode = useCallback((event) => {
@@ -190,10 +187,10 @@ const DarkModeToggle = ({ toggleDayNight }) => {
 }
 
 const MenuButton = ({ section, page, text }) => {
-  const { classes } = useStyles()
+  const { classes, cx } = useStyles()
   return (
     <Link to={section.path}>
-      <button className={clsx(classes.button, page === section.name && classes.buttonActive)}>
+      <button className={cx(classes.button, page === section.name && classes.buttonActive)}>
         <Typography variant="button" color="textPrimary">
           {text}
         </Typography>
@@ -203,8 +200,7 @@ const MenuButton = ({ section, page, text }) => {
 }
 
 const Header = ({ onChangeThemeMode, page }) => {
-  const { classes } = useStyles()
-  const theme = useTheme()
+  const { classes, theme } = useStyles()
   return (
     <header className={classes.header}>
       <Helmet>
