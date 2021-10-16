@@ -99,7 +99,7 @@ export function WorkSection() {
           title={"Iran's National Elites Foundation, Tehran, Iran"}
         />
         <Typography variant="subtitle1" className={classes.paragraph}>
-          Research Assistant | Spring 2019 - Summer 2020 (18 months)
+          Research Assistant & Web Developer | Spring 2019 - Summer 2020 (18 months)
         </Typography>
         <Typography variant="body1" className={classes.paragraph} align="justify">
           I was a member of a project funded by Iran's National Elites Foundation, supervised by Prof. Behroozi and
