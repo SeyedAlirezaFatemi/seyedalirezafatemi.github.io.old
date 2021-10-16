@@ -46,17 +46,17 @@ export function AboutSection() {
     <Typography variant="body1" className={classes.about}>
       <Img alt="Quote" fluid={isDark ? data.off.childImageSharp.fluid : data.on.childImageSharp.fluid}
            className={classes.image} />
-      Welcome! My name is Seyed Alireza FatemiJahromi. I am a Master's student in Computer Science at Aalto
-      University, Espoo, Finland. I received my Bachelor's degree in Computer Engineering from Sharif University of
-      Technology, Tehran, Iran.
+      Welcome! My name is Seyed Alireza FatemiJahromi. I am a Master's student in Computer Science (Big Data and
+      Large-Scale Computing study track) at Aalto University, Espoo, Finland. I received my Bachelor's degree in
+      Computer Engineering from Sharif University of Technology, Tehran, Iran.
       <br />
       Research-wise, my chief areas of interest are Visual Computing and Machine Learning. I'm fascinated by the use of
       Machine
       Learning in various fields and applications of Computer Graphics &
       Vision such as Geometric Deep Learning, 2D/3D Reconstruction, Rendering, Satellite & Aerial Image Analysis, Art &
       Image Generation, Deepfakes, Image Enhancement, etc.
-      On top of these topics, I really enjoy Software, Game, and Web development, especially Front-end web development and
-      Graphics programming. I love playing with shapes and meshes!
+      On top of these topics, I really enjoy Software, Game, and Web development, especially Front-end web development
+      and Graphics programming. I love playing with shapes and meshes!
       <br />
       During my undergraduate studies, I have worked on several research projects in Computer Vision, and I believe I
       have proved myself as a self-motivated and hardworking researcher. My research was focused on Medical Image
