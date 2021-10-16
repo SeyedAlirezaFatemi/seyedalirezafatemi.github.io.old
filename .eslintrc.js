@@ -29,8 +29,6 @@ module.exports = {
     "plugin:jsx-a11y/recommended",
     "plugin:react-hooks/recommended",
     "prettier",
-    "prettier/react",
-    "prettier/@typescript-eslint",
   ],
   settings: {
     react: {
@@ -45,5 +43,12 @@ module.exports = {
     "import/newline-after-import": "error",
     "import/no-duplicates": "error",
     "react/prop-types": "off",
+    // From https://mui.com/guides/minimizing-bundle-size/
+    "no-restricted-imports": [
+      "error",
+      {
+        "patterns": ["@mui/*/*/*", "!@mui/material/test-utils/*"]
+      }
+    ]
   },
 }

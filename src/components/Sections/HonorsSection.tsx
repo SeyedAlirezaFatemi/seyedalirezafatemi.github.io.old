@@ -1,8 +1,9 @@
-import { Typography } from "@material-ui/core"
-import { makeStyles, useTheme } from "@material-ui/core/styles"
+import { Typography } from "@mui/material"
 import React from "react"
 
-const useStyles = makeStyles(theme => ({
+import { makeStyles } from "../makeStyles"
+
+const useStyles = makeStyles()(theme => ({
   name: {
     fontWeight: 600,
     textTransform: "uppercase",
@@ -38,7 +39,7 @@ const useStyles = makeStyles(theme => ({
 }))
 
 export function Date({ children }) {
-  const classes = useStyles()
+  const { classes } = useStyles()
   return (
     <Typography variant="caption" className={classes.date}>
       {children}
@@ -47,15 +48,14 @@ export function Date({ children }) {
 }
 
 export function HonorIcon() {
-  const theme = useTheme()
-  const isDark = theme.palette.type === "dark"
-  const classes = useStyles()
+  const { classes, theme } = useStyles()
+  const isDark = theme.palette.mode === "dark"
   return (<img src={isDark ? "/trophy_dark.svg" : "/trophy_light.svg"} alt="Honor" width={24}
                className={classes.icon} />)
 }
 
 export function HonorsSection() {
-  const classes = useStyles()
+  const { classes } = useStyles()
   return (
     <>
       <Typography variant="h5" className={classes.name} align="center">
@@ -102,13 +102,16 @@ export function HonorsSection() {
           ISBI 2020</a>.
           I was one of the three members of Sharif HooshPardaz Team, Supervised by Prof. Soleymani and Prof. Behroozi.
           I presented our method at the MoNuSAC 2020 Workshop. Joint paper with the challenge organizers and
-          participants in the works (will potentially be published in IEEE Transactions on Medical Imaging). <a
+          participants published in IEEE Transactions on Medical Imaging. <a
           href="/MoNuSAC2020.pdf"
           target="_blank" rel="noopener noreferrer">
           Certificate of Participation</a> + <a
           href="https://www.youtube.com/watch?v=QztsH4IYQRA&t=149s"
           target="_blank" rel="noopener noreferrer">
-          Workshop</a>.
+          Workshop</a> + <a
+          href="https://ieeexplore.ieee.org/document/9446924"
+          target="_blank" rel="noopener noreferrer">
+          Paper</a>.
           <Date>Spring 2020</Date>
         </li>
         <li>

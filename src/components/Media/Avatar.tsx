@@ -1,21 +1,22 @@
-import { makeStyles } from "@material-ui/core/styles"
 import { graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
 import React from "react"
 
-const useStyles = makeStyles(theme => ({
+import { makeStyles } from "../makeStyles"
+
+const useStyles = makeStyles()(theme => ({
   avatar: {
     width: "200px",
     height: "200px",
     borderRadius: "50%",
-  }
+  },
 }))
 
 export function Avatar(props) {
-  const classes = useStyles()
+  const { classes } = useStyles()
   const data = useStaticQuery(graphql`
     query {
-      placeholderImage: file(relativePath: { eq: "avatar.jpg" }) {
+      placeholderImage: file(relativePath: { eq: "avatar.png" }) {
         childImageSharp {
           fixed(width: 200, height: 200, quality: 100) {
             ...GatsbyImageSharpFixed_noBase64

@@ -1,10 +1,10 @@
-import { Divider, Typography } from "@material-ui/core"
-import { makeStyles } from "@material-ui/core/styles"
+import { Divider, Typography } from "@mui/material"
+import { makeStyles } from "../makeStyles"
 import React from "react"
 
 import { CVSection } from "./HomeSection"
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles()(theme => ({
   name: {
     fontWeight: 600,
     textTransform: "uppercase",
@@ -51,7 +51,7 @@ interface TitleProps {
 }
 
 export function Title({ link, title }: TitleProps) {
-  const classes = useStyles()
+  const { classes } = useStyles()
   return (
     <Typography variant="h6" className={classes.paragraph}>
       {link ?
@@ -64,13 +64,24 @@ export function Title({ link, title }: TitleProps) {
 
 
 export function WorkSection() {
-  const classes = useStyles()
+  const { classes } = useStyles()
   return (
     <>
       <Typography variant="h5" className={classes.name} align="center">
         Research & Work
       </Typography>
       <CVSection title={"Research & Work Experiences"}>
+        <Title
+          link={""}
+          title={"University of Toronto, Dynamic Graphics Project Lab, Remote"}
+        />
+        <Typography variant="subtitle1" className={classes.paragraph}>
+          Research Assistant | Summer 2021
+        </Typography>
+        <Typography variant="body1" className={classes.paragraph} align="justify">
+          I worked as a research assistant under the supervision of Prof. Alec Jacobson. My topic of research was about
+          Geometry Processing and Computer Graphics combined with Machine Learning.
+        </Typography>
         <Title
           link={""}
           title={"Robust and Interpretable Machine Learning Lab, Tehran, Iran"}
@@ -267,7 +278,8 @@ export function WorkSection() {
           Fall 2017
         </Typography>
         <Typography variant="body1" className={classes.paragraph}>
-          I designed a digital safe using Verilog HDL for the project of Logic Circuits and Digital Systems course. It was
+          I designed a digital safe using Verilog HDL for the project of Logic Circuits and Digital Systems course. It
+          was
           successfully tested on Xilinix Spartan 6 FPGA. The code is available on <a
           href="https://github.com/SeyedAlirezaFatemi/TheSafe"
           target="_blank" rel="noopener noreferrer">GitHub</a>.
