@@ -5,6 +5,7 @@
   "author": "Seyed Alireza FatemiJahromi",
   "dependencies": {
     "@emotion/react": "^11.4.1",
+    "@emotion/server": "^11.4.0",
     "@emotion/styled": "^11.3.0",
     "@mitch528/mdi-material-ui": "^7.0.0",
     "@mui/material": "^5.0.4",

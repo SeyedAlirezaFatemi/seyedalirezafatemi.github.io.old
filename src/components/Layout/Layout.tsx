@@ -2,7 +2,7 @@ import createCache from "@emotion/cache"
 import { CacheProvider } from "@emotion/react"
 import { Box, CssBaseline, Divider } from "@mui/material"
 import { ThemeProvider } from "@mui/material/styles"
-import React from "react"
+import React, { useState } from "react"
 
 import { useLocalStorage } from "../../utils"
 import { Footer } from "./Footer/Footer"
@@ -10,11 +10,13 @@ import Header from "./Header/Header"
 import { darkTheme, lightTheme } from "./theme"
 
 export const muiCache = createCache({
-  "key": "mui",
+  "key": "css",
   "prepend": true,
 })
 
 function getInitialColorMode(): string {
+  // TODO: Fix this later.
+  return "light"
   // Let's check the media query
   if (typeof window !== "undefined") {
     const mql = window.matchMedia("(prefers-color-scheme: dark)")
@@ -29,7 +31,9 @@ function getInitialColorMode(): string {
 }
 
 export const Layout = ({ children, page }) => {
-  const [theme, setTheme] = useLocalStorage("theme", getInitialColorMode())
+  // TODO: Fix this later.
+  // const [theme, setTheme] = useLocalStorage("theme", getInitialColorMode())
+  const [theme, setTheme] = useState(getInitialColorMode())
   const handleThemeModeChange = () => setTheme(theme === "light" ? "dark" : "light")
   return (
     <MasterWrapper theme={theme}>
