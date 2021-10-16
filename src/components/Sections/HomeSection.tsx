@@ -222,7 +222,9 @@ export function HomeSection() {
             Aalto University
           </Typography>
           <Typography variant="subtitle1" className={classes.paragraph}>
-            Master of Science in Computer Science | Espoo | Aug. 2021 - Expected Aug. 2023
+            Master of Science in Computer Science (Big Data and Large-Scale Computing)
+            <br/>
+            Espoo, Finland | Aug. 2021 - Expected Aug. 2023
           </Typography>
         </li>
         <li>
@@ -234,7 +236,9 @@ export function HomeSection() {
             GPA: <strong>19.21/20</strong> (<strong>3.96/4</strong>)
           </Typography>
           <Typography variant="subtitle1" className={classes.paragraph}>
-            Bachelor of Science in Computer Engineering | Tehran | Sep. 2016 - May 2021
+            Bachelor of Science in Computer Engineering
+            <br/>
+            Tehran, Iran | Sep. 2016 - May 2021
           </Typography>
         </li>
         <li>
@@ -245,7 +249,9 @@ export function HomeSection() {
             GPA: <strong>19.69/20</strong>
           </Typography>
           <Typography variant="subtitle1" className={classes.paragraph}>
-            Diploma | National Organization for Development of Exceptional Talents(NODET) | Shiraz | 2012 – 2016
+            Mathematics & Physics Diploma | National Organization for Development of Exceptional Talents(NODET)
+            <br/>
+            Shiraz, Iran | 2012 – 2016
           </Typography>
         </li>
       </ul>

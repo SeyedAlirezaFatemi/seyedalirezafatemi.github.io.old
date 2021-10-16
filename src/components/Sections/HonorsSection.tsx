@@ -102,13 +102,16 @@ export function HonorsSection() {
           ISBI 2020</a>.
           I was one of the three members of Sharif HooshPardaz Team, Supervised by Prof. Soleymani and Prof. Behroozi.
           I presented our method at the MoNuSAC 2020 Workshop. Joint paper with the challenge organizers and
-          participants in the works (will potentially be published in IEEE Transactions on Medical Imaging). <a
+          participants published in IEEE Transactions on Medical Imaging. <a
           href="/MoNuSAC2020.pdf"
           target="_blank" rel="noopener noreferrer">
           Certificate of Participation</a> + <a
           href="https://www.youtube.com/watch?v=QztsH4IYQRA&t=149s"
           target="_blank" rel="noopener noreferrer">
-          Workshop</a>.
+          Workshop</a> + <a
+          href="https://ieeexplore.ieee.org/document/9446924"
+          target="_blank" rel="noopener noreferrer">
+          Paper</a>.
           <Date>Spring 2020</Date>
         </li>
         <li>

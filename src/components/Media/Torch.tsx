@@ -16,7 +16,6 @@ const useStyles = makeStyles()(theme => ({
 
 export const Torch = ({ onChangeThemeMode }) => {
   const { classes, theme } = useStyles()
-  console.log(theme.palette.mode)
   const data = useStaticQuery(graphql`
     query {
       on: file(relativePath: { eq: "on.png" }) {
