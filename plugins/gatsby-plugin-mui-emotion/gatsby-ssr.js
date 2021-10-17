@@ -15,7 +15,7 @@ export const replaceRenderer = ({ bodyComponent, setHeadComponents, replaceBodyH
   const html = renderToString(bodyComponent)
 
   const emotionStyles = createEmotionServer(cache).extractCriticalToChunks(html)
-  const tssStyles = createEmotionServer(tssCache).extractCriticalToChunks(html)
+  const tssStyles = createEmotionServer(tssCache).extractCriticalToChunks(emotionStyles.html)
 
   setHeadComponents(
     [...emotionStyles.styles.map((style) => (
@@ -34,5 +34,5 @@ export const replaceRenderer = ({ bodyComponent, setHeadComponents, replaceBodyH
   )
 
   // render the result from `extractCritical`
-  replaceBodyHTMLString(html)
+  replaceBodyHTMLString(tssStyles.html)
 }

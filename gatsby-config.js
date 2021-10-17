@@ -17,8 +17,8 @@ module.exports = {
         path: path.join(__dirname, "src", "images"),
       },
     },
+    "gatsby-plugin-top-layout",
     "gatsby-plugin-react-helmet",
-    "gatsby-plugin-mui-emotion",
     {
       resolve: "gatsby-plugin-manifest",
       options: {
@@ -33,6 +33,7 @@ module.exports = {
       },
     },
     "gatsby-plugin-preact",
+    "gatsby-plugin-mui-emotion",
     "gatsby-plugin-webpack-bundle-analyser-v2",
   ],
 }
