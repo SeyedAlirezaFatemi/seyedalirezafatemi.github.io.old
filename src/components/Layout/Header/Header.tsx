@@ -278,7 +278,7 @@ function MobileNavigation() {
 
   return (
     <nav>
-      <AppBar elevation={0} className={classes.appBar} position="absolute">
+      <AppBar elevation={0} className={classes.appBar} sx={{ left: 0 }} position="absolute">
         <button className={`hamburger hamburger--spin ${open ? "is-active" : ""} ${classes.hamburger}`} type="button"
                 onClick={toggleDrawer(true)} aria-label="Menu" aria-controls="navigation"
                 aria-expanded={open ? "true" : "false"}>
