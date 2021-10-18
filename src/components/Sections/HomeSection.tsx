@@ -3,7 +3,6 @@ import React from "react"
 
 import { makeStyles } from "../makeStyles"
 import { Avatar } from "../Media"
-import { HonorIcon } from "./HonorsSection"
 
 const useStyles = makeStyles()(theme => ({
   name: {
@@ -32,9 +31,13 @@ const useStyles = makeStyles()(theme => ({
   interestsList: {
     textAlign: "justify",
     marginTop: theme.spacing(2),
+    paddingLeft: theme.spacing(2),
     "& li": {
       marginBottom: theme.spacing(1),
     },
+  },
+  list: {
+    paddingLeft: theme.spacing(2),
   },
   interests: {
     marginBottom: theme.spacing(2),
@@ -42,14 +45,6 @@ const useStyles = makeStyles()(theme => ({
   avatar: {
     marginTop: theme.spacing(2),
     marginBottom: theme.spacing(2),
-  },
-  honorsList: {
-    listStyle: "none !important",
-    paddingLeft: 0,
-    textAlign: "justify",
-    "& li": {
-      marginBottom: theme.spacing(2),
-    },
   },
   skills: {
     "& .chip": {
@@ -70,39 +65,6 @@ export function CVSection({ title, children }) {
         {children}
       </div>
     </div>
-  )
-}
-
-export function News() {
-  const { classes } = useStyles()
-  return (
-    <CVSection title={"News"}>
-      <Typography variant="body2" className={classes.interests}>
-        <ul className={classes.honorsList}>
-          {/*<li>*/}
-          {/*  <HonorIcon />I was participate in <a href={"https://geometryinstitute.mit.edu/"} target="_blank"*/}
-          {/*                                        rel="noopener noreferrer">MIT's Summer Geometry Institute (SGI) 2021</a>.*/}
-          {/*</li>*/}
-          <li>
-            <HonorIcon />Ranked <strong>5<sup>th</sup></strong> in <a
-            href="https://paip2020.grand-challenge.org/rank/"
-            target="_blank" rel="noopener noreferrer">PAIP (Pathology AI Platform) 2020 Challenge</a>. I was
-            one of the two members of Sharif HooshPardaz Team, supervised by Prof. Soleymani and Prof. Behroozi. I
-            presented our method at the AI Pathology Challenge Workshop at the <a
-            href="https://www.kosombe.or.kr/"
-            target="_blank" rel="noopener noreferrer">Virtual KOSOMBE Conference</a>, South Korea, on Nov 12, 2020. The
-            challenge was about the automated classification of molecular subtypes in colorectal cancer for whole-slide
-            image analysis. It consisted of two tasks, MSI-High Classification, and Whole Tumor Area Segmentation. <a
-            href="/PAIP2020.pdf"
-            target="_blank" rel="noopener noreferrer">
-            Certificate of Award</a> + <a
-            href="https://paip2020.grand-challenge.org/workshop/"
-            target="_blank" rel="noopener noreferrer">
-            Workshop Material</a>.
-          </li>
-        </ul>
-      </Typography>
-    </CVSection>
   )
 }
 
@@ -216,14 +178,14 @@ export function HomeSection() {
 
     <Divider />
     <CVSection title={"Education"}>
-      <ul>
+      <ul className={classes.list}>
         <li>
           <Typography variant="body1" className={cx(classes.paragraph, classes.headline)}>
             Aalto University
           </Typography>
           <Typography variant="subtitle1" className={classes.paragraph}>
             Master of Science in Computer Science (Big Data and Large-Scale Computing)
-            <br/>
+            <br />
             Espoo, Finland | Aug. 2021 - Expected Aug. 2023
           </Typography>
         </li>
@@ -237,7 +199,7 @@ export function HomeSection() {
           </Typography>
           <Typography variant="subtitle1" className={classes.paragraph}>
             Bachelor of Science in Computer Engineering
-            <br/>
+            <br />
             Tehran, Iran | Sep. 2016 - May 2021
           </Typography>
         </li>
@@ -250,7 +212,7 @@ export function HomeSection() {
           </Typography>
           <Typography variant="subtitle1" className={classes.paragraph}>
             Mathematics & Physics Diploma | National Organization for Development of Exceptional Talents(NODET)
-            <br/>
+            <br />
             Shiraz, Iran | 2012 – 2016
           </Typography>
         </li>
@@ -259,7 +221,7 @@ export function HomeSection() {
 
     <Divider />
     <CVSection title={"Languages"}>
-      <ul>
+      <ul className={classes.list}>
         <li>
           <Typography variant="body1" className={cx(classes.paragraph, classes.headline)}>
             Persian
