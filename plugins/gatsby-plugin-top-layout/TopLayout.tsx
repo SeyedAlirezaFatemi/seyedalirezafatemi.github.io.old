@@ -15,7 +15,7 @@ export const muiCache = createCache({
 
 
 function getInitialColorMode(): string {
-  // TODO: Fix.
+  // TODO: Fix. https://github.com/garronej/tss-react/issues/30
   return "light"
   // Let's check the media query
   if (typeof window !== "undefined") {

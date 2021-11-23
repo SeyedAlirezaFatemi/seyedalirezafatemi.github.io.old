@@ -170,8 +170,18 @@ export function HomeSection() {
           <li>Visual Computing (Computer Graphics & Vision)</li>
           <li>Machine Learning & Deep Learning</li>
           <li>Geometry Processing & Geometric Deep Learning</li>
-          <li>Rendering & Physics Simulation</li>
           <li>Game Design & Artificial Intelligence</li>
+        </ul>
+      </Typography>
+    </CVSection>
+
+    <Divider />
+    <CVSection title={"Interests"}>
+      <Typography variant="body2" className={classes.interests}>
+        <ul className={classes.interestsList}>
+          <li>Graphics programming and Game development</li>
+          <li>Software & Web development (Especially front-end)</li>
+          <li>Data science and visualization</li>
         </ul>
       </Typography>
     </CVSection>
@@ -243,29 +253,29 @@ export function HomeSection() {
       </ul>
     </CVSection>
 
-    <Divider />
-    <CVSection title={"Publications"}>
-      <Typography variant="body2">
-        <ol className={classes.interestsList}>
-          * Denotes first author or co-first author paper
-          <li>* A. A. Khani, <strong>* S. A. Fatemi Jahromi</strong>, H. O. Shahreza, H. Behroozi and M. S.
-            Baghshah, <a
-              href="https://ieeexplore.ieee.org/document/9066019" target="_blank" rel="noreferrer"><i>&quot;Towards
-              Automatic Prostate Gleason Grading via Deep Convolutional Neural Networks&quot;</i></a>, The
-            5<sup>th</sup> Iranian Conference on Signal Processing and Intelligent Systems (ICSPIS 2019), Shahrood,
-            Iran, 2019
-          </li>
-          <li>
-            <strong>* S. A. Fatemi Jahromi</strong>, * A. A. Khani, H. O. Shahreza, M. S. Baghshah and H.
-            Behroozi, <a
-            href="https://ieeexplore.ieee.org/abstract/document/9349569" target="_blank" rel="noreferrer"><i>&quot;A
-            Deep Learning Framework for Viable Tumor Burden Estimation&quot;</i></a>,
-            The 6<sup>th</sup> Iranian Conference on Signal Processing and Intelligent Systems (ICSPIS
-            2020), Mashhad, Iran, 2020
-          </li>
-        </ol>
-      </Typography>
-    </CVSection>
+    {/*<Divider />*/}
+    {/*<CVSection title={"Publications"}>*/}
+    {/*  <Typography variant="body2">*/}
+    {/*    <ol className={classes.interestsList}>*/}
+    {/*      * Denotes first author or co-first author paper*/}
+    {/*      <li>* A. A. Khani, <strong>* S. A. Fatemi Jahromi</strong>, H. O. Shahreza, H. Behroozi and M. S.*/}
+    {/*        Baghshah, <a*/}
+    {/*          href="https://ieeexplore.ieee.org/document/9066019" target="_blank" rel="noreferrer"><i>&quot;Towards*/}
+    {/*          Automatic Prostate Gleason Grading via Deep Convolutional Neural Networks&quot;</i></a>, The*/}
+    {/*        5<sup>th</sup> Iranian Conference on Signal Processing and Intelligent Systems (ICSPIS 2019), Shahrood,*/}
+    {/*        Iran, 2019*/}
+    {/*      </li>*/}
+    {/*      <li>*/}
+    {/*        <strong>* S. A. Fatemi Jahromi</strong>, * A. A. Khani, H. O. Shahreza, M. S. Baghshah and H.*/}
+    {/*        Behroozi, <a*/}
+    {/*        href="https://ieeexplore.ieee.org/abstract/document/9349569" target="_blank" rel="noreferrer"><i>&quot;A*/}
+    {/*        Deep Learning Framework for Viable Tumor Burden Estimation&quot;</i></a>,*/}
+    {/*        The 6<sup>th</sup> Iranian Conference on Signal Processing and Intelligent Systems (ICSPIS*/}
+    {/*        2020), Mashhad, Iran, 2020*/}
+    {/*      </li>*/}
+    {/*    </ol>*/}
+    {/*  </Typography>*/}
+    {/*</CVSection>*/}
 
     <Divider />
     <Skills />

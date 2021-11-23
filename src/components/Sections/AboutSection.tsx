@@ -1,4 +1,4 @@
-import { Typography } from "@mui/material"
+import { Typography, Box } from "@mui/material"
 import { graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
 import React from "react"
@@ -23,51 +23,52 @@ export function AboutSection() {
   const { classes, theme } = useStyles()
   const isDark = theme.palette.mode === "dark"
   const data = useStaticQuery(graphql`
-    query {
-      on: file(relativePath: { eq: "quote-on.jpg" }) {
-        childImageSharp {
-          fluid(maxWidth: 600, quality: 100) {
-            ...GatsbyImageSharpFluid_noBase64
-            ...GatsbyImageSharpFluidLimitPresentationSize
+      query {
+          on: file(relativePath: { eq: "quote-on.jpg" }) {
+              childImageSharp {
+                  fluid(maxWidth: 600, quality: 100) {
+                      ...GatsbyImageSharpFluid_noBase64
+                      ...GatsbyImageSharpFluidLimitPresentationSize
+                  }
+              }
           }
-        }
-      }
-      off: file(relativePath: { eq: "quote-off.jpg" }) {
-        childImageSharp {
-          fluid(maxWidth: 600, quality: 100) {
-            ...GatsbyImageSharpFluid_noBase64
-            ...GatsbyImageSharpFluidLimitPresentationSize
+          off: file(relativePath: { eq: "quote-off.jpg" }) {
+              childImageSharp {
+                  fluid(maxWidth: 600, quality: 100) {
+                      ...GatsbyImageSharpFluid_noBase64
+                      ...GatsbyImageSharpFluidLimitPresentationSize
+                  }
+              }
           }
-        }
       }
-    }
   `)
   return (
-    <Typography variant="body1" className={classes.about}>
+    <Typography variant="body1" align="justify">
       <Img alt="Quote" fluid={isDark ? data.off.childImageSharp.fluid : data.on.childImageSharp.fluid}
            className={classes.image} />
       Welcome! My name is Seyed Alireza FatemiJahromi. I am a Master's student in Computer Science (Big Data and
-      Large-Scale Computing study track) at Aalto University, Espoo, Finland. I received my Bachelor's degree in
+      Large-Scale Computing) at Aalto University, Espoo, Finland. I received my Bachelor's degree in
       Computer Engineering from Sharif University of Technology, Tehran, Iran.
       <br />
-      Research-wise, my chief areas of interest are Visual Computing and Machine Learning. I'm fascinated by the use of
-      Machine
-      Learning in various fields and applications of Computer Graphics &
-      Vision such as Geometric Deep Learning, 2D/3D Reconstruction, Rendering, Satellite & Aerial Image Analysis, Art &
-      Image Generation, Deepfakes, Image Enhancement, etc.
+      Research-wise, my chief areas of interest are Visual Computing and Machine Learning.
+      I'm fascinated by the use of Machine Learning in various fields and applications of Computer Graphics & Vision
+      such as Geometric Deep Learning, Art & Image Generation, 2D/3D Reconstruction, Rendering, Deepfakes, Image
+      Enhancement, etc.
       On top of these topics, I really enjoy Software, Game, and Web development, especially Front-end web development
       and Graphics programming. I love playing with shapes and meshes!
       <br />
-      During my undergraduate studies, I have worked on several research projects in Computer Vision, and I believe I
-      have proved myself as a self-motivated and hardworking researcher. My research was focused on Medical Image
-      Analysis using Deep Learning. I worked on classifying and segmenting gigapixel digital pathology whole-slide
-      images, COVID-19 patients' CT scan images, and 3D brain MRI images. I also have a lot of experience in designing
-      and implementing mobile and web applications. I've worked with various frameworks and libraries such as React,
-      React Native, Gatsby, Next, Django, Flask, etc.
+      During my undergraduate studies, I worked on several research projects, and I believe I have proved myself as a
+      self-motivated and hardworking researcher.
+      My research was focused on Medical Image Analysis using Deep Learning.
+      I worked on classifying and segmenting gigapixel digital pathology whole-slide
+      images, COVID-19 patients' CT scan images, and 3D brain MRI images.
+      I also have a lot of experience in designing and implementing mobile and web applications.
+      I've worked with various frameworks and libraries such as React, React Native, Gatsby, Next, Django, Flask, etc.
       <br />
-      I plan to continue my research and expand my knowledge as a graduate student in Visual Computing & Machine
-      Learning. I believe that with knowledge and skills in these fields, we can create innovative and creative
-      solutions and methods that can impact people's lives.
+      I want to expand my knowledge as a graduate student in Visual Computing, Machine Learning, and Software
+      Development.
+      I believe that with knowledge and skills in these fields, we can create innovative and creative solutions and
+      methods that can impact people's lives.
       <br />
       I'm comfortable with working alone as well as working in large teams of diverse people. I take my responsibilities
       seriously, and I try my best to positively influence and help the people and the world around me. I'm a fast and
