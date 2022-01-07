@@ -9,8 +9,8 @@ import { darkTheme, lightTheme } from "../../src/components/Layout/theme"
 import { useLocalStorage } from "../../src/utils"
 
 export const muiCache = createCache({
-  "key": "css",
-  "prepend": true,
+  key: "mui",
+  prepend: true,
 })
 
 

@@ -11,7 +11,7 @@ import getEmotionCache from "./getEmotionCache"
 
 export const replaceRenderer = ({ bodyComponent, setHeadComponents, replaceBodyHTMLString }) => {
   const cache = getEmotionCache()
-  const tssCache = getTssDefaultEmotionCache()
+  const tssCache = getTssDefaultEmotionCache({ "doReset": true })
   const html = renderToString(bodyComponent)
 
   const emotionStyles = createEmotionServer(cache).extractCriticalToChunks(html)

@@ -139,11 +139,8 @@ export function HomeSection() {
           Master's Student in Computer Science at Aalto University
         </Typography>
         <Typography variant="subtitle1" className={classes.paragraph}>
-          Interested in Visual Computing & Machine Learning
+          Researching on Visual Computing & Machine Learning
         </Typography>
-        {/*<Typography variant="subtitle1" className={classes.paragraph}>*/}
-        {/*  Born September 23<sup>th</sup>, 1998*/}
-        {/*</Typography>*/}
         {/*<Typography variant="subtitle1" className={classes.paragraph}>*/}
         {/*  Highly motivated, energetic and creative individual seeking new adventures.*/}
         {/*</Typography>*/}
