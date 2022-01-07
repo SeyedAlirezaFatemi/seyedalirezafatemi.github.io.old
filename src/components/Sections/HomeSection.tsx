@@ -77,7 +77,7 @@ export function Skills() {
           <tr>
             <td>Programming Languages</td>
             <td className={classes.skills}>
-              {["C", "C++", "Java", "Kotlin", "Pyhton",
+              {["C", "C++", "Java", "Kotlin", "Python",
                 "JavaScript", "TypeScript", "Racket", "MATLAB"].map(label => (
                 <Chip key={label} label={label} className={"chip"} />))}
             </td>
