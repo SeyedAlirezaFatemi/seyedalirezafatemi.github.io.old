@@ -1,5 +1,5 @@
 import createCache from "@emotion/cache"
 
 export default function getEmotionCache() {
-  return createCache({ key: "mui", prepend: true })
+  return createCache({ key: "css", prepend: true })
 }

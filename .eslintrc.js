@@ -1,4 +1,5 @@
 module.exports = {
+  root: true,
   parser: "@typescript-eslint/parser",
   parserOptions: {
     ecmaVersion: 2018,
@@ -47,8 +48,8 @@ module.exports = {
     "no-restricted-imports": [
       "error",
       {
-        "patterns": ["@mui/*/*/*", "!@mui/material/test-utils/*"]
-      }
-    ]
+        "patterns": ["@mui/*/*/*", "!@mui/material/test-utils/*"],
+      },
+    ],
   },
 }
