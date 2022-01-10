@@ -1,4 +1,5 @@
 import createCache from "@emotion/cache"
+import { CacheProvider } from "@emotion/react"
 import CssBaseline from "@mui/material/CssBaseline"
 import { ThemeProvider } from "@mui/material/styles"
 import React, { useState } from "react"
@@ -41,14 +42,16 @@ export default function TopLayout(props) {
       <Helmet>
         <meta name="viewport" content="initial-scale=1, width=device-width" />
       </Helmet>
-      <ThemeProvider theme={themeMode === "light" ? lightTheme : darkTheme}>
-        <ThemeContext.Provider value={handleThemeModeChange}>
-          {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
-          <CssBaseline />
-          {/*{React.cloneElement(props.children, { handleThemeModeChange })}*/}
-          {props.children}
-        </ThemeContext.Provider>
-      </ThemeProvider>
+      <CacheProvider value={muiCache}>
+        <ThemeProvider theme={themeMode === "light" ? lightTheme : darkTheme}>
+          <ThemeContext.Provider value={handleThemeModeChange}>
+            {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
+            <CssBaseline />
+            {/*{React.cloneElement(props.children, { handleThemeModeChange })}*/}
+            {props.children}
+          </ThemeContext.Provider>
+        </ThemeProvider>
+      </CacheProvider>
     </>
   )
 }
