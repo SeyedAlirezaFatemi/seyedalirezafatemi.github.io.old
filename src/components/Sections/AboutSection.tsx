@@ -1,4 +1,4 @@
-import { Typography, Box } from "@mui/material"
+import { Typography } from "@mui/material"
 import { graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
 import React from "react"
@@ -52,8 +52,8 @@ export function AboutSection() {
       <br />
       Research-wise, my chief areas of interest are Visual Computing and Machine Learning.
       I'm fascinated by the use of Machine Learning in various fields and applications of Computer Graphics & Vision
-      such as Geometric Deep Learning, Art & Image Generation, 2D/3D Reconstruction, Rendering, Deepfakes, Image
-      Enhancement, etc.
+      such as Geometric Deep Learning, Neural Rendering, Art & Image Generation, 2D/3D Reconstruction, Deepfakes, Image
+      Enhancement, Generative Modeling, etc.
       On top of these topics, I really enjoy Software, Game, and Web development, especially Front-end web development
       and Graphics programming. I love playing with shapes and meshes!
       <br />
@@ -65,10 +65,9 @@ export function AboutSection() {
       I also have a lot of experience in designing and implementing mobile and web applications.
       I've worked with various frameworks and libraries such as React, React Native, Gatsby, Next, Django, Flask, etc.
       <br />
-      I want to expand my knowledge as a graduate student in Visual Computing, Machine Learning, and Software
+      I want to expand my knowledge as a graduate student in Visual Computing, Machine Learning, and Game and Software
       Development.
-      I believe that with knowledge and skills in these fields, we can create innovative and creative solutions and
-      methods that can impact people's lives.
+      I believe that with knowledge and skills in these fields, we can create innovative and creative software that can impact people's lives.
       <br />
       I'm comfortable with working alone as well as working in large teams of diverse people. I take my responsibilities
       seriously, and I try my best to positively influence and help the people and the world around me. I'm a fast and
