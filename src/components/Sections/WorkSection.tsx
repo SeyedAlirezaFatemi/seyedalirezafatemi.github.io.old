@@ -1,7 +1,7 @@
 import { Divider, Typography } from "@mui/material"
-import { makeStyles } from "../makeStyles"
 import React from "react"
 
+import { makeStyles } from "../makeStyles"
 import { CVSection } from "./HomeSection"
 
 const useStyles = makeStyles()(theme => ({
@@ -71,6 +71,17 @@ export function WorkSection() {
         Research & Work
       </Typography>
       <CVSection title={"Research & Work Experiences"}>
+        <Title
+          link={""}
+          title={"Aalto University, Department of Computer Science"}
+        />
+        <Typography variant="subtitle1" className={classes.paragraph}>
+          Research Assistant | Spring 2021 (Present)
+        </Typography>
+        <Typography variant="body1" className={classes.paragraph} align="justify">
+          I'm currently working as a research assistant under the supervision of Prof. Jaakko Lehtinen.
+          My research is related to generative modeling.
+        </Typography>
         <Title
           link={""}
           title={"University of Toronto, Dynamic Graphics Project Lab, Remote"}
@@ -168,7 +179,64 @@ export function WorkSection() {
       </CVSection>
 
       <Divider className={classes.divider} />
+      <CVSection title={"Teaching Experiences"}>
+        <Title
+          link={""}
+          title={"Data Structures and Algorithms, Aalto University"}
+        />
+        <Typography variant="subtitle1" className={classes.paragraph}>
+          Teaching Assistant | Fall 2021
+        </Typography>
+        <Typography variant="body1" className={classes.paragraph} align="justify">
+          Instructor: Prof. Ari Korhonen
+        </Typography>
+        <Title
+          link={""}
+          title={"Basics in Programming Y1, Aalto University"}
+        />
+        <Typography variant="subtitle1" className={classes.paragraph}>
+          Teaching Assistant | Fall 2021
+        </Typography>
+        <Typography variant="body1" className={classes.paragraph} align="justify">
+          Instructor: Prof. Barbara Keller
+        </Typography>
+        <Title
+          link={""}
+          title={"Database Design, Sharif University of Technology"}
+        />
+        <Typography variant="subtitle1" className={classes.paragraph}>
+          Teaching Assistant | Fall 2020
+        </Typography>
+        <Typography variant="body1" className={classes.paragraph} align="justify">
+          Instructor: Prof. Abbas Heydarnoori
+        </Typography>
+      </CVSection>
+
+      <Divider className={classes.divider} />
       <CVSection title={"Projects"}>
+        <Title
+          link={"https://docs.google.com/document/d/1_g0HvAUIjQ--5TeSVOuIaqgbUAu_E4LJyaiJIvgovfA/edit?usp=sharing"}
+          title={"Exploring The Space Of Spatial Structures"}
+        />
+        <Typography variant="subtitle1" className={classes.paragraph}>
+          Fall 2021
+        </Typography>
+        <Typography variant="body1" className={classes.paragraph}>
+          This was the project for <a href="http://matharts.aalto.fi/courses.html" target="_blank"
+                                      rel="noopener noreferrer">Spatial Structures</a> course.
+          It is a collection of AI-generated art related to concepts covered in the course, especially the fourth dimension.
+        </Typography>
+        <Title
+          link={"https://github.com/SeyedAlirezaFatemi/CS-C3100-ComputerGraphics"}
+          title={"Computer Graphics"}
+        />
+        <Typography variant="subtitle1" className={classes.paragraph}>
+          Fall 2021
+        </Typography>
+        <Typography variant="body1" className={classes.paragraph}>
+          This repository is my solutions to the assignments of the Computer Graphics course.
+          It contains code for ray tracing, physics simulation, animation, curves, mesh simplification, etc.
+        </Typography>
         <Title
           link={"https://github.com/SeyedAlirezaFatemi/decaf-compiler"}
           title={"Lark Decaf Compiler"}

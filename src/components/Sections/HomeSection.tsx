@@ -141,11 +141,9 @@ export function HomeSection() {
         <Typography variant="subtitle1" className={classes.paragraph}>
           Researching on Visual Computing & Machine Learning
         </Typography>
-        {/*<Typography variant="subtitle1" className={classes.paragraph}>*/}
-        {/*  Highly motivated, energetic and creative individual seeking new adventures.*/}
-        {/*</Typography>*/}
         <Typography variant="subtitle2">
           seyedalirezafatemijahromi [at] gmail.com<br />
+          seyedalireza.fatemijahromi [at] aalto.fi<br />
           <a href="https://github.com/SeyedAlirezaFatemi" target="_blank"
              rel="noopener noreferrer">GitHub</a>,&nbsp;
           <a href="https://scholar.google.com/citations?user=YxRB1PAAAAAJ&hl=en&authuser=2" target="_blank"
@@ -167,7 +165,8 @@ export function HomeSection() {
           <li>Visual Computing (Computer Graphics & Vision)</li>
           <li>Machine Learning & Deep Learning</li>
           <li>Geometry Processing & Geometric Deep Learning</li>
-          <li>Game Design & Artificial Intelligence</li>
+          <li>Differential Geometry and Discrete Differential Geometry</li>
+          <li>A lot of other topics I haven't discovered yet!</li>
         </ul>
       </Typography>
     </CVSection>
@@ -176,7 +175,7 @@ export function HomeSection() {
     <CVSection title={"Interests"}>
       <Typography variant="body2" className={classes.interests}>
         <ul className={classes.interestsList}>
-          <li>Graphics programming and Game development</li>
+          <li>Game design and development and Graphics programming</li>
           <li>Software & Web development (Especially front-end)</li>
           <li>Data science and visualization</li>
         </ul>
@@ -190,6 +189,9 @@ export function HomeSection() {
           <Typography variant="body1" className={cx(classes.paragraph, classes.headline)}>
             Aalto University
           </Typography>
+          {/*<Typography variant="subtitle2" className={classes.paragraph}>*/}
+          {/*  GPA: <strong>5/5</strong>*/}
+          {/*</Typography>*/}
           <Typography variant="subtitle1" className={classes.paragraph}>
             Master of Science in Computer Science (Big Data and Large-Scale Computing)
             <br />
