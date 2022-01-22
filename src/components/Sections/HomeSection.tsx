@@ -128,7 +128,7 @@ export function HomeSection() {
   const { classes, cx } = useStyles()
   return <>
     <Typography className={classes.name} variant="h5" align="center">
-      Seyed Alireza FatemiJahromi
+      Seyed Alireza Fatemi Jahromi
     </Typography>
     <Grid container justifyContent="flex-start" direction="row" alignItems="center" className={classes.avatar}>
       <Grid container item md={4} xs={12} justifyContent="center" className={classes.avatar}>
@@ -165,8 +165,7 @@ export function HomeSection() {
           <li>Visual Computing (Computer Graphics & Vision)</li>
           <li>Machine Learning & Deep Learning</li>
           <li>Geometry Processing & Geometric Deep Learning</li>
-          <li>Differential Geometry and Discrete Differential Geometry</li>
-          <li>A lot of other topics I haven't discovered yet!</li>
+          <li>A lot of other things I haven't discovered yet!</li>
         </ul>
       </Typography>
     </CVSection>
@@ -175,9 +174,10 @@ export function HomeSection() {
     <CVSection title={"Interests"}>
       <Typography variant="body2" className={classes.interests}>
         <ul className={classes.interestsList}>
-          <li>Game design and development and Graphics programming</li>
-          <li>Software & Web development (Especially front-end)</li>
-          <li>Data science and visualization</li>
+          <li>Game Design & Development & Graphics Programming</li>
+          <li>Data Science & Visualization</li>
+          <li>Software & Web Development (Especially Front-end)</li>
+          <li>A lot of other things I haven't discovered yet!</li>
         </ul>
       </Typography>
     </CVSection>
@@ -189,9 +189,9 @@ export function HomeSection() {
           <Typography variant="body1" className={cx(classes.paragraph, classes.headline)}>
             Aalto University
           </Typography>
-          {/*<Typography variant="subtitle2" className={classes.paragraph}>*/}
-          {/*  GPA: <strong>5/5</strong>*/}
-          {/*</Typography>*/}
+          <Typography variant="subtitle2" className={classes.paragraph}>
+           GPA: <strong>4.85/5</strong>
+          </Typography>
           <Typography variant="subtitle1" className={classes.paragraph}>
             Master of Science in Computer Science (Big Data and Large-Scale Computing)
             <br />

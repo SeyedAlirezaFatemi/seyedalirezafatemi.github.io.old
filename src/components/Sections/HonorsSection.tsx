@@ -62,11 +62,17 @@ export function HonorsSection() {
         Honors
       </Typography>
       <ul className={classes.honorsList}>
+      <li>
+          <HonorIcon />
+          Recipient of the outstanding achievement award for outstanding performance in the Cloud Software and Systems
+          course at Aalto CS.
+          <Date>Fall 2021</Date>
+        </li>
         <li>
           <HonorIcon />
           Recipient of the grant and membership of <strong>Iran&apos;s National Elites Foundation</strong> for
           outstanding academic success.
-          <Date>Summer 2016 - 2021</Date>
+          <Date>Summer 2016 - Spring 2021</Date>
         </li>
         <li className={classes.minorHack}>
           <HonorIcon />Ranked <strong>5<sup>th</sup></strong> in <a
