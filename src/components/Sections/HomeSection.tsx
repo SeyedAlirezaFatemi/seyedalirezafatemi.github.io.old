@@ -83,6 +83,13 @@ export function Skills() {
             </td>
           </tr>
           <tr>
+            <td>3D Modeling</td>
+            <td className={classes.skills}>
+              {["Blender", "Fusion 360"].map(label => (
+                <Chip key={label} label={label} className={"chip"} />))}
+            </td>
+          </tr>
+          <tr>
             <td>Machine Learning</td>
             <td className={classes.skills}>
               {["TensorFlow", "Keras", "PyTorch", "scikit-learn", "pandas", "NumPy"].map(label => (
@@ -159,24 +166,25 @@ export function HomeSection() {
     {/*<News />*/}
 
     <Divider />
-    <CVSection title={"Research Interests"}>
+    <CVSection title={"Interests"}>
       <Typography variant="body2" className={classes.interests}>
         <ul className={classes.interestsList}>
-          <li>Visual Computing (Computer Graphics & Vision)</li>
-          <li>Machine Learning & Deep Learning</li>
-          <li>Geometry Processing & Geometric Deep Learning</li>
+          <li>Game Design & Development & Graphics Programming</li>
+          <li>3D Modeling & Printing</li>
+          <li>Data Science & Visualization</li>
+          <li>Software & Web Development (Especially Front-end)</li>
           <li>A lot of other things I haven't discovered yet!</li>
         </ul>
       </Typography>
     </CVSection>
 
     <Divider />
-    <CVSection title={"Interests"}>
+    <CVSection title={"Research Interests"}>
       <Typography variant="body2" className={classes.interests}>
         <ul className={classes.interestsList}>
-          <li>Game Design & Development & Graphics Programming</li>
-          <li>Data Science & Visualization</li>
-          <li>Software & Web Development (Especially Front-end)</li>
+          <li>Visual Computing (Computer Graphics & Vision)</li>
+          <li>Machine Learning & Deep Learning</li>
+          <li>Geometry Processing & Geometric Deep Learning</li>
           <li>A lot of other things I haven't discovered yet!</li>
         </ul>
       </Typography>
@@ -190,7 +198,7 @@ export function HomeSection() {
             Aalto University
           </Typography>
           <Typography variant="subtitle2" className={classes.paragraph}>
-           GPA: <strong>4.85/5</strong>
+           GPA: <strong>4.87/5</strong>
           </Typography>
           <Typography variant="subtitle1" className={classes.paragraph}>
             Master of Science in Computer Science (Big Data and Large-Scale Computing)
