@@ -71,12 +71,23 @@ export function WorkSection() {
         Research & Work
       </Typography>
       <CVSection title={"Research & Work Experiences"}>
+      <Title
+          link={""}
+          title={"Nokia, Advanced Technology Group"}
+        />
+        <Typography variant="subtitle1" className={classes.paragraph}>
+          Software Developer Trainee | May 2022 - Present
+        </Typography>
+        <Typography variant="body1" className={classes.paragraph} align="justify">
+          I'm currently working as a trainee in the ATG group at Nokia.
+          My work is related to augmented reality with WebXR.
+        </Typography>
         <Title
           link={""}
           title={"Aalto University, Department of Computer Science"}
         />
         <Typography variant="subtitle1" className={classes.paragraph}>
-          Research Assistant | Spring 2021 (Present)
+          Research Assistant | January 2022 -  Present
         </Typography>
         <Typography variant="body1" className={classes.paragraph} align="justify">
           I'm currently working as a research assistant under the supervision of Prof. Jaakko Lehtinen.
