@@ -80,18 +80,18 @@ export function WorkSection() {
         </Typography>
         <Typography variant="body1" className={classes.paragraph} align="justify">
           I'm currently working as a trainee in the ATG group at Nokia.
-          My work is related to augmented reality with WebXR.
+          My work is related to Augmented Reality and Visual Localization.
         </Typography>
         <Title
           link={""}
           title={"Aalto University, Department of Computer Science"}
         />
         <Typography variant="subtitle1" className={classes.paragraph}>
-          Research Assistant | January 2022 -  Present
+          Research Assistant | January 2022 -  June 2022
         </Typography>
         <Typography variant="body1" className={classes.paragraph} align="justify">
-          I'm currently working as a research assistant under the supervision of Prof. Jaakko Lehtinen.
-          My research is related to generative modeling.
+          I worked as a research assistant under the supervision of Prof. Jaakko Lehtinen.
+          My research was related to generative modeling with medical images.
         </Typography>
         <Title
           link={""}
@@ -225,6 +225,17 @@ export function WorkSection() {
 
       <Divider className={classes.divider} />
       <CVSection title={"Projects"}>
+      <Title
+          link={"https://github.com/SeyedAlirezaFatemi/CS-E5520-AdvancedComputerGraphics"}
+          title={"Advanced Computer Graphics"}
+        />
+        <Typography variant="subtitle1" className={classes.paragraph}>
+          Spring 2022
+        </Typography>
+        <Typography variant="body1" className={classes.paragraph}>
+          This repository is my solutions to the assignments of the Advanced Computer Graphics course.
+          It contains code for path tracing, BVH construction and traversal, Radiosity, etc.
+        </Typography>
         <Title
           link={"https://docs.google.com/document/d/1_g0HvAUIjQ--5TeSVOuIaqgbUAu_E4LJyaiJIvgovfA/edit?usp=sharing"}
           title={"Exploring The Space Of Spatial Structures"}

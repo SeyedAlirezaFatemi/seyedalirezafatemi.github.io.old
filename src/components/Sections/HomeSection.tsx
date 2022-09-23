@@ -90,6 +90,13 @@ export function Skills() {
             </td>
           </tr>
           <tr>
+            <td>Game Engines</td>
+            <td className={classes.skills}>
+              {["Unity", "Unreal Engine 5"].map(label => (
+                <Chip key={label} label={label} className={"chip"} />))}
+            </td>
+          </tr>
+          <tr>
             <td>Machine Learning</td>
             <td className={classes.skills}>
               {["TensorFlow", "Keras", "PyTorch", "scikit-learn", "pandas", "NumPy"].map(label => (
@@ -144,6 +151,8 @@ export function HomeSection() {
       <Grid item md={8} xs={12}>
         <Typography variant="body1" className={classes.paragraph}>
           Master's Student in Computer Science at Aalto University
+          <br/>
+          Minor in Game Design and Development
         </Typography>
         <Typography variant="subtitle1" className={classes.paragraph}>
           Researching on Visual Computing & Machine Learning
@@ -198,10 +207,12 @@ export function HomeSection() {
             Aalto University
           </Typography>
           <Typography variant="subtitle2" className={classes.paragraph}>
-           GPA: <strong>4.87/5</strong>
+           GPA: <strong>4.91/5</strong>
           </Typography>
           <Typography variant="subtitle1" className={classes.paragraph}>
             Master of Science in Computer Science (Big Data and Large-Scale Computing)
+            <br />
+            Minor in Game Design and Development
             <br />
             Espoo, Finland | Aug. 2021 - Expected Aug. 2023
           </Typography>
