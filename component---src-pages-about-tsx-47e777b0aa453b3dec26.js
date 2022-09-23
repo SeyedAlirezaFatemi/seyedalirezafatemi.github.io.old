@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkseyed_alireza_fatemi_jahromi=self.webpackChunkseyed_alireza_fatemi_jahromi||[]).push([[49],{564:function(e,t,a){a.r(t);var l=a(257),u=a(9709),r=a(415);t.default=function(){return l.default.createElement(u.Ar,{page:r.b.about.name},l.default.createElement(u.HJ,{title:r.b.about.title}),l.default.createElement(u.ez,null))}}}]);
+//# sourceMappingURL=component---src-pages-about-tsx-47e777b0aa453b3dec26.js.map

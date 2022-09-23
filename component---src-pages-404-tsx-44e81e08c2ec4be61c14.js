@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkseyed_alireza_fatemi_jahromi=self.webpackChunkseyed_alireza_fatemi_jahromi||[]).push([[218],{938:function(e,t,a){a.r(t);var l=a(257),u=a(9709);t.default=function(){return l.default.createElement(u.Ar,{page:"404"},l.default.createElement(u.HJ,{title:"404: Not found"}),l.default.createElement("h1",null,"NOT FOUND"),l.default.createElement("p",null,"You just hit a route that doesn't exist... the sadness."))}}}]);
+//# sourceMappingURL=component---src-pages-404-tsx-44e81e08c2ec4be61c14.js.map

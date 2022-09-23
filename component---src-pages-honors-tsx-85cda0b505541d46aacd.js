@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkseyed_alireza_fatemi_jahromi=self.webpackChunkseyed_alireza_fatemi_jahromi||[]).push([[225],{5345:function(e,t,a){a.r(t);var l=a(257),n=a(9709),r=a(415);t.default=function(){return l.default.createElement(n.Ar,{page:r.b.honors.name},l.default.createElement(n.HJ,{title:r.b.honors.title}),l.default.createElement(n.en,null))}}}]);
+//# sourceMappingURL=component---src-pages-honors-tsx-85cda0b505541d46aacd.js.map

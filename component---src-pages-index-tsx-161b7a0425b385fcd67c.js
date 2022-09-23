@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkseyed_alireza_fatemi_jahromi=self.webpackChunkseyed_alireza_fatemi_jahromi||[]).push([[691],{6738:function(e,t,a){a.r(t);var l=a(257),r=a(9709),n=a(415);t.default=function(){return l.default.createElement(r.Ar,{page:n.b.home.name},l.default.createElement(r.HJ,{title:n.b.home.title}),l.default.createElement(r.LE,null))}}}]);
+//# sourceMappingURL=component---src-pages-index-tsx-161b7a0425b385fcd67c.js.map
